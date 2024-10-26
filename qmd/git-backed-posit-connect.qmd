@@ -16,6 +16,8 @@ format:
 
 This document describes how to deploy a Shiny app on Posit Connect, leveraging the [pins](https://cran.r-project.org/web/packages/pins/index.html) package to manage data. The application showcases single-cell RNA sequencing data analysis using the [scRNAseq](https://www.bioconductor.org/packages/release/data/experiment/html/scRNAseq.html) package to fetch data, perform quality control, normalization, and dimensionality reduction, displaying results with a Shiny interface.
 
+Note that you may find more information and details in the Posit Connect documentation [Git-Backed Content section](https://docs.posit.co/connect/user/git-backed/).
+
 ## Step 1: Data Preparation
 
 As a best practice, it's advised to separate the analytics code and the Shiny application code either in different repositories or at least different branches of the same GitHub repository.
@@ -26,7 +28,7 @@ For organizational clarity and efficiency:
 
 - **Separate Branches**: Alternatively, use different branches within a single GitHub repository to isolate analytics from app development.
 
-To keep all the code in a single repository for the simplicity of this demonstration, the analytics code described below is located in the `R/` directory of this repository. In general, it is best to follow best practices to keep this code in a separate repository or branch as specified above. 
+To keep all the code in a single repository for the simplicity of this demonstration, the analytics code described below is located in the [R/](https://github.com/ccb-hms/Git-Backed-Content/tree/master/R) directory of the [GitHub repository for this tutorial](https://github.com/ccb-hms/Git-Backed-Content). In general, it is best to follow best practices to keep this code in a separate repository or branch as specified above. 
 
 ```{r}
 #| echo: true
@@ -131,6 +133,8 @@ This Shiny app provides an interactive interface to visualize dimensionality red
 - **User Interface (UI)**: Includes a title, a sidebar for user input, and a main panel for displaying visualizations.
 
 - **Server Logic**: Processes user input and displays a plot where cell types are color-coded, facilitating exploration of cell heterogeneity.
+
+The code below reads the data pinned on the Posit Connect server and generates the Shiny app. This code is available in the [Shiny/](https://github.com/ccb-hms/Git-Backed-Content/tree/master/Shiny) folder of the [GitHub repository for this tutorial](https://github.com/ccb-hms/Git-Backed-Content).
 
 ```{r}
 #| echo: true
