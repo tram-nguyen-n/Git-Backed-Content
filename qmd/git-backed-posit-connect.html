@@ -112,18 +112,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This document describes how to deploy a Shiny app on Posit Connect, leveraging the <a href="https://cran.r-project.org/web/packages/pins/index.html">pins</a> package to manage data. The application showcases single-cell RNA sequencing data analysis using the <a href="https://www.bioconductor.org/packages/release/data/experiment/html/scRNAseq.html">scRNAseq</a> package to fetch data, perform quality control, normalization, and dimensionality reduction, displaying results with a Shiny interface.</p>
-<p>Note that you may find more information and details in the Posit Connect documentation <a href="https://docs.posit.co/connect/user/git-backed/">Git-Backed Content section</a>.</p>
+<p>This tutorial demonstrates how to deploy a Shiny app on Posit Connect, leveraging the <a href="https://cran.r-project.org/web/packages/pins/index.html">pins</a> package to manage data. The application showcases single-cell RNA sequencing data analysis using the <a href="https://www.bioconductor.org/packages/release/data/experiment/html/scRNAseq.html">scRNAseq</a> package to fetch data, perform quality control, normalization, and dimensionality reduction, displaying results with a Shiny interface.</p>
+<p>The code for this tutorial is contained in the this <a href="https://github.com/ccb-hms/Git-Backed-Content">GitHub respository</a>. The main elements of this tutorial are the following:</p>
+<ul>
+<li>The analytics code to generate and save the data using <code>pins</code>, available in the <a href="https://github.com/ccb-hms/Git-Backed-Content">master branch</a> of the GitHub repository.</li>
+<li>The Quarto code to generate this document (which is also deployed on the same Posit Connect server as the Shiny app), available in the <a href="https://github.com/ccb-hms/Git-Backed-Content/tree/Quarto">Quarto branch</a> of the GitHub repository.</li>
+<li>The code to generate the Shiny app, available in the <a href="https://github.com/ccb-hms/Git-Backed-Content/tree/Shiny">Shiny branch</a> of the GitHub repository.</li>
+</ul>
+<p>The resulting output of this repository are:</p>
+<ol type="1">
+<li><a href="https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Tutorial/">This Quarto document</a>.</li>
+<li><a href="https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Shiny-App/">The Shiny app</a> to visualize the single-cell RNA-seq data in reduced dimensions.</li>
+</ol>
+<p>Note: you may find more information and details in the Posit Connect documentation <a href="https://docs.posit.co/connect/user/git-backed/">Git-Backed Content section</a>.</p>
 </section>
 <section id="step-1-data-preparation" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-data-preparation">Step 1: Data Preparation</h2>
 <p>As a best practice, it’s advised to separate the analytics code and the Shiny application code either in different repositories or at least different branches of the same GitHub repository.</p>
 <p>For organizational clarity and efficiency:</p>
 <ul>
-<li><p><strong>Separate Repositories</strong>: Maintain distinct repositories for your analytics and Shiny applications.</p></li>
+<li><p><strong>Separate Repositories</strong>: Maintain distinct repositories for your analytics and Quarto/Shiny applications.</p></li>
 <li><p><strong>Separate Branches</strong>: Alternatively, use different branches within a single GitHub repository to isolate analytics from app development.</p></li>
 </ul>
-<p>To keep all the code in a single repository for the simplicity of this demonstration, the analytics code described below is located in the <a href="https://github.com/ccb-hms/Git-Backed-Content/tree/master/R">R/</a> directory of the <a href="https://github.com/ccb-hms/Git-Backed-Content">GitHub repository for this tutorial</a>. In general, it is best to follow best practices to keep this code in a separate repository or branch as specified above.</p>
+<p>To keep all the code in a single repository for the simplicity of this demonstration, the we use separate branches for the analytics code to generate and save the data, the code to generate this app and the code to generate the Shiny app (as described in the Overview).</p>
+<p>The analytics code below is available in the <a href="https://github.com/ccb-hms/Git-Backed-Content">master branch</a> of the GitHub repository.</p>
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
@@ -225,7 +237,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong>User Interface (UI)</strong>: Includes a title, a sidebar for user input, and a main panel for displaying visualizations.</p></li>
 <li><p><strong>Server Logic</strong>: Processes user input and displays a plot where cell types are color-coded, facilitating exploration of cell heterogeneity.</p></li>
 </ul>
-<p>The code below reads the data pinned on the Posit Connect server and generates the Shiny app. This code is available in the <a href="https://github.com/ccb-hms/Git-Backed-Content/tree/master/Shiny">Shiny/</a> folder of the <a href="https://github.com/ccb-hms/Git-Backed-Content">GitHub repository for this tutorial</a>.</p>
+<p>The code below reads the data pinned on the Posit Connect server and generates the Shiny app. This code is available in the <a href="https://github.com/ccb-hms/Git-Backed-Content/tree/Shiny">Shiny branch</a> of the GitHub repository.</p>
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
@@ -926,222 +938,240 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">    html:</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">        toc: true</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">        toc-depth: 2</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">        code-fold: show</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">        code-tools: true</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">        theme: </span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">          light: flatly</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">          dark: darkly</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>This document describes how to deploy a Shiny app on Posit Connect, leveraging the <span class="co">[</span><span class="ot">pins</span><span class="co">](https://cran.r-project.org/web/packages/pins/index.html)</span> package to manage data. The application showcases single-cell RNA sequencing data analysis using the <span class="co">[</span><span class="ot">scRNAseq</span><span class="co">](https://www.bioconductor.org/packages/release/data/experiment/html/scRNAseq.html)</span> package to fetch data, perform quality control, normalization, and dimensionality reduction, displaying results with a Shiny interface.</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>Note that you may find more information and details in the Posit Connect documentation <span class="co">[</span><span class="ot">Git-Backed Content section</span><span class="co">](https://docs.posit.co/connect/user/git-backed/)</span>.</span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 1: Data Preparation</span></span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>As a best practice, it's advised to separate the analytics code and the Shiny application code either in different repositories or at least different branches of the same GitHub repository.</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>For organizational clarity and efficiency:</span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Separate Repositories**: Maintain distinct repositories for your analytics and Shiny applications.</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Separate Branches**: Alternatively, use different branches within a single GitHub repository to isolate analytics from app development.</span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>To keep all the code in a single repository for the simplicity of this demonstration, the analytics code described below is located in the <span class="co">[</span><span class="ot">R/</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content/tree/master/R)</span> directory of the <span class="co">[</span><span class="ot">GitHub repository for this tutorial</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content)</span>. In general, it is best to follow best practices to keep this code in a separate repository or branch as specified above.</span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">        grid: </span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">          body-width: 1000px</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">          sidebar-width: 200px</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">          margin-width: 200px</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">        toc: true</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">        toc-depth: 2</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">        code-fold: show</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">        code-tools: true</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">        theme: </span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co">          light: flatly</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co">          dark: darkly</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co">        number-sections: false</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>This tutorial demonstrates how to deploy a Shiny app on Posit Connect, leveraging the <span class="co">[</span><span class="ot">pins</span><span class="co">](https://cran.r-project.org/web/packages/pins/index.html)</span> package to manage data. The application showcases single-cell RNA sequencing data analysis using the <span class="co">[</span><span class="ot">scRNAseq</span><span class="co">](https://www.bioconductor.org/packages/release/data/experiment/html/scRNAseq.html)</span> package to fetch data, perform quality control, normalization, and dimensionality reduction, displaying results with a Shiny interface.</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>The code for this tutorial is contained in the this <span class="co">[</span><span class="ot">GitHub respository</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content)</span>. The main elements of this tutorial are the following:</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The analytics code to generate and save the data using <span class="in">`pins`</span>, available in the <span class="co">[</span><span class="ot">master branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content)</span> of the GitHub repository.</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Quarto code to generate this document (which is also deployed on the same Posit Connect server as the Shiny app), available in the <span class="co">[</span><span class="ot">Quarto branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content/tree/Quarto)</span> of the GitHub repository.</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The code to generate the Shiny app, available in the <span class="co">[</span><span class="ot">Shiny branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content/tree/Shiny)</span> of the GitHub repository.</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>The resulting output of this repository are:</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">This Quarto document</span><span class="co">](https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Tutorial/)</span>.</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">The Shiny app</span><span class="co">](https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Shiny-App/)</span> to visualize the single-cell RNA-seq data in reduced dimensions.</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>Note: you may find more information and details in the Posit Connect documentation <span class="co">[</span><span class="ot">Git-Backed Content section</span><span class="co">](https://docs.posit.co/connect/user/git-backed/)</span>.</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 1: Data Preparation</span></span>
 <span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Load necessary libraries</span></span>
-<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scRNAseq)</span>
-<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scuttle)</span>
-<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scran)</span>
-<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scater)</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>As a best practice, it's advised to separate the analytics code and the Shiny application code either in different repositories or at least different branches of the same GitHub repository.</span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>For organizational clarity and efficiency:</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Separate Repositories**: Maintain distinct repositories for your analytics and Quarto/Shiny applications.</span>
 <span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Fetch the He Organ Atlas Data for the Marrow tissue</span></span>
-<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">HeOrganAtlasData</span>(<span class="at">tissue =</span> <span class="fu">c</span>(<span class="st">"Marrow"</span>), <span class="at">ensembl =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate mitochondrial protein-coding feature percentages if needed</span></span>
-<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>is_mito <span class="ot">&lt;-</span> <span class="fu">grepl</span>(<span class="st">"^MT-"</span>, <span class="fu">rowData</span>(sce)<span class="sc">$</span>symbol)</span>
-<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">addPerCellQC</span>(sce, <span class="at">subsets =</span> <span class="fu">list</span>(<span class="at">Mito =</span> is_mito))</span>
-<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a><span class="co"># Run quality control by flagging low-quality cells based on mitochondrial content</span></span>
-<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a><span class="co"># percent_subsets looks within the data subsets calculated by addPerCellQC</span></span>
-<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>qc_metrics <span class="ot">&lt;-</span> <span class="fu">quickPerCellQC</span>(<span class="fu">colData</span>(sce), </span>
-<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>                             <span class="at">percent_subsets =</span> <span class="st">"subsets_Mito_percent"</span>)</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Separate Branches**: Alternatively, use different branches within a single GitHub repository to isolate analytics from app development.</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>To keep all the code in a single repository for the simplicity of this demonstration, the we use separate branches for the analytics code to generate and save the data, the code to generate this app and the code to generate the Shiny app (as described in the Overview).</span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>The analytics code below is available in the <span class="co">[</span><span class="ot">master branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content)</span> of the GitHub repository.</span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
 <span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter cells using the QC metrics obtained</span></span>
-<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> sce[, <span class="sc">!</span>qc_metrics<span class="sc">$</span>discard]</span>
-<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalization using scran</span></span>
-<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">logNormCounts</span>(sce)</span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a><span class="co"># Load necessary libraries</span></span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scRNAseq)</span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scuttle)</span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scran)</span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scater)</span>
 <span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecting highly variable genes</span></span>
-<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> sce[<span class="fu">getTopHVGs</span>(sce, <span class="at">n =</span> <span class="fl">1e3</span>),]</span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a><span class="co"># Fetch the He Organ Atlas Data for the Marrow tissue</span></span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">HeOrganAtlasData</span>(<span class="at">tissue =</span> <span class="fu">c</span>(<span class="st">"Marrow"</span>), <span class="at">ensembl =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute PCA</span></span>
-<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">runPCA</span>(sce)</span>
-<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute UMAP</span></span>
-<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">runUMAP</span>(sce, <span class="at">dimred =</span> <span class="st">"PCA"</span>)</span>
-<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute t-SNE</span></span>
-<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">runTSNE</span>(sce, <span class="at">dimred =</span> <span class="st">"PCA"</span>)</span>
-<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 2: Pin the Data to Posit Connect Server</span></span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate mitochondrial protein-coding feature percentages if needed</span></span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>is_mito <span class="ot">&lt;-</span> <span class="fu">grepl</span>(<span class="st">"^MT-"</span>, <span class="fu">rowData</span>(sce)<span class="sc">$</span>symbol)</span>
+<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">addPerCellQC</span>(sce, <span class="at">subsets =</span> <span class="fu">list</span>(<span class="at">Mito =</span> is_mito))</span>
+<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a><span class="co"># Run quality control by flagging low-quality cells based on mitochondrial content</span></span>
+<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a><span class="co"># percent_subsets looks within the data subsets calculated by addPerCellQC</span></span>
+<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a>qc_metrics <span class="ot">&lt;-</span> <span class="fu">quickPerCellQC</span>(<span class="fu">colData</span>(sce), </span>
+<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a>                             <span class="at">percent_subsets =</span> <span class="st">"subsets_Mito_percent"</span>)</span>
+<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter cells using the QC metrics obtained</span></span>
+<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> sce[, <span class="sc">!</span>qc_metrics<span class="sc">$</span>discard]</span>
 <span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a><span class="fu">### Setting Up the `.Renviron` File</span></span>
-<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a>To securely manage API keys and other sensitive information, use an <span class="in">`.Renviron`</span> file. This file is used to set environment variables that R can access. Here's how to set it up:</span>
-<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Create the `.Renviron` File**: Open a text editor, create a file named <span class="in">`.Renviron`</span>, and add your server URL and API key like this:</span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalization using scran</span></span>
+<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">logNormCounts</span>(sce)</span>
+<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecting highly variable genes</span></span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> sce[<span class="fu">getTopHVGs</span>(sce, <span class="at">n =</span> <span class="fl">1e3</span>),]</span>
 <span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute PCA</span></span>
+<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">runPCA</span>(sce)</span>
+<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute UMAP</span></span>
+<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">runUMAP</span>(sce, <span class="at">dimred =</span> <span class="st">"PCA"</span>)</span>
 <span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a>POSIT_SERVER_URL <span class="ot">=</span> <span class="er">&lt;</span>your_posit_server_url<span class="sc">&gt;</span></span>
-<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a>POSIT_API_KEY <span class="ot">=</span> <span class="er">&lt;</span>your_api_key<span class="sc">&gt;</span></span>
+<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute t-SNE</span></span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">runTSNE</span>(sce, <span class="at">dimred =</span> <span class="st">"PCA"</span>)</span>
 <span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Replace <span class="in">`&lt;your_posit_server_url&gt;`</span> and <span class="in">`&lt;your_api_key&gt;`</span> with your actual credentials.</span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 2: Pin the Data to Posit Connect Server</span></span>
 <span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Location of `.Renviron`**: Place the <span class="in">`.Renviron`</span> file in your home directory (e.g., <span class="in">`~/.Renviron`</span>). Environment variables set in this location are globally accessible across R sessions on your machine. Alternatively, if you only want the file to be used in a specific project, place it in the project's root directory.</span>
+<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a><span class="fu">### Setting Up the `.Renviron` File</span></span>
 <span id="cb6-97"><a href="#cb6-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Security Considerations**: Add <span class="in">`.Renviron`</span> to your <span class="in">`.gitignore`</span> file to ensure it is not included in your version control system. This prevents sharing sensitive information such as API keys on GitHub (or any other VCS), even if the repository is private. This precaution safeguards against accidental exposure if the repository becomes public or shared with external collaborators.</span>
+<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a>To securely manage API keys and other sensitive information, use an <span class="in">`.Renviron`</span> file. This file is used to set environment variables that R can access. Here's how to set it up:</span>
 <span id="cb6-99"><a href="#cb6-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-100"><a href="#cb6-100" aria-hidden="true" tabindex="-1"></a>To do this, add the following line to your <span class="in">`.gitignore`</span>: <span class="in">`.Renviron`</span></span>
+<span id="cb6-100"><a href="#cb6-100" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Create the `.Renviron` File**: Open a text editor, create a file named <span class="in">`.Renviron`</span>, and add your server URL and API key like this:</span>
 <span id="cb6-101"><a href="#cb6-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-102"><a href="#cb6-102" aria-hidden="true" tabindex="-1"></a><span class="fu">### Integration with Your Code</span></span>
-<span id="cb6-103"><a href="#cb6-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-104"><a href="#cb6-104" aria-hidden="true" tabindex="-1"></a>Once set up, you can integrate your environment variables into your <span class="in">`R`</span> script. Using the pins package, we can now upload the processed dataset to Posit Connect as shown in the code below. This will allow the Shiny app to access the data from within the platform without maintaining local copies.</span>
-<span id="cb6-105"><a href="#cb6-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-108"><a href="#cb6-108" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb6-109"><a href="#cb6-109" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb6-110"><a href="#cb6-110" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb6-104"><a href="#cb6-104" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-105"><a href="#cb6-105" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb6-106"><a href="#cb6-106" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb6-107"><a href="#cb6-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-108"><a href="#cb6-108" aria-hidden="true" tabindex="-1"></a>POSIT_SERVER_URL <span class="ot">=</span> <span class="er">&lt;</span>your_posit_server_url<span class="sc">&gt;</span></span>
+<span id="cb6-109"><a href="#cb6-109" aria-hidden="true" tabindex="-1"></a>POSIT_API_KEY <span class="ot">=</span> <span class="er">&lt;</span>your_api_key<span class="sc">&gt;</span></span>
+<span id="cb6-110"><a href="#cb6-110" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb6-111"><a href="#cb6-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-112"><a href="#cb6-112" aria-hidden="true" tabindex="-1"></a><span class="co"># Load pins library</span></span>
-<span id="cb6-113"><a href="#cb6-113" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pins)</span>
-<span id="cb6-114"><a href="#cb6-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-115"><a href="#cb6-115" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the server URL and API keys</span></span>
-<span id="cb6-116"><a href="#cb6-116" aria-hidden="true" tabindex="-1"></a><span class="fu">readRenviron</span>(<span class="st">".Renviron"</span>)</span>
-<span id="cb6-117"><a href="#cb6-117" aria-hidden="true" tabindex="-1"></a>server_url <span class="ot">&lt;-</span> <span class="fu">Sys.getenv</span>(<span class="st">"POSIT_SERVER_URL"</span>)</span>
-<span id="cb6-118"><a href="#cb6-118" aria-hidden="true" tabindex="-1"></a>api_key <span class="ot">&lt;-</span> <span class="fu">Sys.getenv</span>(<span class="st">"POSIT_API_KEY"</span>)</span>
+<span id="cb6-112"><a href="#cb6-112" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Replace <span class="in">`&lt;your_posit_server_url&gt;`</span> and <span class="in">`&lt;your_api_key&gt;`</span> with your actual credentials.</span>
+<span id="cb6-113"><a href="#cb6-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-114"><a href="#cb6-114" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Location of `.Renviron`**: Place the <span class="in">`.Renviron`</span> file in your home directory (e.g., <span class="in">`~/.Renviron`</span>). Environment variables set in this location are globally accessible across R sessions on your machine. Alternatively, if you only want the file to be used in a specific project, place it in the project's root directory.</span>
+<span id="cb6-115"><a href="#cb6-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-116"><a href="#cb6-116" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Security Considerations**: Add <span class="in">`.Renviron`</span> to your <span class="in">`.gitignore`</span> file to ensure it is not included in your version control system. This prevents sharing sensitive information such as API keys on GitHub (or any other VCS), even if the repository is private. This precaution safeguards against accidental exposure if the repository becomes public or shared with external collaborators.</span>
+<span id="cb6-117"><a href="#cb6-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-118"><a href="#cb6-118" aria-hidden="true" tabindex="-1"></a>To do this, add the following line to your <span class="in">`.gitignore`</span>: <span class="in">`.Renviron`</span></span>
 <span id="cb6-119"><a href="#cb6-119" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-120"><a href="#cb6-120" aria-hidden="true" tabindex="-1"></a><span class="co"># Connect to Posit server using environment variables</span></span>
-<span id="cb6-121"><a href="#cb6-121" aria-hidden="true" tabindex="-1"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>(</span>
-<span id="cb6-122"><a href="#cb6-122" aria-hidden="true" tabindex="-1"></a> <span class="at">server =</span> server_url,</span>
-<span id="cb6-123"><a href="#cb6-123" aria-hidden="true" tabindex="-1"></a> <span class="at">key =</span> api_key</span>
-<span id="cb6-124"><a href="#cb6-124" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-125"><a href="#cb6-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-126"><a href="#cb6-126" aria-hidden="true" tabindex="-1"></a><span class="co"># Pin the SingleCellExperiment object</span></span>
-<span id="cb6-127"><a href="#cb6-127" aria-hidden="true" tabindex="-1"></a><span class="fu">pin_write</span>(board, sce, <span class="at">name =</span> <span class="st">"marrow_single_cell_data"</span>, <span class="at">type =</span> <span class="st">"rds"</span>)</span>
-<span id="cb6-128"><a href="#cb6-128" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-120"><a href="#cb6-120" aria-hidden="true" tabindex="-1"></a><span class="fu">### Integration with Your Code</span></span>
+<span id="cb6-121"><a href="#cb6-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-122"><a href="#cb6-122" aria-hidden="true" tabindex="-1"></a>Once set up, you can integrate your environment variables into your <span class="in">`R`</span> script. Using the pins package, we can now upload the processed dataset to Posit Connect as shown in the code below. This will allow the Shiny app to access the data from within the platform without maintaining local copies.</span>
+<span id="cb6-123"><a href="#cb6-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-126"><a href="#cb6-126" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-127"><a href="#cb6-127" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb6-128"><a href="#cb6-128" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
 <span id="cb6-129"><a href="#cb6-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-130"><a href="#cb6-130" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 3: Develop the Shiny App</span></span>
-<span id="cb6-131"><a href="#cb6-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-132"><a href="#cb6-132" aria-hidden="true" tabindex="-1"></a>This Shiny app provides an interactive interface to visualize dimensionality reduction of single-cell RNA-seq data from bone marrow samples. Users can select either UMAP or t-SNE for visualization, with plots colored by cell type using the <span class="in">`reclustered.broad`</span> column. This coloring helps highlight cellular heterogeneity within the dataset.</span>
-<span id="cb6-133"><a href="#cb6-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-134"><a href="#cb6-134" aria-hidden="true" tabindex="-1"></a><span class="fu">### Overview of the App</span></span>
-<span id="cb6-135"><a href="#cb6-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-136"><a href="#cb6-136" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Objective**: To visualize single-cell RNA sequencing data from bone marrow samples with cell types distinguished by color, allowing users to choose between UMAP and t-SNE plots.</span>
+<span id="cb6-130"><a href="#cb6-130" aria-hidden="true" tabindex="-1"></a><span class="co"># Load pins library</span></span>
+<span id="cb6-131"><a href="#cb6-131" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pins)</span>
+<span id="cb6-132"><a href="#cb6-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-133"><a href="#cb6-133" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the server URL and API keys</span></span>
+<span id="cb6-134"><a href="#cb6-134" aria-hidden="true" tabindex="-1"></a><span class="fu">readRenviron</span>(<span class="st">".Renviron"</span>)</span>
+<span id="cb6-135"><a href="#cb6-135" aria-hidden="true" tabindex="-1"></a>server_url <span class="ot">&lt;-</span> <span class="fu">Sys.getenv</span>(<span class="st">"POSIT_SERVER_URL"</span>)</span>
+<span id="cb6-136"><a href="#cb6-136" aria-hidden="true" tabindex="-1"></a>api_key <span class="ot">&lt;-</span> <span class="fu">Sys.getenv</span>(<span class="st">"POSIT_API_KEY"</span>)</span>
 <span id="cb6-137"><a href="#cb6-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-138"><a href="#cb6-138" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**User Interface (UI)**: Includes a title, a sidebar for user input, and a main panel for displaying visualizations.</span>
-<span id="cb6-139"><a href="#cb6-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-140"><a href="#cb6-140" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Server Logic**: Processes user input and displays a plot where cell types are color-coded, facilitating exploration of cell heterogeneity.</span>
-<span id="cb6-141"><a href="#cb6-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-142"><a href="#cb6-142" aria-hidden="true" tabindex="-1"></a>The code below reads the data pinned on the Posit Connect server and generates the Shiny app. This code is available in the <span class="co">[</span><span class="ot">Shiny/</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content/tree/master/Shiny)</span> folder of the <span class="co">[</span><span class="ot">GitHub repository for this tutorial</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content)</span>.</span>
+<span id="cb6-138"><a href="#cb6-138" aria-hidden="true" tabindex="-1"></a><span class="co"># Connect to Posit server using environment variables</span></span>
+<span id="cb6-139"><a href="#cb6-139" aria-hidden="true" tabindex="-1"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>(</span>
+<span id="cb6-140"><a href="#cb6-140" aria-hidden="true" tabindex="-1"></a> <span class="at">server =</span> server_url,</span>
+<span id="cb6-141"><a href="#cb6-141" aria-hidden="true" tabindex="-1"></a> <span class="at">key =</span> api_key</span>
+<span id="cb6-142"><a href="#cb6-142" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb6-143"><a href="#cb6-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-146"><a href="#cb6-146" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb6-147"><a href="#cb6-147" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb6-148"><a href="#cb6-148" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb6-144"><a href="#cb6-144" aria-hidden="true" tabindex="-1"></a><span class="co"># Pin the SingleCellExperiment object</span></span>
+<span id="cb6-145"><a href="#cb6-145" aria-hidden="true" tabindex="-1"></a><span class="fu">pin_write</span>(board, sce, <span class="at">name =</span> <span class="st">"marrow_single_cell_data"</span>, <span class="at">type =</span> <span class="st">"rds"</span>)</span>
+<span id="cb6-146"><a href="#cb6-146" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-147"><a href="#cb6-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-148"><a href="#cb6-148" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 3: Develop the Shiny App</span></span>
 <span id="cb6-149"><a href="#cb6-149" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-150"><a href="#cb6-150" aria-hidden="true" tabindex="-1"></a><span class="co"># Load required libraries for Shiny</span></span>
-<span id="cb6-151"><a href="#cb6-151" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
-<span id="cb6-152"><a href="#cb6-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-153"><a href="#cb6-153" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the pinned data from Posit Connect</span></span>
-<span id="cb6-154"><a href="#cb6-154" aria-hidden="true" tabindex="-1"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>(</span>
-<span id="cb6-155"><a href="#cb6-155" aria-hidden="true" tabindex="-1"></a>    <span class="at">server =</span> <span class="fu">Sys.getenv</span>(<span class="st">"POSIT_SERVER_URL"</span>), </span>
-<span id="cb6-156"><a href="#cb6-156" aria-hidden="true" tabindex="-1"></a>    <span class="at">key =</span> <span class="fu">Sys.getenv</span>(<span class="st">"POSIT_API_KEY"</span>)</span>
-<span id="cb6-157"><a href="#cb6-157" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-158"><a href="#cb6-158" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">pin_read</span>(board, <span class="at">name =</span> <span class="st">"marrow_single_cell_data"</span>)</span>
+<span id="cb6-150"><a href="#cb6-150" aria-hidden="true" tabindex="-1"></a>This Shiny app provides an interactive interface to visualize dimensionality reduction of single-cell RNA-seq data from bone marrow samples. Users can select either UMAP or t-SNE for visualization, with plots colored by cell type using the <span class="in">`reclustered.broad`</span> column. This coloring helps highlight cellular heterogeneity within the dataset.</span>
+<span id="cb6-151"><a href="#cb6-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-152"><a href="#cb6-152" aria-hidden="true" tabindex="-1"></a><span class="fu">### Overview of the App</span></span>
+<span id="cb6-153"><a href="#cb6-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-154"><a href="#cb6-154" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Objective**: To visualize single-cell RNA sequencing data from bone marrow samples with cell types distinguished by color, allowing users to choose between UMAP and t-SNE plots.</span>
+<span id="cb6-155"><a href="#cb6-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-156"><a href="#cb6-156" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**User Interface (UI)**: Includes a title, a sidebar for user input, and a main panel for displaying visualizations.</span>
+<span id="cb6-157"><a href="#cb6-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-158"><a href="#cb6-158" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Server Logic**: Processes user input and displays a plot where cell types are color-coded, facilitating exploration of cell heterogeneity.</span>
 <span id="cb6-159"><a href="#cb6-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-160"><a href="#cb6-160" aria-hidden="true" tabindex="-1"></a><span class="co"># UI</span></span>
-<span id="cb6-161"><a href="#cb6-161" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
-<span id="cb6-162"><a href="#cb6-162" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">"Single Cell RNA-seq Analysis"</span>),</span>
-<span id="cb6-163"><a href="#cb6-163" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarLayout</span>(</span>
-<span id="cb6-164"><a href="#cb6-164" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sidebarPanel</span>(</span>
-<span id="cb6-165"><a href="#cb6-165" aria-hidden="true" tabindex="-1"></a>      <span class="fu">radioButtons</span>(<span class="st">"dimred"</span>, <span class="st">"Choose Dimensionality Reduction:"</span>,</span>
-<span id="cb6-166"><a href="#cb6-166" aria-hidden="true" tabindex="-1"></a>                   <span class="at">choices =</span> <span class="fu">c</span>(<span class="st">"UMAP"</span>, <span class="st">"t-SNE"</span>), <span class="at">selected =</span> <span class="st">"UMAP"</span>)</span>
-<span id="cb6-167"><a href="#cb6-167" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb6-168"><a href="#cb6-168" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mainPanel</span>(</span>
-<span id="cb6-169"><a href="#cb6-169" aria-hidden="true" tabindex="-1"></a>      <span class="fu">plotOutput</span>(<span class="st">"scatterPlot"</span>)</span>
-<span id="cb6-170"><a href="#cb6-170" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb6-171"><a href="#cb6-171" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb6-172"><a href="#cb6-172" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-173"><a href="#cb6-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-174"><a href="#cb6-174" aria-hidden="true" tabindex="-1"></a><span class="co"># Server</span></span>
-<span id="cb6-175"><a href="#cb6-175" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output, session) {</span>
-<span id="cb6-176"><a href="#cb6-176" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-177"><a href="#cb6-177" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>scatterPlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
-<span id="cb6-178"><a href="#cb6-178" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (input<span class="sc">$</span>dimred <span class="sc">==</span> <span class="st">"UMAP"</span>) {</span>
-<span id="cb6-179"><a href="#cb6-179" aria-hidden="true" tabindex="-1"></a>      <span class="fu">plotReducedDim</span>(sce, <span class="at">dimred =</span> <span class="st">"UMAP"</span>, <span class="at">color_by =</span> <span class="st">"reclustered.broad"</span>)</span>
-<span id="cb6-180"><a href="#cb6-180" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb6-181"><a href="#cb6-181" aria-hidden="true" tabindex="-1"></a>      <span class="fu">plotReducedDim</span>(sce, <span class="at">dimred =</span> <span class="st">"TSNE"</span>, <span class="at">color_by =</span> <span class="st">"reclustered.broad"</span>)</span>
-<span id="cb6-182"><a href="#cb6-182" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb6-183"><a href="#cb6-183" aria-hidden="true" tabindex="-1"></a>  })</span>
-<span id="cb6-184"><a href="#cb6-184" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-185"><a href="#cb6-185" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-186"><a href="#cb6-186" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the app</span></span>
-<span id="cb6-187"><a href="#cb6-187" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span>
-<span id="cb6-188"><a href="#cb6-188" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb6-189"><a href="#cb6-189" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-190"><a href="#cb6-190" aria-hidden="true" tabindex="-1"></a><span class="fu">### Server and API Keys for the App</span></span>
+<span id="cb6-160"><a href="#cb6-160" aria-hidden="true" tabindex="-1"></a>The code below reads the data pinned on the Posit Connect server and generates the Shiny app. This code is available in the <span class="co">[</span><span class="ot">Shiny branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content/tree/Shiny)</span> of the GitHub repository.</span>
+<span id="cb6-161"><a href="#cb6-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-164"><a href="#cb6-164" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-165"><a href="#cb6-165" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb6-166"><a href="#cb6-166" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb6-167"><a href="#cb6-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-168"><a href="#cb6-168" aria-hidden="true" tabindex="-1"></a><span class="co"># Load required libraries for Shiny</span></span>
+<span id="cb6-169"><a href="#cb6-169" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb6-170"><a href="#cb6-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-171"><a href="#cb6-171" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the pinned data from Posit Connect</span></span>
+<span id="cb6-172"><a href="#cb6-172" aria-hidden="true" tabindex="-1"></a>board <span class="ot">&lt;-</span> <span class="fu">board_connect</span>(</span>
+<span id="cb6-173"><a href="#cb6-173" aria-hidden="true" tabindex="-1"></a>    <span class="at">server =</span> <span class="fu">Sys.getenv</span>(<span class="st">"POSIT_SERVER_URL"</span>), </span>
+<span id="cb6-174"><a href="#cb6-174" aria-hidden="true" tabindex="-1"></a>    <span class="at">key =</span> <span class="fu">Sys.getenv</span>(<span class="st">"POSIT_API_KEY"</span>)</span>
+<span id="cb6-175"><a href="#cb6-175" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-176"><a href="#cb6-176" aria-hidden="true" tabindex="-1"></a>sce <span class="ot">&lt;-</span> <span class="fu">pin_read</span>(board, <span class="at">name =</span> <span class="st">"marrow_single_cell_data"</span>)</span>
+<span id="cb6-177"><a href="#cb6-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-178"><a href="#cb6-178" aria-hidden="true" tabindex="-1"></a><span class="co"># UI</span></span>
+<span id="cb6-179"><a href="#cb6-179" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb6-180"><a href="#cb6-180" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">"Single Cell RNA-seq Analysis"</span>),</span>
+<span id="cb6-181"><a href="#cb6-181" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarLayout</span>(</span>
+<span id="cb6-182"><a href="#cb6-182" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sidebarPanel</span>(</span>
+<span id="cb6-183"><a href="#cb6-183" aria-hidden="true" tabindex="-1"></a>      <span class="fu">radioButtons</span>(<span class="st">"dimred"</span>, <span class="st">"Choose Dimensionality Reduction:"</span>,</span>
+<span id="cb6-184"><a href="#cb6-184" aria-hidden="true" tabindex="-1"></a>                   <span class="at">choices =</span> <span class="fu">c</span>(<span class="st">"UMAP"</span>, <span class="st">"t-SNE"</span>), <span class="at">selected =</span> <span class="st">"UMAP"</span>)</span>
+<span id="cb6-185"><a href="#cb6-185" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb6-186"><a href="#cb6-186" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mainPanel</span>(</span>
+<span id="cb6-187"><a href="#cb6-187" aria-hidden="true" tabindex="-1"></a>      <span class="fu">plotOutput</span>(<span class="st">"scatterPlot"</span>)</span>
+<span id="cb6-188"><a href="#cb6-188" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb6-189"><a href="#cb6-189" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb6-190"><a href="#cb6-190" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb6-191"><a href="#cb6-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-192"><a href="#cb6-192" aria-hidden="true" tabindex="-1"></a>The Shiny app reads the pinned single-cell RNA-seq dataset from the Posit Connect server, with server URL and API key managed as secure environment variables (<span class="in">`POSIT_SERVER_URL`</span> and <span class="in">`POSIT_API_KEY`</span>) in the Posit Connect environment (see step 4).</span>
-<span id="cb6-193"><a href="#cb6-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-194"><a href="#cb6-194" aria-hidden="true" tabindex="-1"></a><span class="fu">### Generating the JSON file</span></span>
-<span id="cb6-195"><a href="#cb6-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-196"><a href="#cb6-196" aria-hidden="true" tabindex="-1"></a>To create a deployment-ready configuration for your Shiny app, run <span class="in">`rsconnect::writeManifest("app.R")`</span> while your working directory is set to where the app's <span class="in">`R`</span> script resides. If your Shiny application script is not named <span class="in">`app.R`</span>, you should specify the script file's name using the <span class="in">`appDir`</span> argument in the <span class="in">`writeManifest()`</span> function, like <span class="in">`rsconnect::writeManifest(appDir = "your_app_script.R")`</span>. This ensures the <span class="in">`manifest.json`</span> correctly reflects your app's requirements and dependencies, prepping it for smooth deployment on Posit Connect.</span>
-<span id="cb6-197"><a href="#cb6-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-200"><a href="#cb6-200" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb6-201"><a href="#cb6-201" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb6-202"><a href="#cb6-202" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb6-192"><a href="#cb6-192" aria-hidden="true" tabindex="-1"></a><span class="co"># Server</span></span>
+<span id="cb6-193"><a href="#cb6-193" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output, session) {</span>
+<span id="cb6-194"><a href="#cb6-194" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-195"><a href="#cb6-195" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>scatterPlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb6-196"><a href="#cb6-196" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (input<span class="sc">$</span>dimred <span class="sc">==</span> <span class="st">"UMAP"</span>) {</span>
+<span id="cb6-197"><a href="#cb6-197" aria-hidden="true" tabindex="-1"></a>      <span class="fu">plotReducedDim</span>(sce, <span class="at">dimred =</span> <span class="st">"UMAP"</span>, <span class="at">color_by =</span> <span class="st">"reclustered.broad"</span>)</span>
+<span id="cb6-198"><a href="#cb6-198" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb6-199"><a href="#cb6-199" aria-hidden="true" tabindex="-1"></a>      <span class="fu">plotReducedDim</span>(sce, <span class="at">dimred =</span> <span class="st">"TSNE"</span>, <span class="at">color_by =</span> <span class="st">"reclustered.broad"</span>)</span>
+<span id="cb6-200"><a href="#cb6-200" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-201"><a href="#cb6-201" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb6-202"><a href="#cb6-202" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb6-203"><a href="#cb6-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-204"><a href="#cb6-204" aria-hidden="true" tabindex="-1"></a>rsconnect<span class="sc">::</span><span class="fu">writeManifest</span>(<span class="st">"app.R"</span>)</span>
-<span id="cb6-205"><a href="#cb6-205" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb6-206"><a href="#cb6-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-207"><a href="#cb6-207" aria-hidden="true" tabindex="-1"></a>The command <span class="in">`rsconnect::writeManifest("app.R")`</span> generates a <span class="in">`manifest.json`</span> file based on the <span class="in">`app.R`</span> script in your Shiny application's directory. This manifest file is crucial for deploying your app to Posit Connect (or other RStudio-related hosting services) because it automatically identifies all the dependencies required to run the app, including the necessary R packages and files. Essentially, it ensures that your deployment environment is correctly set up to mirror your development environment</span>
-<span id="cb6-208"><a href="#cb6-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-209"><a href="#cb6-209" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 4: Deploying the App on Posit Connect</span></span>
-<span id="cb6-210"><a href="#cb6-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-211"><a href="#cb6-211" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Commit and Push Changes**:</span>
-<span id="cb6-212"><a href="#cb6-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-213"><a href="#cb6-213" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Commit your report and the generated <span class="in">`manifest.json`</span> file to your local Git repository.</span>
-<span id="cb6-214"><a href="#cb6-214" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Push these changes to your GitHub repository to ensure all updates are saved and accessible.</span>
+<span id="cb6-204"><a href="#cb6-204" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the app</span></span>
+<span id="cb6-205"><a href="#cb6-205" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span>
+<span id="cb6-206"><a href="#cb6-206" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-207"><a href="#cb6-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-208"><a href="#cb6-208" aria-hidden="true" tabindex="-1"></a><span class="fu">### Server and API Keys for the App</span></span>
+<span id="cb6-209"><a href="#cb6-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-210"><a href="#cb6-210" aria-hidden="true" tabindex="-1"></a>The Shiny app reads the pinned single-cell RNA-seq dataset from the Posit Connect server, with server URL and API key managed as secure environment variables (<span class="in">`POSIT_SERVER_URL`</span> and <span class="in">`POSIT_API_KEY`</span>) in the Posit Connect environment (see step 4).</span>
+<span id="cb6-211"><a href="#cb6-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-212"><a href="#cb6-212" aria-hidden="true" tabindex="-1"></a><span class="fu">### Generating the JSON file</span></span>
+<span id="cb6-213"><a href="#cb6-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-214"><a href="#cb6-214" aria-hidden="true" tabindex="-1"></a>To create a deployment-ready configuration for your Shiny app, run <span class="in">`rsconnect::writeManifest("app.R")`</span> while your working directory is set to where the app's <span class="in">`R`</span> script resides. If your Shiny application script is not named <span class="in">`app.R`</span>, you should specify the script file's name using the <span class="in">`appDir`</span> argument in the <span class="in">`writeManifest()`</span> function, like <span class="in">`rsconnect::writeManifest(appDir = "your_app_script.R")`</span>. This ensures the <span class="in">`manifest.json`</span> correctly reflects your app's requirements and dependencies, prepping it for smooth deployment on Posit Connect.</span>
 <span id="cb6-215"><a href="#cb6-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-216"><a href="#cb6-216" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Access Posit Connect**:</span>
-<span id="cb6-217"><a href="#cb6-217" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-218"><a href="#cb6-218" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Open your on-premises Posit Connect server's main page in a web browser.</span>
-<span id="cb6-219"><a href="#cb6-219" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Navigate to **Content \&gt; Publish \&gt; Import from Git**.</span>
-<span id="cb6-220"><a href="#cb6-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-221"><a href="#cb6-221" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Import Repository**:</span>
-<span id="cb6-222"><a href="#cb6-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-223"><a href="#cb6-223" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Enter the URL of your GitHub repository. For example: <span class="in">`https://github.com/ccb-hms/git-backed-posit-connect/`</span>.</span>
-<span id="cb6-224"><a href="#cb6-224" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Select the appropriate branch and enter a suitable title for your content.</span>
-<span id="cb6-225"><a href="#cb6-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-226"><a href="#cb6-226" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Configure Environment Variables**:</span>
-<span id="cb6-227"><a href="#cb6-227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-228"><a href="#cb6-228" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Go to **Settings \&gt; Vars** on the Posit Connect page.</span>
-<span id="cb6-229"><a href="#cb6-229" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Add the necessary environment variables, specifically <span class="in">`POSIT_SERVER_URL`</span> and <span class="in">`POSIT_API_KEY`</span>, to securely manage your app’s access credentials.</span>
+<span id="cb6-218"><a href="#cb6-218" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb6-219"><a href="#cb6-219" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb6-220"><a href="#cb6-220" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb6-221"><a href="#cb6-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-222"><a href="#cb6-222" aria-hidden="true" tabindex="-1"></a>rsconnect<span class="sc">::</span><span class="fu">writeManifest</span>(<span class="st">"app.R"</span>)</span>
+<span id="cb6-223"><a href="#cb6-223" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-224"><a href="#cb6-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-225"><a href="#cb6-225" aria-hidden="true" tabindex="-1"></a>The command <span class="in">`rsconnect::writeManifest("app.R")`</span> generates a <span class="in">`manifest.json`</span> file based on the <span class="in">`app.R`</span> script in your Shiny application's directory. This manifest file is crucial for deploying your app to Posit Connect (or other RStudio-related hosting services) because it automatically identifies all the dependencies required to run the app, including the necessary R packages and files. Essentially, it ensures that your deployment environment is correctly set up to mirror your development environment</span>
+<span id="cb6-226"><a href="#cb6-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-227"><a href="#cb6-227" aria-hidden="true" tabindex="-1"></a><span class="fu">## Step 4: Deploying the App on Posit Connect</span></span>
+<span id="cb6-228"><a href="#cb6-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-229"><a href="#cb6-229" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Commit and Push Changes**:</span>
 <span id="cb6-230"><a href="#cb6-230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-231"><a href="#cb6-231" aria-hidden="true" tabindex="-1"></a>By following these steps, Posit Connect will automatically pull the contents of your repository, render the document, and display it on the server. By default, the Connect server checks your repository for new commits every 15 minutes, ensuring your deployed content remains up to date without any further manual interaction.</span>
+<span id="cb6-231"><a href="#cb6-231" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Commit your report and the generated <span class="in">`manifest.json`</span> file to your local Git repository.</span>
+<span id="cb6-232"><a href="#cb6-232" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Push these changes to your GitHub repository to ensure all updates are saved and accessible.</span>
+<span id="cb6-233"><a href="#cb6-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-234"><a href="#cb6-234" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Access Posit Connect**:</span>
+<span id="cb6-235"><a href="#cb6-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-236"><a href="#cb6-236" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Open your on-premises Posit Connect server's main page in a web browser.</span>
+<span id="cb6-237"><a href="#cb6-237" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Navigate to **Content \&gt; Publish \&gt; Import from Git**.</span>
+<span id="cb6-238"><a href="#cb6-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-239"><a href="#cb6-239" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Import Repository**:</span>
+<span id="cb6-240"><a href="#cb6-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-241"><a href="#cb6-241" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Enter the URL of your GitHub repository. For example: <span class="in">`https://github.com/ccb-hms/git-backed-posit-connect/`</span>.</span>
+<span id="cb6-242"><a href="#cb6-242" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Select the appropriate branch and enter a suitable title for your content.</span>
+<span id="cb6-243"><a href="#cb6-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-244"><a href="#cb6-244" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Configure Environment Variables**:</span>
+<span id="cb6-245"><a href="#cb6-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-246"><a href="#cb6-246" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Go to **Settings \&gt; Vars** on the Posit Connect page.</span>
+<span id="cb6-247"><a href="#cb6-247" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Add the necessary environment variables, specifically <span class="in">`POSIT_SERVER_URL`</span> and <span class="in">`POSIT_API_KEY`</span>, to securely manage your app’s access credentials.</span>
+<span id="cb6-248"><a href="#cb6-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-249"><a href="#cb6-249" aria-hidden="true" tabindex="-1"></a>By following these steps, Posit Connect will automatically pull the contents of your repository, render the document, and display it on the server. By default, the Connect server checks your repository for new commits every 15 minutes, ensuring your deployed content remains up to date without any further manual interaction.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

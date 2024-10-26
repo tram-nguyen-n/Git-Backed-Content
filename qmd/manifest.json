@@ -749,8 +749,53 @@
     }
   },
   "files": {
+    "git-backed-posit-connect.html": {
+      "checksum": "ccf7560846e7d53eabdf90d3e373ebd1"
+    },
     "git-backed-posit-connect.qmd": {
-      "checksum": "06eccabcc1ff0c66ba2db9b606e63b31"
+      "checksum": "a328c72097e08505bc84892b4e84ab61"
+    },
+    "git-backed-posit-connect_files/libs/bootstrap/bootstrap-dark.min.css": {
+      "checksum": "dddd6c5f6ee46e86bfb4f6d811810bd8"
+    },
+    "git-backed-posit-connect_files/libs/bootstrap/bootstrap-icons.css": {
+      "checksum": "7b398b1069853b0425186226963a7aad"
+    },
+    "git-backed-posit-connect_files/libs/bootstrap/bootstrap-icons.woff": {
+      "checksum": "1a51dfbe5467607389d603c02a77cd10"
+    },
+    "git-backed-posit-connect_files/libs/bootstrap/bootstrap.min.css": {
+      "checksum": "90b606e8952c84a99be798b486ad7302"
+    },
+    "git-backed-posit-connect_files/libs/bootstrap/bootstrap.min.js": {
+      "checksum": "13e7cde0b66bf81424927231819f2616"
+    },
+    "git-backed-posit-connect_files/libs/clipboard/clipboard.min.js": {
+      "checksum": "722242f7b6e0fa3b8d25070388a5c826"
+    },
+    "git-backed-posit-connect_files/libs/quarto-html/anchor.min.js": {
+      "checksum": "1d0d5a0fbdee0fe4cad01b18ca781d13"
+    },
+    "git-backed-posit-connect_files/libs/quarto-html/popper.min.js": {
+      "checksum": "c04c707933aaedbb017737dfe0a0de7f"
+    },
+    "git-backed-posit-connect_files/libs/quarto-html/quarto-syntax-highlighting-dark.css": {
+      "checksum": "3b377ce0d2199010ac692f1601011221"
+    },
+    "git-backed-posit-connect_files/libs/quarto-html/quarto-syntax-highlighting.css": {
+      "checksum": "38eeced77734a789514900e1cb87bfb1"
+    },
+    "git-backed-posit-connect_files/libs/quarto-html/quarto.js": {
+      "checksum": "fa9ec11d1c69dc53ca056e8b8d84bec6"
+    },
+    "git-backed-posit-connect_files/libs/quarto-html/tippy.css": {
+      "checksum": "ebd6f8ce46a677e1a4f5f8a8317109a9"
+    },
+    "git-backed-posit-connect_files/libs/quarto-html/tippy.umd.min.js": {
+      "checksum": "c767a9ffc932cac8690dd2e0321a121d"
+    },
+    "style.css": {
+      "checksum": "e7fcf35813851ec475da222c857115c2"
     }
   },
   "users": null
