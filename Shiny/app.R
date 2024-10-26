@@ -6,7 +6,7 @@ board <- board_connect(
     server = Sys.getenv("POSIT_SERVER_URL"), 
     key = Sys.getenv("POSIT_API_KEY")
 )
-sce <- pin_read(board, name = "marrow_single_cell_data")
+sce <- pin_read(board, name = "anthony-alexander_christidis@hms.harvard.edu/marrow_single_cell_data")
 
 # UI
 ui <- fluidPage(
