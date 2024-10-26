@@ -74,7 +74,7 @@ sce <- runTSNE(sce, dimred = "PCA")
 
 ## Step 2: Pin the Data to Posit Connect Server
 
-### Setting Up the .Renviron File
+### Setting Up the `.Renviron` File
 
 To securely manage API keys and other sensitive information, use an `.Renviron` file. This file is used to set environment variables that R can access. Here's how to set it up:
 
