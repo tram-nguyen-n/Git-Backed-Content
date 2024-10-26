@@ -1774,6 +1774,34 @@
         "Built": "R 4.4.0; ; 2024-04-23 00:26:20 UTC; windows"
       }
     },
+    "generics": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "generics",
+        "Title": "Common S3 Generics not Provided by Base R Methods Related to\nModel Fitting",
+        "Version": "0.1.3",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = c(\"aut\", \"cre\")),\n    person(\"Max\", \"Kuhn\", , \"max@rstudio.com\", role = \"aut\"),\n    person(\"Davis\", \"Vaughan\", , \"davis@rstudio.com\", role = \"aut\"),\n    person(\"RStudio\", role = \"cph\")\n  )",
+        "Description": "In order to reduce potential package dependencies and\n    conflicts, generics provides a number of commonly used S3 generics.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://generics.r-lib.org, https://github.com/r-lib/generics",
+        "BugReports": "https://github.com/r-lib/generics/issues",
+        "Depends": "R (>= 3.2)",
+        "Imports": "methods",
+        "Suggests": "covr, pkgload, testthat (>= 3.0.0), tibble, withr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.0",
+        "NeedsCompilation": "no",
+        "Packaged": "2022-07-05 14:52:13 UTC; davis",
+        "Author": "Hadley Wickham [aut, cre],\n  Max Kuhn [aut],\n  Davis Vaughan [aut],\n  RStudio [cph]",
+        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2022-07-05 19:40:02 UTC",
+        "Built": "R 4.4.0; ; 2024-05-25 00:23:18 UTC; windows"
+      }
+    },
     "ggbeeswarm": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -2584,6 +2612,36 @@
         "Built": "R 4.4.0; ; 2024-05-25 01:28:22 UTC; windows"
       }
     },
+    "pins": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Type": "Package",
+        "Package": "pins",
+        "Title": "Pin, Discover, and Share Resources",
+        "Version": "1.4.0",
+        "Authors@R": "c(\n    person(\"Julia\", \"Silge\", , \"julia.silge@posit.co\", role = c(\"cre\", \"aut\"),\n           comment = c(ORCID = \"0000-0002-3671-836X\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\",\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Javier\", \"Luraschi\", , \"jluraschi@gmail.com\", role = \"aut\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Publish data sets, models, and other R objects, making it\n    easy to share them across projects and with your colleagues. You can\n    pin objects to a variety of \"boards\", including local folders (to\n    share on a networked drive or with 'DropBox'), 'Posit Connect',\n    'AWS S3', and more.",
+        "License": "Apache License (>= 2)",
+        "URL": "https://pins.rstudio.com/, https://github.com/rstudio/pins-r",
+        "BugReports": "https://github.com/rstudio/pins-r/issues",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli, digest, fs, generics, glue, httr, jsonlite, lifecycle,\nmagrittr, purrr (>= 1.0.0), rappdirs, rlang (>= 1.1.0), tibble,\nwhisker, withr (>= 2.4.3), yaml",
+        "Suggests": "archive, arrow, AzureStor, covr, data.table, datasets,\nfilelock, gitcreds, googleCloudStorageR, googledrive, httr2,\nids, knitr, Microsoft365R, mime, mockery, nanoparquet, openssl,\npaws.storage, qs, R.utils, rmarkdown, rsconnect, shiny, sodium,\ntestthat (>= 3.1.7), webfakes (>= 1.2.0), xml2, zip",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-10-07 15:34:43 UTC; juliasilge",
+        "Author": "Julia Silge [cre, aut] (<https://orcid.org/0000-0002-3671-836X>),\n  Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>),\n  Javier Luraschi [aut],\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Julia Silge <julia.silge@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-10-07 16:00:03 UTC",
+        "Built": "R 4.4.0; ; 2024-10-09 01:45:19 UTC; windows"
+      }
+    },
     "pkgconfig": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -2658,6 +2716,38 @@
         "Repository": "CRAN",
         "Date/Publication": "2024-04-05 15:00:06 UTC",
         "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 01:15:06 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "purrr": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "purrr",
+        "Title": "Functional Programming Tools",
+        "Version": "1.0.2",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Lionel\", \"Henry\", , \"lionel@rstudio.com\", role = \"aut\"),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "A complete and consistent functional programming toolkit for\n    R.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://purrr.tidyverse.org/, https://github.com/tidyverse/purrr",
+        "BugReports": "https://github.com/tidyverse/purrr/issues",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": "cli (>= 3.6.1), lifecycle (>= 1.0.3), magrittr (>= 1.5.0),\nrlang (>= 1.1.1), vctrs (>= 0.6.3)",
+        "Suggests": "covr, dplyr (>= 0.7.8), httr, knitr, lubridate, rmarkdown,\ntestthat (>= 3.0.0), tibble, tidyselect",
+        "LinkingTo": "cli",
+        "VignetteBuilder": "knitr",
+        "Biarch": "true",
+        "Config/Needs/website": "tidyverse/tidytemplate, tidyr",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.3",
+        "NeedsCompilation": "yes",
+        "Packaged": "2023-08-08 16:13:31 UTC; hadleywickham",
+        "Author": "Hadley Wickham [aut, cre] (<https://orcid.org/0000-0003-4757-117X>),\n  Lionel Henry [aut],\n  RStudio [cph, fnd]",
+        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-08-10 08:20:07 UTC",
+        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 01:28:31 UTC; windows",
         "Archs": "x64"
       }
     },
@@ -3347,6 +3437,29 @@
         "Built": "R 4.4.0; ; 2024-05-25 00:23:18 UTC; windows"
       }
     },
+    "whisker": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "whisker",
+        "Maintainer": "Edwin de Jonge <edwindjonge@gmail.com>",
+        "License": "GPL-3",
+        "Title": "{{mustache}} for R, Logicless Templating",
+        "Type": "Package",
+        "LazyLoad": "yes",
+        "Author": "Edwin de Jonge",
+        "Description": "Implements 'Mustache' logicless templating.",
+        "Version": "0.4.1",
+        "URL": "https://github.com/edwindj/whisker",
+        "Suggests": "markdown",
+        "RoxygenNote": "6.1.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2022-12-05 15:15:55 UTC; hornik",
+        "Repository": "CRAN",
+        "Date/Publication": "2022-12-05 15:33:50 UTC",
+        "Built": "R 4.4.0; ; 2024-05-28 00:32:43 UTC; windows"
+      }
+    },
     "withr": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -3402,6 +3515,30 @@
         "Built": "R 4.4.0; ; 2024-05-28 00:30:43 UTC; windows"
       }
     },
+    "yaml": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "yaml",
+        "Type": "Package",
+        "Title": "Methods to Convert R Data to YAML and Back",
+        "Date": "2024-07-22",
+        "Version": "2.3.10",
+        "Suggests": "RUnit",
+        "Author": "Shawn P Garbett [aut], Jeremy Stephens [aut, cre], Kirill Simonov [aut], Yihui Xie [ctb],\n  Zhuoer Dong [ctb], Hadley Wickham [ctb], Jeffrey Horner [ctb], reikoch [ctb],\n  Will Beasley [ctb], Brendan O'Connor [ctb], Gregory R. Warnes [ctb],\n  Michael Quinn [ctb], Zhian N. Kamvar [ctb], Charlie Gao [ctb]",
+        "Maintainer": "Shawn Garbett <shawn.garbett@vumc.org>",
+        "License": "BSD_3_clause + file LICENSE",
+        "Description": "Implements the 'libyaml' 'YAML' 1.1 parser and emitter\n  (<https://pyyaml.org/wiki/LibYAML>) for R.",
+        "URL": "https://github.com/vubiostat/r-yaml/",
+        "BugReports": "https://github.com/vubiostat/r-yaml/issues",
+        "NeedsCompilation": "yes",
+        "Packaged": "2024-07-22 15:44:18 UTC; garbetsp",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-07-26 15:10:02 UTC",
+        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-07-31 00:26:34 UTC; windows",
+        "Archs": "x64"
+      }
+    },
     "zlibbioc": {
       "Source": "Bioconductor",
       "Repository": "https://bioconductor.org/packages/3.19/bioc",
@@ -3435,7 +3572,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "9c5adff14b2b54bd7b8585c7392499cd"
+      "checksum": "5e11dd30fb07994307c86ad321d1c590"
     }
   },
   "users": null
