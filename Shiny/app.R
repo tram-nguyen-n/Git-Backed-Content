@@ -1,4 +1,5 @@
 # Load required libraries for Shiny
+library(pins)
 library(shiny)
 library(scater)
 
