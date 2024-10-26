@@ -9,7 +9,7 @@ This tutorial guides you through deploying a Shiny app on Posit Connect using th
 This tutorial provides step-by-step instructions for:
 
 1.  Setting up your local environment and preparing data for deployment.
-2.  Using the `pins` package to upload datasets to Posit Connect securely.
+2.  Using the [pins](https://cran.r-project.org/web/packages/pins/index.html) package to upload datasets to Posit Connect securely.
 3.  Developing a Shiny app that dynamically reads data from Posit Connect.
 4.  Configuring and deploying the Shiny app on Posit Connect.
 
