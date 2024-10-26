@@ -2,6 +2,8 @@
 
 ## Overview
 
+Tutorial Link: <https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Tutorial/>
+
 This tutorial guides you through deploying a Shiny app on Posit Connect using the powerful [pins](https://cran.r-project.org/web/packages/pins/index.html) package to manage your data efficiently. It demonstrates single-cell RNA sequencing data analysis with the [scRNAseq](https://www.bioconductor.org/packages/release/data/experiment/html/scRNAseq.html) package, encompassing data fetching, quality control, normalization, and dimensionality reduction with results showcased via a dynamic Shiny interface.
 
 This tutorial provides step-by-step instructions for:
