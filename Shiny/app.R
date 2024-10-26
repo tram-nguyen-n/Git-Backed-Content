@@ -1,5 +1,6 @@
 # Load required libraries for Shiny
 library(shiny)
+library(scater)
 
 # Read the pinned data from Posit Connect
 board <- board_connect(
