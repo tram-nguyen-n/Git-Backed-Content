@@ -322,7 +322,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Add the necessary environment variables, specifically <code>POSIT_SERVER_URL</code> and <code>POSIT_API_KEY</code>, to securely manage your app’s access credentials.</li>
 </ul></li>
 </ol>
-<p>By following these steps, Posit Connect will automatically pull the contents of your repository, render the document, and display it on the server. By default, the Connect server checks your repository for new commits every 15 minutes, ensuring your deployed content remains up to date without any further manual interaction.</p>
+<p>By following these steps, Posit Connect will automatically pull the contents of your repository and deploy the <a href="https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Shiny-App/">Shiny app</a> to visualize the single-cell RNA-seq data in reduced dimensions. on the server.</p>
+<p>By default, the Connect server checks your repository for new commits every 15 minutes, ensuring your deployed content remains up to date without any further manual interaction.</p>
 <!-- -->
 
 </section>
@@ -958,14 +959,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>The code for this tutorial is contained in the this <span class="co">[</span><span class="ot">GitHub respository</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content)</span>. The main elements of this tutorial are the following:</span>
 <span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The analytics code to generate and save the data using <span class="in">`pins`</span>, available in the <span class="co">[</span><span class="ot">master branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content)</span> of the GitHub repository.</span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The Quarto code to generate this document (which is also deployed on the same Posit Connect server as the Shiny app), available in the <span class="co">[</span><span class="ot">Quarto branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content/tree/Quarto)</span> of the GitHub repository.</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The code to generate the Shiny app, available in the <span class="co">[</span><span class="ot">Shiny branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content/tree/Shiny)</span> of the GitHub repository.</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The analytics code to generate and save the data using <span class="in">`pins`</span>, available in the <span class="co">[</span><span class="ot">master branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content)</span> of the GitHub repository.</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The Quarto code to generate this document (which is also deployed on the same Posit Connect server as the Shiny app), available in the <span class="co">[</span><span class="ot">Quarto branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content/tree/Quarto)</span> of the GitHub repository.</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The code to generate the Shiny app, available in the <span class="co">[</span><span class="ot">Shiny branch</span><span class="co">](https://github.com/ccb-hms/Git-Backed-Content/tree/Shiny)</span> of the GitHub repository.</span>
 <span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>The resulting output of this repository are:</span>
 <span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span><span class="co">[</span><span class="ot">This Quarto document</span><span class="co">](https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Tutorial/)</span>.</span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="co">[</span><span class="ot">The Shiny app</span><span class="co">](https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Shiny-App/)</span> to visualize the single-cell RNA-seq data in reduced dimensions.</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span><span class="co">[</span><span class="ot">This Quarto document</span><span class="co">](https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Tutorial/)</span>.</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span><span class="co">[</span><span class="ot">The Shiny app</span><span class="co">](https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Shiny-App/)</span> to visualize the single-cell RNA-seq data in reduced dimensions.</span>
 <span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>Note: you may find more information and details in the Posit Connect documentation <span class="co">[</span><span class="ot">Git-Backed Content section</span><span class="co">](https://docs.posit.co/connect/user/git-backed/)</span>.</span>
 <span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a></span>
@@ -1171,7 +1172,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb6-246"><a href="#cb6-246" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Go to **Settings \&gt; Vars** on the Posit Connect page.</span>
 <span id="cb6-247"><a href="#cb6-247" aria-hidden="true" tabindex="-1"></a><span class="ss">    -   </span>Add the necessary environment variables, specifically <span class="in">`POSIT_SERVER_URL`</span> and <span class="in">`POSIT_API_KEY`</span>, to securely manage your app’s access credentials.</span>
 <span id="cb6-248"><a href="#cb6-248" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-249"><a href="#cb6-249" aria-hidden="true" tabindex="-1"></a>By following these steps, Posit Connect will automatically pull the contents of your repository, render the document, and display it on the server. By default, the Connect server checks your repository for new commits every 15 minutes, ensuring your deployed content remains up to date without any further manual interaction.</span>
+<span id="cb6-249"><a href="#cb6-249" aria-hidden="true" tabindex="-1"></a>By following these steps, Posit Connect will automatically pull the contents of your repository and deploy the <span class="co">[</span><span class="ot">Shiny app</span><span class="co">](https://ccb.connect.hms.harvard.edu/Git-Backed-Content-Shiny-App/)</span> to visualize the single-cell RNA-seq data in reduced dimensions. on the server. </span>
+<span id="cb6-250"><a href="#cb6-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-251"><a href="#cb6-251" aria-hidden="true" tabindex="-1"></a>By default, the Connect server checks your repository for new commits every 15 minutes, ensuring your deployed content remains up to date without any further manual interaction.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
