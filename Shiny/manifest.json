@@ -12,7 +12,7 @@
   "packages": {
     "BH": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "BH",
         "Type": "Package",
@@ -29,7 +29,7 @@
         "Packaged": "2024-01-09 13:19:22 UTC; edd",
         "Repository": "CRAN",
         "Date/Publication": "2024-01-10 11:53:35 UTC",
-        "Built": "R 4.4.0; ; 2024-04-23 00:24:28 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:13:52 UTC; unix"
       }
     },
     "Biobase": {
@@ -42,7 +42,7 @@
         "biocViews": "Infrastructure",
         "URL": "https://bioconductor.org/packages/Biobase",
         "BugReports": "https://github.com/Bioconductor/Biobase/issues",
-        "Version": "2.64.0",
+        "Version": "2.65.0",
         "License": "Artistic-2.0",
         "Authors@R": "c(\n    person(\"R.\", \"Gentleman\", role=\"aut\"),\n    person(\"V.\", \"Carey\", role = \"aut\"),\n    person(\"M.\", \"Morgan\", role=\"aut\"),\n    person(\"S.\", \"Falcon\", role=\"aut\"),\n    person(\"Haleema\", \"Khan\",\n        role = \"ctb\",\n        comment = \"'esApply' and 'BiobaseDevelopment' vignette translation from Sweave to Rmarkdown / HTML\"\n    ),\n    person(\"Bioconductor Package Maintainer\",\n        role = \"cre\",\n        email = \"maintainer@bioconductor.org\"\n    ))",
         "Suggests": "tools, tkWidgets, ALL, RUnit, golubEsets, BiocStyle, knitr,\nlimma",
@@ -52,17 +52,16 @@
         "LazyLoad": "yes",
         "Collate": "tools.R strings.R environment.R vignettes.R packages.R\nAllGenerics.R VersionsClass.R VersionedClasses.R\nmethods-VersionsNull.R methods-VersionedClass.R DataClasses.R\nmethods-aggregator.R methods-container.R methods-MIAxE.R\nmethods-MIAME.R methods-AssayData.R\nmethods-AnnotatedDataFrame.R methods-eSet.R\nmethods-ExpressionSet.R methods-MultiSet.R methods-SnpSet.R\nmethods-NChannelSet.R anyMissing.R rowOp-methods.R\nupdateObjectTo.R methods-ScalarObject.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/Biobase",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "a3b75b7",
+        "git_branch": "devel",
+        "git_last_commit": "a613de8",
         "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-05-01",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-05-01 21:20:12 UTC; biocbuild",
+        "Packaged": "2024-05-01 21:22:01 UTC; biocbuild",
         "Author": "R. Gentleman [aut],\n  V. Carey [aut],\n  M. Morgan [aut],\n  S. Falcon [aut],\n  Haleema Khan [ctb] ('esApply' and 'BiobaseDevelopment' vignette\n    translation from Sweave to Rmarkdown / HTML),\n  Bioconductor Package Maintainer [cre]",
         "Maintainer": "Bioconductor Package Maintainer <maintainer@bioconductor.org>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-02 12:29:13 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-02 18:17:29 UTC; unix"
       }
     },
     "BiocGenerics": {
@@ -75,7 +74,7 @@
         "biocViews": "Infrastructure",
         "URL": "https://bioconductor.org/packages/BiocGenerics",
         "BugReports": "https://github.com/Bioconductor/BiocGenerics/issues",
-        "Version": "0.50.0",
+        "Version": "0.51.0",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Author": "The Bioconductor Dev Team",
@@ -85,25 +84,25 @@
         "Suggests": "Biobase, S4Vectors, IRanges, GenomicRanges, DelayedArray,\nBiostrings, Rsamtools, AnnotationDbi, affy, affyPLM, DESeq2,\nflowClust, MSnbase, annotate, RUnit",
         "Collate": "S3-classes-as-S4-classes.R utils.R normarg-utils.R\nreplaceSlots.R aperm.R append.R as.data.frame.R as.list.R\nas.vector.R cbind.R do.call.R duplicated.R eval.R Extremes.R\nformat.R funprog.R get.R grep.R is.unsorted.R lapply.R mapply.R\nmatch.R mean.R nrow.R order.R paste.R rank.R rep.R\nrow_colnames.R sets.R sort.R start.R subset.R t.R table.R\ntapply.R unique.R unlist.R unsplit.R relist.R var.R which.R\nwhich.min.R boxplot.R image.R density.R IQR.R mad.R residuals.R\nweights.R xtabs.R annotation.R combine.R dbconn.R dge.R dims.R\nfileName.R normalize.R Ontology.R organism_species.R path.R\nplotMA.R plotPCA.R score.R strand.R toTable.R type.R\nupdateObject.R testPackage.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/BiocGenerics",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "d23d8dd",
+        "git_branch": "devel",
+        "git_last_commit": "7b9834d",
         "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-05-01",
         "NeedsCompilation": "no",
-        "Packaged": "2024-05-01 21:20:50 UTC; biocbuild",
-        "Built": "R 4.4.0; ; 2024-05-02 12:29:30 UTC; windows"
+        "Packaged": "2024-05-01 21:23:01 UTC; biocbuild",
+        "Built": "R 4.4.0; ; 2024-05-02 18:17:48 UTC; unix"
       }
     },
     "BiocManager": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "BiocManager",
         "Title": "Access the Bioconductor Project Package Repository",
         "Description": "A convenient tool to install and update Bioconductor packages.",
-        "Version": "1.30.25",
-        "Authors@R": "c(\n    person(\"Martin\", \"Morgan\", email = \"martin.morgan@roswellpark.org\",\n        role = \"aut\", comment = c(ORCID = \"0000-0002-5874-8148\")),\n    person(\"Marcel\", \"Ramos\", email = \"marcel.ramos@sph.cuny.edu\",\n        role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-3242-0582\")))",
+        "Version": "1.30.24",
+        "Authors@R": "c(\n    person(\"Martin\", \"Morgan\", email = \"martin.morgan@roswellpark.org\",\n        role = \"aut\", comment = c(ORCID = \"0000-0002-5874-8148\")),\n    person(\"Marcel\", \"Ramos\", email = \"marcel.ramos@roswellpark.org\",\n        role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-3242-0582\")))",
         "Imports": "utils",
         "Suggests": "BiocVersion, BiocStyle, remotes, rmarkdown, testthat, withr,\ncurl, knitr",
         "URL": "https://bioconductor.github.io/BiocManager/",
@@ -113,12 +112,12 @@
         "Encoding": "UTF-8",
         "RoxygenNote": "7.3.1",
         "NeedsCompilation": "no",
-        "Packaged": "2024-08-27 21:44:40 UTC; mr148",
+        "Packaged": "2024-08-20 15:57:13 UTC; mr148",
         "Author": "Martin Morgan [aut] (<https://orcid.org/0000-0002-5874-8148>),\n  Marcel Ramos [aut, cre] (<https://orcid.org/0000-0002-3242-0582>)",
-        "Maintainer": "Marcel Ramos <marcel.ramos@sph.cuny.edu>",
+        "Maintainer": "Marcel Ramos <marcel.ramos@roswellpark.org>",
         "Repository": "CRAN",
-        "Date/Publication": "2024-08-28 14:20:02 UTC",
-        "Built": "R 4.4.1; ; 2024-09-23 00:30:48 UTC; windows"
+        "Date/Publication": "2024-08-20 19:10:05 UTC",
+        "Built": "R 4.4.1; ; 2024-08-20 23:23:28 UTC; unix"
       }
     },
     "BiocNeighbors": {
@@ -126,7 +125,7 @@
       "Repository": "https://bioconductor.org/packages/3.19/bioc",
       "description": {
         "Package": "BiocNeighbors",
-        "Version": "1.22.0",
+        "Version": "1.23.0",
         "Date": "2022-12-17",
         "Title": "Nearest Neighbor Detection for Bioconductor Packages",
         "Authors@R": "c(person(\"Aaron\", \"Lun\", role=c(\"aut\", \"cre\", \"cph\"),\n    email=\"infinite.monkeys.with.keyboards@gmail.com\"))",
@@ -140,17 +139,16 @@
         "SystemRequirements": "C++11",
         "RoxygenNote": "7.1.1",
         "git_url": "https://git.bioconductor.org/packages/BiocNeighbors",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "c9f4480",
+        "git_branch": "devel",
+        "git_last_commit": "e0cd963",
         "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-05-01",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-05-01 21:24:39 UTC; biocbuild",
+        "Packaged": "2024-05-01 21:29:21 UTC; biocbuild",
         "Author": "Aaron Lun [aut, cre, cph]",
         "Maintainer": "Aaron Lun <infinite.monkeys.with.keyboards@gmail.com>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-02 12:29:37 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-02 18:17:52 UTC; unix"
       }
     },
     "BiocParallel": {
@@ -160,7 +158,7 @@
         "Package": "BiocParallel",
         "Type": "Package",
         "Title": "Bioconductor facilities for parallel evaluation",
-        "Version": "1.38.0",
+        "Version": "1.39.0",
         "Authors@R": "c(\n    person(\"Martin\", \"Morgan\",\n        email = \"mtmorgan.bioc@gmail.com\",\n        role=c(\"aut\", \"cre\")),\n    person(\"Jiefei\", \"Wang\", role = \"aut\"),\n    person(\"Valerie\", \"Obenchain\", role=\"aut\"),\n    person(\"Michel\", \"Lang\", email=\"michellang@gmail.com\", role=\"aut\"),\n    person(\"Ryan\", \"Thompson\", email=\"rct@thompsonclan.org\", role=\"aut\"),\n    person(\"Nitesh\", \"Turaga\", role=\"aut\"),\n    person(\"Aaron\", \"Lun\", role = \"ctb\"),\n    person(\"Henrik\", \"Bengtsson\", role = \"ctb\"),\n    person(\"Madelyn\", \"Carlson\", role = \"ctb\",\n        comment = \"Translated 'Random Numbers' vignette from Sweave to RMarkdown / HTML.\"\n    ),\n    person(\"Phylis\", \"Atieno\", role = \"ctb\",\n        comment = \"Translated 'Introduction to BiocParallel' vignette from Sweave to Rmarkdown / HTML.\"\n    ),\n    person(\n        \"Sergio\", \"Oller\", role = \"ctb\",\n        comment = c(\n            \"Improved bpmapply() efficiency.\",\n            \"ORCID\" = \"0000-0002-8994-1549\"\n        )\n    ))",
         "Description": "This package provides modified versions and novel\n    implementation of functions for parallel evaluation, tailored to\n    use with Bioconductor objects.",
         "URL": "https://github.com/Bioconductor/BiocParallel",
@@ -177,17 +175,16 @@
         "VignetteBuilder": "knitr",
         "RoxygenNote": "7.1.2",
         "git_url": "https://git.bioconductor.org/packages/BiocParallel",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "d180bc0",
+        "git_branch": "devel",
+        "git_last_commit": "aa329b3",
         "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-05-01",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-05-01 21:24:19 UTC; biocbuild",
+        "Packaged": "2024-05-01 21:28:04 UTC; biocbuild",
         "Author": "Martin Morgan [aut, cre],\n  Jiefei Wang [aut],\n  Valerie Obenchain [aut],\n  Michel Lang [aut],\n  Ryan Thompson [aut],\n  Nitesh Turaga [aut],\n  Aaron Lun [ctb],\n  Henrik Bengtsson [ctb],\n  Madelyn Carlson [ctb] (Translated 'Random Numbers' vignette from Sweave\n    to RMarkdown / HTML.),\n  Phylis Atieno [ctb] (Translated 'Introduction to BiocParallel' vignette\n    from Sweave to Rmarkdown / HTML.),\n  Sergio Oller [ctb] (Improved bpmapply() efficiency.,\n    <https://orcid.org/0000-0002-8994-1549>)",
         "Maintainer": "Martin Morgan <mtmorgan.bioc@gmail.com>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-02 12:29:43 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-02 18:18:11 UTC; unix"
       }
     },
     "BiocSingular": {
@@ -195,11 +192,11 @@
       "Repository": "https://bioconductor.org/packages/3.19/bioc",
       "description": {
         "Package": "BiocSingular",
-        "Version": "1.20.0",
-        "Date": "2023-07-07",
+        "Version": "1.21.2",
+        "Date": "2024-07-03",
         "Title": "Singular Value Decomposition for Bioconductor Packages",
         "Authors@R": "c(person(\"Aaron\", \"Lun\", role=c(\"aut\", \"cre\", \"cph\"),\n        email=\"infinite.monkeys.with.keyboards@gmail.com\"))",
-        "Imports": "BiocGenerics, S4Vectors, Matrix, methods, utils, DelayedArray,\nBiocParallel, ScaledMatrix, irlba, rsvd, Rcpp, beachmat",
+        "Imports": "BiocGenerics, S4Vectors, Matrix, methods, utils, DelayedArray,\nBiocParallel, ScaledMatrix, irlba, rsvd, Rcpp, beachmat (>=\n2.21.1)",
         "Suggests": "testthat, BiocStyle, knitr, rmarkdown, ResidualMatrix",
         "biocViews": "Software, DimensionReduction, PrincipalComponent",
         "Description": "Implements exact and approximate methods for singular value\n        decomposition and principal components analysis, in a framework that\n        allows them to be easily switched within Bioconductor packages or \n        workflows. Where possible, parallelization is achieved using \n        the BiocParallel framework.",
@@ -211,17 +208,16 @@
         "BugReports": "https://github.com/LTLA/BiocSingular/issues",
         "URL": "https://github.com/LTLA/BiocSingular",
         "git_url": "https://git.bioconductor.org/packages/BiocSingular",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "c5dafa5",
-        "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-01",
+        "git_branch": "devel",
+        "git_last_commit": "37af3b3",
+        "git_last_commit_date": "2024-07-03",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-07-04",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-05-01 21:22:28 UTC; biocbuild",
+        "Packaged": "2024-07-04 20:00:48 UTC; biocbuild",
         "Author": "Aaron Lun [aut, cre, cph]",
         "Maintainer": "Aaron Lun <infinite.monkeys.with.keyboards@gmail.com>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-02 12:29:50 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-07-05 04:20:45 UTC; unix"
       }
     },
     "BiocVersion": {
@@ -229,7 +225,7 @@
       "Repository": "https://bioconductor.org/packages/3.19/bioc",
       "description": {
         "Package": "BiocVersion",
-        "Version": "3.19.1",
+        "Version": "3.20.0",
         "Title": "Set the appropriate version of Bioconductor packages",
         "Description": "This package provides repository information for the appropriate\n    version of Bioconductor. ",
         "Authors@R": "c(\n    person(\"Martin\", \"Morgan\", email = \"martin.morgan@roswellpark.org\",\n        role = \"aut\"),\n    person(\"Marcel\", \"Ramos\", email = \"marcel.ramos@roswellpark.org\",\n        role = \"ctb\"),\n    person(\"Bioconductor\", \"Package Maintainer\",\n        email  = \"maintainer@bioconductor.org\",\n        role = c(\"ctb\", \"cre\")))",
@@ -240,20 +236,20 @@
         "RoxygenNote": "6.0.1",
         "git_url": "https://git.bioconductor.org/packages/BiocVersion",
         "git_branch": "devel",
-        "git_last_commit": "99e637d",
-        "git_last_commit_date": "2023-10-25",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-04-17",
+        "git_last_commit": "43c716a",
+        "git_last_commit_date": "2024-04-30",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-05-01",
         "NeedsCompilation": "no",
-        "Packaged": "2024-04-17 20:56:44 UTC; biocbuild",
+        "Packaged": "2024-05-01 21:25:25 UTC; biocbuild",
         "Author": "Martin Morgan [aut],\n  Marcel Ramos [ctb],\n  Bioconductor Package Maintainer [ctb, cre]",
         "Maintainer": "Bioconductor Package Maintainer <maintainer@bioconductor.org>",
-        "Built": "R 4.4.0; ; 2024-04-18 06:23:07 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-02 18:18:11 UTC; unix"
       }
     },
     "Cairo": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "Cairo",
         "Version": "1.6-2",
@@ -272,8 +268,8 @@
         "Packaged": "2023-11-27 20:50:44 UTC; rforge",
         "Repository": "CRAN",
         "Date/Publication": "2023-11-28 08:44:24 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-04-23 00:30:08 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 06:36:27 UTC; unix",
+        "Archs": "Cairo.so.dSYM"
       }
     },
     "DelayedArray": {
@@ -286,87 +282,50 @@
         "biocViews": "Infrastructure, DataRepresentation, Annotation,\nGenomeAnnotation",
         "URL": "https://bioconductor.org/packages/DelayedArray",
         "BugReports": "https://github.com/Bioconductor/DelayedArray/issues",
-        "Version": "0.30.1",
+        "Version": "0.31.11",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Authors@R": "c(\n\tperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t\temail=\"hpages.on.github@gmail.com\"),\n\tperson(\"Aaron\", \"Lun\", role=\"ctb\",\n\t\temail=\"infinite.monkeys.with.keyboards@gmail.com\"),\n\tperson(\"Peter\", \"Hickey\", role=\"ctb\",\n\t\temail=\"peter.hickey@gmail.com\"))",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
-        "Depends": "R (>= 4.0.0), methods, stats4, Matrix, BiocGenerics (>=\n0.43.4), MatrixGenerics (>= 1.1.3), S4Vectors (>= 0.27.2),\nIRanges (>= 2.17.3), S4Arrays (>= 1.3.5), SparseArray (>=\n1.1.10)",
+        "Depends": "R (>= 4.0.0), methods, stats4, Matrix, BiocGenerics (>=\n0.43.4), MatrixGenerics (>= 1.1.3), S4Vectors (>= 0.27.2),\nIRanges (>= 2.17.3), S4Arrays (>= 1.5.4), SparseArray (>=\n1.5.21)",
         "Imports": "stats",
         "LinkingTo": "S4Vectors",
         "Suggests": "BiocParallel, HDF5Array (>= 1.17.12), genefilter,\nSummarizedExperiment, airway, lobstr, DelayedMatrixStats,\nknitr, rmarkdown, BiocStyle, RUnit",
         "VignetteBuilder": "knitr",
-        "Collate": "compress_atomic_vector.R SparseArraySeed-class.R\nSparseArraySeed-utils.R read_sparse_block.R\nmakeCappedVolumeBox.R AutoBlock-global-settings.R AutoGrid.R\nblockApply.R DelayedOp-class.R DelayedSubset-class.R\nDelayedAperm-class.R DelayedUnaryIsoOpStack-class.R\nDelayedUnaryIsoOpWithArgs-class.R DelayedSubassign-class.R\nDelayedSetDimnames-class.R DelayedNaryIsoOp-class.R\nDelayedAbind-class.R showtree.R simplify.R DelayedArray-class.R\nDelayedArray-subsetting.R chunkGrid.R RealizationSink-class.R\nrealize.R DelayedArray-utils.R DelayedArray-stats.R\nDelayedMatrix-stats.R DelayedMatrix-rowsum.R\nDelayedMatrix-mult.R ConstantArray-class.R RleArraySeed-class.R\nRleArray-class.R compat.R zzz.R",
+        "Collate": "compress_atomic_vector.R SparseArraySeed-class.R\nSparseArraySeed-utils.R read_sparse_block.R\nmakeCappedVolumeBox.R AutoBlock-global-settings.R AutoGrid.R\nblockApply.R DelayedOp-class.R DelayedSubset-class.R\nDelayedAperm-class.R DelayedUnaryIsoOpStack-class.R\nDelayedUnaryIsoOpWithArgs-class.R DelayedSubassign-class.R\nDelayedSetDimnames-class.R DelayedNaryIsoOp-class.R\nDelayedAbind-class.R showtree.R simplify.R DelayedArray-class.R\nDelayedArray-subsetting.R chunkGrid.R RealizationSink-class.R\nrealize.R DelayedArray-utils.R DelayedArray-stats.R\nmatrixStats-methods.R DelayedMatrix-rowsum.R\nDelayedMatrix-mult.R ConstantArray-class.R RleArraySeed-class.R\nRleArray-class.R compat.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/DelayedArray",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "099a643",
-        "git_last_commit_date": "2024-05-06",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-08",
+        "git_branch": "devel",
+        "git_last_commit": "bf5d6a0",
+        "git_last_commit_date": "2024-08-04",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-08-04",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-05-08 22:22:39 UTC; biocbuild",
+        "Packaged": "2024-08-04 20:33:02 UTC; biocbuild",
         "Author": "Hervé Pagès [aut, cre],\n  Aaron Lun [ctb],\n  Peter Hickey [ctb]",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-09 11:24:38 UTC; windows",
-        "Archs": "x64"
-      }
-    },
-    "DelayedMatrixStats": {
-      "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
-      "description": {
-        "Package": "DelayedMatrixStats",
-        "Type": "Package",
-        "Title": "Functions that Apply to Rows and Columns of 'DelayedMatrix'\nObjects",
-        "Version": "1.26.0",
-        "Date": "2024-04-23",
-        "Authors@R": "c(person(\"Peter\", \"Hickey\", role = c(\"aut\", \"cre\"),\n    email = \"peter.hickey@gmail.com\", comment = c(ORCID = \"0000-0002-8153-6258\")),\n    person(\"Hervé\", \"Pagès\", role = \"ctb\", email = \"hpages.on.github@gmail.com\"),\n    person(\"Aaron\", \"Lun\", role = \"ctb\", email = \"infinite.monkeys.with.keyboards@gmail.com\"))",
-        "Description": "A port of the 'matrixStats' API for use with DelayedMatrix objects \n  from the 'DelayedArray' package. High-performing functions operating on rows \n  and columns of DelayedMatrix objects, e.g. col / rowMedians(), \n  col / rowRanks(), and col / rowSds(). Functions optimized per data type and \n  for subsetted calculations such that both memory usage and processing time is \n  minimized.",
-        "License": "MIT + file LICENSE",
-        "Encoding": "UTF-8",
-        "Roxygen": "list(markdown = TRUE)",
-        "RoxygenNote": "7.3.1",
-        "Depends": "MatrixGenerics (>= 1.15.1), DelayedArray (>= 0.27.10)",
-        "Imports": "methods, sparseMatrixStats (>= 1.13.2), Matrix (>= 1.5-0),\nS4Vectors (>= 0.17.5), IRanges (>= 2.25.10)",
-        "Suggests": "testthat, knitr, rmarkdown, BiocStyle, microbenchmark,\nprofmem, HDF5Array, matrixStats (>= 1.0.0)",
-        "VignetteBuilder": "knitr",
-        "URL": "https://github.com/PeteHaitch/DelayedMatrixStats",
-        "BugReports": "https://github.com/PeteHaitch/DelayedMatrixStats/issues",
-        "biocViews": "Infrastructure, DataRepresentation, Software",
-        "git_url": "https://git.bioconductor.org/packages/DelayedMatrixStats",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "5774778",
-        "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-01",
-        "NeedsCompilation": "no",
-        "Packaged": "2024-05-01 22:21:41 UTC; biocbuild",
-        "Author": "Peter Hickey [aut, cre] (<https://orcid.org/0000-0002-8153-6258>),\n  Hervé Pagès [ctb],\n  Aaron Lun [ctb]",
-        "Maintainer": "Peter Hickey <peter.hickey@gmail.com>",
-        "Built": "R 4.4.0; ; 2024-05-02 12:42:11 UTC; windows"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-08-05 05:52:02 UTC; unix"
       }
     },
     "FNN": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "FNN",
-        "Version": "1.1.4.1",
+        "Version": "1.1.4",
         "Date": "2023-12-31",
         "Title": "Fast Nearest Neighbor Search Algorithms and Applications",
-        "Authors@R": "c(person(\"Alina\", \"Beygelzimer\", role = \"aut\",\n                    comment = \"cover tree library\"),\n             person(\"Sham\", \"Kakadet\", role = \"aut\",\n\t             comment = \"cover tree library\"),\n\t     person(\"John\", \"Langford\", role = \"aut\",\n\t            comment = \"cover tree library\"), \n             person(\"Sunil\", \"Arya\", role = \"aut\",\n\t            comment = \"ANN library 1.1.2 for the kd-tree approach\"),\n             person(\"David\", \"Mount\", role = \"aut\",\n\t            comment = \"ANN library 1.1.2 for the kd-tree approach\"),\n             person(\"Shengqiao\", \"Li\", role = c(\"aut\", \"cre\"),\n\t            email = \"lishengqiao@yahoo.com\"))",
+        "Author": "Alina Beygelzimer, Sham Kakadet and John Langford (cover tree library), \n        Sunil Arya and David Mount (ANN library 1.1.2 for the kd-tree approach), Shengqiao Li",
         "Copyright": "ANN Copyright (c) 1997-2010 University of Maryland and Sunil\nArya and David Mount. All Rights Reserved.",
+        "Maintainer": "Shengqiao Li <lishengqiao@yahoo.com>",
         "Depends": "R (>= 4.0.0)",
         "Suggests": "chemometrics, mvtnorm",
         "Description": "Cover-tree and kd-tree fast k-nearest neighbor search algorithms and related applications\n        including KNN classification, regression and information measures are implemented.",
         "License": "GPL (>= 2)",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-09-22 07:57:30 UTC; hornik",
+        "Packaged": "2024-01-11 06:38:55 UTC; Lion",
         "Repository": "CRAN",
-        "Date/Publication": "2024-09-22 08:24:48 UTC",
-        "Author": "Alina Beygelzimer [aut] (cover tree library),\n  Sham Kakadet [aut] (cover tree library),\n  John Langford [aut] (cover tree library),\n  Sunil Arya [aut] (ANN library 1.1.2 for the kd-tree approach),\n  David Mount [aut] (ANN library 1.1.2 for the kd-tree approach),\n  Shengqiao Li [aut, cre]",
-        "Maintainer": "Shengqiao Li <lishengqiao@yahoo.com>",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-22 23:50:39 UTC; windows",
-        "Archs": "x64"
+        "Date/Publication": "2024-01-12 16:40:08 UTC",
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 05:58:46 UTC; unix",
+        "Archs": "FNN.so.dSYM"
       }
     },
     "GenomeInfoDb": {
@@ -380,7 +339,7 @@
         "URL": "https://bioconductor.org/packages/GenomeInfoDb",
         "Video": "http://youtu.be/wdEjCYSXa7w",
         "BugReports": "https://github.com/Bioconductor/GenomeInfoDb/issues",
-        "Version": "1.40.1",
+        "Version": "1.41.1",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Authors@R": "c(\n\tperson(\"Sonali\", \"Arora\", role=\"aut\"),\n\tperson(\"Martin\", \"Morgan\", role=\"aut\"),\n\tperson(\"Marc\", \"Carlson\", role=\"aut\"),\n\tperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t\temail=\"hpages.on.github@gmail.com\"),\n\tperson(\"Prisca Chidimma\", \"Maduka\", role=\"ctb\"),\n\tperson(\"Atuhurira Kirabo\", \"Kakopo\", role=\"ctb\"),\n\tperson(\"Haleema\", \"Khan\", role=\"ctb\",\n\t\tcomment=\"vignette translation from Sweave to Rmarkdown / HTML\"),\n\tperson(\"Emmanuel Chigozie\", \"Elendu\", role=\"ctb\"))",
@@ -390,16 +349,16 @@
         "VignetteBuilder": "knitr",
         "Collate": "utils.R fetch_table_dump_from_Ensembl_FTP.R list_ftp_dir.R\nrankSeqlevels.R NCBI-utils.R UCSC-utils.R Ensembl-utils.R\ngetChromInfoFromNCBI.R getChromInfoFromUCSC.R\ngetChromInfoFromEnsembl.R loadTaxonomyDb.R mapGenomeBuilds.R\nseqinfo.R Seqinfo-class.R seqlevelsStyle.R seqlevels-wrappers.R\nGenomeDescription-class.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/GenomeInfoDb",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "00bb347",
+        "git_branch": "devel",
+        "git_last_commit": "4f9eff2",
         "git_last_commit_date": "2024-05-22",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-05-24",
         "NeedsCompilation": "no",
-        "Packaged": "2024-05-24 21:17:06 UTC; biocbuild",
+        "Packaged": "2024-05-25 02:36:17 UTC; biocbuild",
         "Author": "Sonali Arora [aut],\n  Martin Morgan [aut],\n  Marc Carlson [aut],\n  Hervé Pagès [aut, cre],\n  Prisca Chidimma Maduka [ctb],\n  Atuhurira Kirabo Kakopo [ctb],\n  Haleema Khan [ctb] (vignette translation from Sweave to Rmarkdown /\n    HTML),\n  Emmanuel Chigozie Elendu [ctb]",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
-        "Built": "R 4.4.0; ; 2024-05-29 05:50:05 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-25 21:19:49 UTC; unix"
       }
     },
     "GenomeInfoDbData": {
@@ -417,7 +376,7 @@
         "License": "Artistic-2.0",
         "NeedsCompilation": "no",
         "Packaged": "2024-03-21 18:53:40 UTC; lorikern",
-        "Built": "R 4.4.0; ; 2024-05-29 05:50:02 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-25 13:55:47 UTC; unix"
       }
     },
     "GenomicRanges": {
@@ -430,7 +389,7 @@
         "biocViews": "Genetics, Infrastructure, DataRepresentation, Sequencing,\nAnnotation, GenomeAnnotation, Coverage",
         "URL": "https://bioconductor.org/packages/GenomicRanges",
         "BugReports": "https://github.com/Bioconductor/GenomicRanges/issues",
-        "Version": "1.56.1",
+        "Version": "1.57.1",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Authors@R": "c(\n\tperson(\"Patrick\", \"Aboyoun\", role=\"aut\"),\n\tperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t\temail=\"hpages.on.github@gmail.com\"),\n\tperson(\"Michael\", \"Lawrence\", role=\"aut\"),\n\tperson(\"Sonali\", \"Arora\", role=\"ctb\"),\n\tperson(\"Martin\", \"Morgan\", role=\"ctb\"),\n\tperson(\"Kayla\", \"Morrell\", role=\"ctb\"),\n\tperson(\"Valerie\", \"Obenchain\", role=\"ctb\"),\n\tperson(\"Marcel\", \"Ramos\", role=\"ctb\"),\n\tperson(\"Lori\", \"Shepherd\", role=\"ctb\"),\n\tperson(\"Dan\", \"Tenenbaum\", role=\"ctb\"),\n\tperson(\"Daniel\", \"van Twisk\", role=\"ctb\"))",
@@ -441,17 +400,16 @@
         "VignetteBuilder": "knitr",
         "Collate": "normarg-utils.R utils.R phicoef.R transcript-utils.R\nconstraint.R strand-utils.R genomic-range-squeezers.R\nGenomicRanges-class.R GenomicRanges-comparison.R\nGRanges-class.R GPos-class.R GRangesFactor-class.R\nDelegatingGenomicRanges-class.R GNCList-class.R\nGenomicRangesList-class.R GRangesList-class.R\nmakeGRangesFromDataFrame.R makeGRangesListFromDataFrame.R\nRangedData-methods.R findOverlaps-methods.R\nintra-range-methods.R inter-range-methods.R coverage-methods.R\nsetops-methods.R subtract-methods.R nearest-methods.R\nabsoluteRanges.R tileGenome.R tile-methods.R genomicvars.R\nzzz.R",
         "git_url": "https://git.bioconductor.org/packages/GenomicRanges",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "6319740",
+        "git_branch": "devel",
+        "git_last_commit": "2b7bf7d",
         "git_last_commit_date": "2024-06-10",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-06-12",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-06-12 23:39:30 UTC; biocbuild",
+        "Packaged": "2024-06-12 21:19:24 UTC; biocbuild",
         "Author": "Patrick Aboyoun [aut],\n  Hervé Pagès [aut, cre],\n  Michael Lawrence [aut],\n  Sonali Arora [ctb],\n  Martin Morgan [ctb],\n  Kayla Morrell [ctb],\n  Valerie Obenchain [ctb],\n  Marcel Ramos [ctb],\n  Lori Shepherd [ctb],\n  Dan Tenenbaum [ctb],\n  Daniel van Twisk [ctb]",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-06-13 19:46:42 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-06-13 05:12:15 UTC; unix"
       }
     },
     "IRanges": {
@@ -464,32 +422,31 @@
         "biocViews": "Infrastructure, DataRepresentation",
         "URL": "https://bioconductor.org/packages/IRanges",
         "BugReports": "https://github.com/Bioconductor/IRanges/issues",
-        "Version": "2.38.1",
+        "Version": "2.39.2",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Authors@R": "c(\n\tperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t\temail=\"hpages.on.github@gmail.com\"),\n\tperson(\"Patrick\", \"Aboyoun\", role=\"aut\"),\n\tperson(\"Michael\", \"Lawrence\", role=\"aut\"))",
-        "Depends": "R (>= 4.0.0), methods, utils, stats, BiocGenerics (>= 0.39.2),\nS4Vectors (>= 0.33.3)",
+        "Depends": "R (>= 4.0.0), methods, utils, stats, BiocGenerics (>= 0.39.2),\nS4Vectors (>= 0.43.2)",
         "Imports": "stats4",
         "LinkingTo": "S4Vectors",
         "Suggests": "XVector, GenomicRanges, Rsamtools, GenomicAlignments,\nGenomicFeatures, BSgenome.Celegans.UCSC.ce2, pasillaBamSubset,\nRUnit, BiocStyle",
         "Collate": "range-squeezers.R Vector-class-leftovers.R\nDataFrameList-class.R DataFrameList-utils.R AtomicList-class.R\nAtomicList-utils.R Ranges-and-RangesList-classes.R\nIPosRanges-class.R IPosRanges-comparison.R\nIntegerRangesList-class.R IRanges-class.R IRanges-constructor.R\nIRanges-utils.R Rle-class-leftovers.R IPos-class.R\nsubsetting-utils.R Grouping-class.R Views-class.R\nRleViews-class.R RleViews-utils.R extractList.R seqapply.R\nmultisplit.R SimpleGrouping-class.R IRangesList-class.R\nIPosList-class.R ViewsList-class.R RleViewsList-class.R\nRleViewsList-utils.R RangedSelection-class.R\nMaskCollection-class.R read.Mask.R CompressedList-class.R\nCompressedList-comparison.R CompressedHitsList-class.R\nCompressedDataFrameList-class.R CompressedAtomicList-class.R\nCompressedGrouping-class.R CompressedRangesList-class.R\nHits-class-leftovers.R NCList-class.R findOverlaps-methods.R\nwindows-methods.R intra-range-methods.R inter-range-methods.R\nreverse-methods.R coverage-methods.R cvg-methods.R\nslice-methods.R setops-methods.R nearest-methods.R\ncbind-Rle-methods.R tile-methods.R extractListFragments.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/IRanges",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "d4d8da9",
-        "git_last_commit_date": "2024-07-03",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-07-03",
+        "git_branch": "devel",
+        "git_last_commit": "fedf331",
+        "git_last_commit_date": "2024-07-17",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-07-17",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-07-03 23:14:53 UTC; biocbuild",
+        "Packaged": "2024-07-17 21:11:50 UTC; biocbuild",
         "Author": "Hervé Pagès [aut, cre],\n  Patrick Aboyoun [aut],\n  Michael Lawrence [aut]",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-07-04 11:30:57 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-07-18 05:40:51 UTC; unix"
       }
     },
     "MASS": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "MASS",
         "Priority": "recommended",
@@ -513,13 +470,13 @@
         "Maintainer": "Brian Ripley <ripley@stats.ox.ac.uk>",
         "Repository": "CRAN",
         "Date/Publication": "2024-06-13 10:23:32",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 00:26:07 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-06-13 11:03:07 UTC; unix",
+        "Archs": "MASS.so.dSYM"
       }
     },
     "Matrix": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "Matrix",
         "Version": "1.7-0",
@@ -547,8 +504,7 @@
         "Maintainer": "Martin Maechler <mmaechler+Matrix@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-03-22 09:08:25 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-28 01:10:53 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-24 18:04:52 UTC; unix"
       }
     },
     "MatrixGenerics": {
@@ -561,7 +517,7 @@
         "biocViews": "Infrastructure, Software",
         "URL": "https://bioconductor.org/packages/MatrixGenerics",
         "BugReports": "https://github.com/Bioconductor/MatrixGenerics/issues",
-        "Version": "1.16.0",
+        "Version": "1.17.0",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Authors@R": "c(person(\"Constantin\", \"Ahlmann-Eltze\",\n                email = \"artjom31415@googlemail.com\", role = c(\"aut\"),\n                comment = c(ORCID = \"0000-0002-3762-068X\")),\n            person(\"Peter\", \"Hickey\", role = c(\"aut\", \"cre\"),\n                email = \"peter.hickey@gmail.com\",\n                comment = c(ORCID = \"0000-0002-8153-6258\")),\n            person(\"Hervé\", \"Pagès\", email = \"hpages.on.github@gmail.com\",\n                role = \"aut\"))",
@@ -572,21 +528,21 @@
         "Roxygen": "list(markdown = TRUE, old_usage = TRUE)",
         "Collate": "'MatrixGenerics-package.R' 'rowAlls.R' 'rowAnyNAs.R'\n'rowAnys.R' 'rowAvgsPerColSet.R' 'rowCollapse.R' 'rowCounts.R'\n'rowCummaxs.R' 'rowCummins.R' 'rowCumprods.R' 'rowCumsums.R'\n'rowDiffs.R' 'rowIQRDiffs.R' 'rowIQRs.R' 'rowLogSumExps.R'\n'rowMadDiffs.R' 'rowMads.R' 'rowMaxs.R' 'rowMeans.R'\n'rowMeans2.R' 'rowMedians.R' 'rowMins.R' 'rowOrderStats.R'\n'rowProds.R' 'rowQuantiles.R' 'rowRanges.R' 'rowRanks.R'\n'rowSdDiffs.R' 'rowSds.R' 'rowSums.R' 'rowSums2.R'\n'rowTabulates.R' 'rowVarDiffs.R' 'rowVars.R'\n'rowWeightedMads.R' 'rowWeightedMeans.R' 'rowWeightedMedians.R'\n'rowWeightedSds.R' 'rowWeightedVars.R'",
         "git_url": "https://git.bioconductor.org/packages/MatrixGenerics",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "80e0be9",
+        "git_branch": "devel",
+        "git_last_commit": "de9be73",
         "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-05-01",
         "NeedsCompilation": "no",
-        "Packaged": "2024-05-01 23:48:25 UTC; biocbuild",
+        "Packaged": "2024-05-02 00:09:27 UTC; biocbuild",
         "Author": "Constantin Ahlmann-Eltze [aut]\n    (<https://orcid.org/0000-0002-3762-068X>),\n  Peter Hickey [aut, cre] (<https://orcid.org/0000-0002-8153-6258>),\n  Hervé Pagès [aut]",
         "Maintainer": "Peter Hickey <peter.hickey@gmail.com>",
-        "Built": "R 4.4.0; ; 2024-05-02 13:03:26 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-02 19:02:46 UTC; unix"
       }
     },
     "R6": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "R6",
         "Title": "Encapsulated Classes with Reference Semantics",
@@ -605,12 +561,12 @@
         "Maintainer": "Winston Chang <winston@stdout.org>",
         "Repository": "CRAN",
         "Date/Publication": "2021-08-19 14:00:05 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 00:23:17 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:06:56 UTC; unix"
       }
     },
     "RColorBrewer": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "RColorBrewer",
         "Version": "1.1-3",
@@ -626,12 +582,12 @@
         "NeedsCompilation": "no",
         "Repository": "CRAN",
         "Date/Publication": "2022-04-03 19:20:13 UTC",
-        "Built": "R 4.4.0; ; 2024-04-23 00:23:59 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:07:17 UTC; unix"
       }
     },
     "RSpectra": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "RSpectra",
         "Type": "Package",
@@ -655,13 +611,13 @@
         "Maintainer": "Yixuan Qiu <yixuan.qiu@cos.name>",
         "Repository": "CRAN",
         "Date/Publication": "2024-07-18 15:30:05 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 01:24:38 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-07-18 21:12:38 UTC; unix",
+        "Archs": "RSpectra.so.dSYM"
       }
     },
     "Rcpp": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "Rcpp",
         "Title": "Seamless R and C++ Integration",
@@ -682,13 +638,13 @@
         "Packaged": "2024-07-11 13:00:10 UTC; edd",
         "Repository": "CRAN",
         "Date/Publication": "2024-07-17 15:50:06 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 00:26:10 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-07-17 18:43:53 UTC; unix",
+        "Archs": "Rcpp.so.dSYM"
       }
     },
     "RcppAnnoy": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "RcppAnnoy",
         "Type": "Package",
@@ -710,13 +666,13 @@
         "Packaged": "2024-01-23 00:46:29 UTC; edd",
         "Repository": "CRAN",
         "Date/Publication": "2024-01-23 14:33:04 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-28 00:32:43 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 07:20:04 UTC; unix",
+        "Archs": "RcppAnnoy.so.dSYM"
       }
     },
     "RcppEigen": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "RcppEigen",
         "Type": "Package",
@@ -740,13 +696,13 @@
         "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
         "Repository": "CRAN",
         "Date/Publication": "2024-08-24 06:30:02 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 01:10:36 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-08-24 09:04:49 UTC; unix",
+        "Archs": "RcppEigen.so.dSYM"
       }
     },
     "RcppHNSW": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "RcppHNSW",
         "Title": "'Rcpp' Bindings for 'hnswlib', a Library for Approximate Nearest\nNeighbors",
@@ -767,13 +723,13 @@
         "Maintainer": "James Melville <jlmelville@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-02-04 05:40:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-28 00:32:43 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 07:19:33 UTC; unix",
+        "Archs": "RcppHNSW.so.dSYM"
       }
     },
     "RcppML": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "RcppML",
         "Type": "Package",
@@ -797,13 +753,13 @@
         "Maintainer": "Zachary DeBruine <zacharydebruine@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-09-21 19:00:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-28 01:32:22 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-31 02:41:53 UTC; unix",
+        "Archs": "RcppML.so.dSYM"
       }
     },
     "RcppProgress": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "RcppProgress",
         "Maintainer": "Karl Forner <karl.forner@gmail.com>",
@@ -824,12 +780,12 @@
         "Packaged": "2020-02-06 10:57:24 UTC; karl",
         "Repository": "CRAN",
         "Date/Publication": "2020-02-06 12:10:08 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 00:31:40 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-30 06:22:21 UTC; unix"
       }
     },
     "Rtsne": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "Rtsne",
         "Type": "Package",
@@ -851,8 +807,8 @@
         "License_is_FOSS": "yes",
         "Repository": "CRAN",
         "Date/Publication": "2023-12-07 11:50:11 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-28 00:32:43 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 07:19:42 UTC; unix",
+        "Archs": "Rtsne.so.dSYM"
       }
     },
     "S4Arrays": {
@@ -865,7 +821,7 @@
         "biocViews": "Infrastructure, DataRepresentation",
         "URL": "https://bioconductor.org/packages/S4Arrays",
         "BugReports": "https://github.com/Bioconductor/S4Arrays/issues",
-        "Version": "1.4.1",
+        "Version": "1.5.7",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Authors@R": "c(\n\tperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t\temail=\"hpages.on.github@gmail.com\"),\n\tperson(\"Jacques\", \"Serizay\", role=\"ctb\"))",
@@ -874,19 +830,18 @@
         "LinkingTo": "S4Vectors",
         "Suggests": "BiocParallel, SparseArray (>= 0.0.4), DelayedArray, testthat,\nknitr, rmarkdown, BiocStyle",
         "VignetteBuilder": "knitr",
-        "Collate": "utils.R rowsum.R abind.R aperm2.R array_selection.R\nNindex-utils.R Array-class.R dim-tuning-utils.R\nArrayGrid-class.R mapToGrid.R extract_array.R type.R\nis_sparse.R read_block.R write_block.R show-utils.R zzz.R",
+        "Collate": "utils.R rowsum.R abind.R aperm2.R array_selection.R\nNindex-utils.R Array-class.R dim-tuning-utils.R\nArray-subassignment.R ArrayGrid-class.R mapToGrid.R\nextract_array.R type.R is_sparse.R read_block.R write_block.R\nshow-utils.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/S4Arrays",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "472c245",
-        "git_last_commit_date": "2024-05-20",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-20",
+        "git_branch": "devel",
+        "git_last_commit": "820cc05",
+        "git_last_commit_date": "2024-08-06",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-08-06",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-05-21 01:36:19 UTC; biocbuild",
+        "Packaged": "2024-08-06 22:23:41 UTC; biocbuild",
         "Author": "Hervé Pagès [aut, cre],\n  Jacques Serizay [ctb]",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-21 13:04:55 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-08-07 06:21:39 UTC; unix"
       }
     },
     "S4Vectors": {
@@ -899,7 +854,7 @@
         "biocViews": "Infrastructure, DataRepresentation",
         "URL": "https://bioconductor.org/packages/S4Vectors",
         "BugReports": "https://github.com/Bioconductor/S4Vectors/issues",
-        "Version": "0.42.1",
+        "Version": "0.43.2",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Authors@R": "c(\n\tperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t\temail=\"hpages.on.github@gmail.com\"),\n\tperson(\"Michael\", \"Lawrence\", role=\"aut\"),\n\tperson(\"Patrick\", \"Aboyoun\", role=\"aut\"),\n\tperson(\"Aaron\", \"Lun\", role=\"ctb\"),\n\tperson(\"Beryl\", \"Kanali\", role=\"ctb\",\n\t\tcomment=\"Converted vignettes from Sweave to RMarkdown\"))",
@@ -908,17 +863,16 @@
         "VignetteBuilder": "knitr",
         "Collate": "S4-utils.R show-utils.R utils.R normarg-utils.R bindROWS.R\nLLint-class.R isSorted.R subsetting-utils.R vector-utils.R\ninteger-utils.R character-utils.R raw-utils.R eval-utils.R\nmap_ranges_to_runs.R RectangularData-class.R Annotated-class.R\nDataFrame_OR_NULL-class.R Vector-class.R Vector-comparison.R\nVector-setops.R Vector-merge.R Hits-class.R Hits-comparison.R\nHits-setops.R Rle-class.R Rle-utils.R Factor-class.R\nList-class.R List-comparison.R splitAsList.R List-utils.R\nSimpleList-class.R HitsList-class.R DataFrame-class.R\nDataFrame-combine.R DataFrame-comparison.R DataFrame-utils.R\nDataFrameFactor-class.R TransposedDataFrame-class.R\nPairs-class.R FilterRules-class.R stack-methods.R\nexpand-methods.R aggregate-methods.R shiftApply-methods.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/S4Vectors",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "cc0a6d7",
-        "git_last_commit_date": "2024-07-03",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-07-03",
+        "git_branch": "devel",
+        "git_last_commit": "40c18e5",
+        "git_last_commit_date": "2024-07-17",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-07-17",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-07-04 01:07:36 UTC; biocbuild",
+        "Packaged": "2024-07-17 22:13:52 UTC; biocbuild",
         "Author": "Hervé Pagès [aut, cre],\n  Michael Lawrence [aut],\n  Patrick Aboyoun [aut],\n  Aaron Lun [ctb],\n  Beryl Kanali [ctb] (Converted vignettes from Sweave to RMarkdown)",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-07-04 11:56:39 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-07-18 05:56:07 UTC; unix"
       }
     },
     "ScaledMatrix": {
@@ -926,7 +880,7 @@
       "Repository": "https://bioconductor.org/packages/3.19/bioc",
       "description": {
         "Package": "ScaledMatrix",
-        "Version": "1.12.0",
+        "Version": "1.13.0",
         "Date": "2024-02-29",
         "Title": "Creating a DelayedMatrix of Scaled and Centered Values",
         "Authors@R": "person(\"Aaron\", \"Lun\", role=c(\"aut\", \"cre\", \"cph\"),\n        email=\"infinite.monkeys.with.keyboards@gmail.com\")",
@@ -940,16 +894,16 @@
         "BugReports": "https://github.com/LTLA/ScaledMatrix/issues",
         "URL": "https://github.com/LTLA/ScaledMatrix",
         "git_url": "https://git.bioconductor.org/packages/ScaledMatrix",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "7361ce9",
+        "git_branch": "devel",
+        "git_last_commit": "b4bf8cb",
         "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-05-01",
         "NeedsCompilation": "no",
-        "Packaged": "2024-05-02 01:40:11 UTC; biocbuild",
+        "Packaged": "2024-05-02 02:17:35 UTC; biocbuild",
         "Author": "Aaron Lun [aut, cre, cph]",
         "Maintainer": "Aaron Lun <infinite.monkeys.with.keyboards@gmail.com>",
-        "Built": "R 4.4.0; ; 2024-05-02 13:28:00 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-02 19:36:14 UTC; unix"
       }
     },
     "SingleCellExperiment": {
@@ -957,8 +911,8 @@
       "Repository": "https://bioconductor.org/packages/3.19/bioc",
       "description": {
         "Package": "SingleCellExperiment",
-        "Version": "1.26.0",
-        "Date": "2024-03-25",
+        "Version": "1.27.2",
+        "Date": "2024-05-21",
         "Title": "S4 Classes for Single Cell Data",
         "Authors@R": "c(\n        person(\"Aaron\", \"Lun\", role=c(\"aut\", \"cph\"), email=\"infinite.monkeys.with.keyboards@gmail.com\"),\n        person(\"Davide\",\"Risso\", role=c(\"aut\",\"cre\", \"cph\"), email=\"risso.davide@gmail.com\"),\n        person(\"Keegan\", \"Korthauer\", role=\"ctb\"),\n        person(\"Kevin\", \"Rue-Albrecht\", role=\"ctb\"),\n        person(\"Luke\", \"Zappia\", role = \"ctb\", comment = c(ORCID = \"0000-0001-7744-8565\", github = \"lazappi\")))",
         "Depends": "SummarizedExperiment",
@@ -970,16 +924,16 @@
         "VignetteBuilder": "knitr",
         "RoxygenNote": "7.3.1",
         "git_url": "https://git.bioconductor.org/packages/SingleCellExperiment",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "9dae229",
-        "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-01",
+        "git_branch": "devel",
+        "git_last_commit": "7c68b56",
+        "git_last_commit_date": "2024-05-22",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-05-24",
         "NeedsCompilation": "no",
-        "Packaged": "2024-05-02 02:00:15 UTC; biocbuild",
+        "Packaged": "2024-05-25 06:05:25 UTC; biocbuild",
         "Author": "Aaron Lun [aut, cph],\n  Davide Risso [aut, cre, cph],\n  Keegan Korthauer [ctb],\n  Kevin Rue-Albrecht [ctb],\n  Luke Zappia [ctb] (<https://orcid.org/0000-0001-7744-8565>, lazappi)",
         "Maintainer": "Davide Risso <risso.davide@gmail.com>",
-        "Built": "R 4.4.0; ; 2024-05-02 13:32:55 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-25 22:13:35 UTC; unix"
       }
     },
     "SparseArray": {
@@ -992,28 +946,27 @@
         "biocViews": "Infrastructure, DataRepresentation",
         "URL": "https://bioconductor.org/packages/SparseArray",
         "BugReports": "https://github.com/Bioconductor/SparseArray/issues",
-        "Version": "1.4.8",
+        "Version": "1.5.31",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
-        "Authors@R": "c(\n\tperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t\temail=\"hpages.on.github@gmail.com\"),\n\tperson(\"Vince\", \"Carey\", role=\"fnd\",\n\t\temail=\"stvjc@channing.harvard.edu\"),\n\tperson(\"Rafael A.\", \"Irizarry\", role=\"fnd\",\n\t\temail=\"rafa@ds.harvard.edu\"),\n\tperson(\"Jacques\", \"Serizay\", role=\"ctb\"))",
-        "Depends": "R (>= 4.3.0), methods, Matrix, BiocGenerics (>= 0.43.1),\nMatrixGenerics (>= 1.11.1), S4Vectors, S4Arrays (>= 1.4.1)",
+        "Authors@R": "c(\n\tperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t\temail=\"hpages.on.github@gmail.com\",\n\t\tcomment=c(ORCID=\"0009-0002-8272-4522\")),\n\tperson(\"Vince\", \"Carey\", role=\"fnd\",\n\t\temail=\"stvjc@channing.harvard.edu\",\n\t\tcomment=c(ORCID=\"0000-0003-4046-0063\")),\n\tperson(\"Rafael A.\", \"Irizarry\", role=\"fnd\",\n\t\temail=\"rafa@ds.harvard.edu\",\n\t\tcomment=c(ORCID=\"0000-0002-3944-4309\")),\n\tperson(\"Jacques\", \"Serizay\", role=\"ctb\",\n\t\tcomment=c(ORCID=\"0000-0002-4295-0624\")))",
+        "Depends": "R (>= 4.3.0), methods, Matrix, BiocGenerics (>= 0.43.1),\nMatrixGenerics (>= 1.11.1), S4Vectors (>= 0.43.2), S4Arrays (>=\n1.5.6)",
         "Imports": "utils, stats, matrixStats, IRanges, XVector",
         "LinkingTo": "S4Vectors, IRanges, XVector",
-        "Suggests": "DelayedArray, testthat, knitr, rmarkdown, BiocStyle",
+        "Suggests": "HDF5Array, ExperimentHub, testthat, knitr, rmarkdown,\nBiocStyle",
         "VignetteBuilder": "knitr",
-        "Collate": "utils.R options.R OPBufTree.R thread-control.R\nsparseMatrix-utils.R SparseArray-class.R\nCOO_SparseArray-class.R SVT_SparseArray-class.R\nextract_sparse_array.R read_block_as_sparse.R\nSparseArray-dim-tuning.R SparseArray-aperm.R\nSparseArray-subsetting.R SparseArray-subassignment.R\nSparseArray-abind.R SparseArray-summarization.R\nSparseArray-Ops-methods.R SparseArray-Math-methods.R\nSparseArray-Complex-methods.R SparseArray-misc-methods.R\nSparseMatrix-mult.R matrixStats-methods.R rowsum-methods.R\nrandomSparseArray.R readSparseCSV.R zzz.R",
+        "Collate": "utils.R options.R OPBufTree.R thread-control.R\nsparseMatrix-utils.R SparseArray-class.R\nCOO_SparseArray-class.R SVT_SparseArray-class.R\nextract_sparse_array.R read_block_as_sparse.R\nSparseArray-dim-tuning.R SparseArray-aperm.R\nSparseArray-subsetting.R SparseArray-subassignment.R\nSparseArray-abind.R SparseArray-summarization.R\nSparseArray-Ops-methods.R SparseArray-Math-methods.R\nSparseArray-Complex-methods.R SparseArray-misc-methods.R\nmatrixStats-methods.R rowsum-methods.R SparseMatrix-mult.R\nrandomSparseArray.R readSparseCSV.R NaArray-class.R\nNaArray-aperm.R NaArray-subsetting.R NaArray-subassignment.R\nNaArray-abind.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/SparseArray",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "3d08cdc",
-        "git_last_commit_date": "2024-05-24",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-24",
+        "git_branch": "devel",
+        "git_last_commit": "8494ce0",
+        "git_last_commit_date": "2024-08-04",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-08-04",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-05-24 23:26:31 UTC; biocbuild",
-        "Author": "Hervé Pagès [aut, cre],\n  Vince Carey [fnd],\n  Rafael A. Irizarry [fnd],\n  Jacques Serizay [ctb]",
+        "Packaged": "2024-08-04 22:39:36 UTC; biocbuild",
+        "Author": "Hervé Pagès [aut, cre] (<https://orcid.org/0009-0002-8272-4522>),\n  Vince Carey [fnd] (<https://orcid.org/0000-0003-4046-0063>),\n  Rafael A. Irizarry [fnd] (<https://orcid.org/0000-0002-3944-4309>),\n  Jacques Serizay [ctb] (<https://orcid.org/0000-0002-4295-0624>)",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-29 06:08:21 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-08-05 06:20:21 UTC; unix"
       }
     },
     "SummarizedExperiment": {
@@ -1026,26 +979,26 @@
         "biocViews": "Genetics, Infrastructure, Sequencing, Annotation, Coverage,\nGenomeAnnotation",
         "URL": "https://bioconductor.org/packages/SummarizedExperiment",
         "BugReports": "https://github.com/Bioconductor/SummarizedExperiment/issues",
-        "Version": "1.34.0",
+        "Version": "1.35.1",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Authors@R": "c(\n\tperson(\"Martin\", \"Morgan\", role=\"aut\"),\n\tperson(\"Valerie\", \"Obenchain\", role=\"aut\"),\n\tperson(\"Jim\", \"Hester\", role=\"aut\"),\n\tperson(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t\temail=\"hpages.on.github@gmail.com\"))",
         "Depends": "R (>= 4.0.0), methods, MatrixGenerics (>= 1.1.3),\nGenomicRanges (>= 1.55.2), Biobase",
         "Imports": "utils, stats, tools, Matrix, BiocGenerics (>= 0.37.0),\nS4Vectors (>= 0.33.7), IRanges (>= 2.23.9), GenomeInfoDb (>=\n1.13.1), S4Arrays (>= 1.1.1), DelayedArray (>= 0.27.1)",
-        "Suggests": "HDF5Array (>= 1.7.5), annotate, AnnotationDbi, hgu95av2.db,\nGenomicFeatures, TxDb.Hsapiens.UCSC.hg19.knownGene, jsonlite,\nrhdf5, airway (>= 1.15.1), BiocStyle, knitr, rmarkdown, RUnit,\ntestthat, digest",
+        "Suggests": "jsonlite, rhdf5, HDF5Array (>= 1.7.5), annotate,\nAnnotationDbi, GenomicFeatures, SparseArray,\nSingleCellExperiment, TxDb.Hsapiens.UCSC.hg19.knownGene,\nhgu95av2.db, airway (>= 1.15.1), BiocStyle, knitr, rmarkdown,\nRUnit, testthat, digest",
         "VignetteBuilder": "knitr",
         "Collate": "Assays-class.R SummarizedExperiment-class.R\nRangedSummarizedExperiment-class.R intra-range-methods.R\ninter-range-methods.R coverage-methods.R combine-methods.R\nfindOverlaps-methods.R nearest-methods.R\nmakeSummarizedExperimentFromExpressionSet.R\nmakeSummarizedExperimentFromDataFrame.R\nmakeSummarizedExperimentFromLoom.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/SummarizedExperiment",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "503f180",
-        "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-01",
+        "git_branch": "devel",
+        "git_last_commit": "c5b7ca2",
+        "git_last_commit_date": "2024-06-27",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-06-28",
         "NeedsCompilation": "no",
-        "Packaged": "2024-05-02 02:15:51 UTC; biocbuild",
+        "Packaged": "2024-06-28 22:21:43 UTC; biocbuild",
         "Author": "Martin Morgan [aut],\n  Valerie Obenchain [aut],\n  Jim Hester [aut],\n  Hervé Pagès [aut, cre]",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
-        "Built": "R 4.4.0; ; 2024-05-02 13:36:59 UTC; windows"
+        "Built": "R 4.4.1; ; 2024-06-29 04:50:21 UTC; unix"
       }
     },
     "UCSC.utils": {
@@ -1058,7 +1011,7 @@
         "biocViews": "Infrastructure, GenomeAssembly, Annotation,\nGenomeAnnotation, DataImport",
         "URL": "https://bioconductor.org/packages/UCSC.utils",
         "BugReports": "https://github.com/Bioconductor/UCSC.utils/issues",
-        "Version": "1.0.0",
+        "Version": "1.1.0",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Authors@R": "person(\"Hervé\", \"Pagès\", role=c(\"aut\", \"cre\"),\n\t          email=\"hpages.on.github@gmail.com\")",
@@ -1067,16 +1020,16 @@
         "VignetteBuilder": "knitr",
         "Collate": "00utils.R UCSC.api.url.R REST_API.R list_UCSC_genomes.R\nget_UCSC_chrom_sizes.R list_UCSC_tracks.R\nfetch_UCSC_track_data.R UCSC_dbselect.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/UCSC.utils",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "dc5a0a8",
+        "git_branch": "devel",
+        "git_last_commit": "e7cd20f",
         "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-05-01",
         "NeedsCompilation": "no",
-        "Packaged": "2024-05-02 02:29:16 UTC; biocbuild",
+        "Packaged": "2024-05-02 03:27:45 UTC; biocbuild",
         "Author": "Hervé Pagès [aut, cre]",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
-        "Built": "R 4.4.0; ; 2024-05-02 13:41:09 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-02 19:54:16 UTC; unix"
       }
     },
     "XVector": {
@@ -1089,7 +1042,7 @@
         "biocViews": "Infrastructure, DataRepresentation",
         "URL": "https://bioconductor.org/packages/XVector",
         "BugReports": "https://github.com/Bioconductor/XVector/issues",
-        "Version": "0.44.0",
+        "Version": "0.45.0",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Author": "Hervé Pagès and Patrick Aboyoun",
@@ -1100,42 +1053,40 @@
         "Suggests": "Biostrings, drosophila2probe, RUnit",
         "Collate": "io-utils.R RDS-random-access.R SharedVector-class.R\nSharedRaw-class.R SharedInteger-class.R SharedDouble-class.R\nXVector-class.R XRaw-class.R XInteger-class.R XDouble-class.R\nXVectorList-class.R XRawList-class.R XRawList-comparison.R\nXIntegerViews-class.R XDoubleViews-class.R OnDiskRaw-class.R\nRdaCollection-class.R RdsCollection-class.R\nintra-range-methods.R compact-methods.R reverse-methods.R\nslice-methods.R view-summarization-methods.R\nupdateObject-methods.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/XVector",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "5790b9b",
+        "git_branch": "devel",
+        "git_last_commit": "a73c4b6",
         "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-05-01",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-05-02 02:36:28 UTC; biocbuild",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-02 13:42:54 UTC; windows",
-        "Archs": "x64"
+        "Packaged": "2024-05-02 03:37:55 UTC; biocbuild",
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-02 19:56:33 UTC; unix"
       }
     },
     "abind": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "abind",
-        "Version": "1.4-8",
-        "Date": "2024-09-08",
+        "Version": "1.4-5",
+        "Date": "2016-06-19",
         "Title": "Combine Multidimensional Arrays",
-        "Authors@R": "c(person(\"Tony\", \"Plate\", email = \"tplate@acm.org\", role = c(\"aut\", \"cre\")), person(\"Richard\", \"Heiberger\", role = c(\"aut\")))",
+        "Author": "Tony Plate <tplate@acm.org> and Richard Heiberger",
         "Maintainer": "Tony Plate <tplate@acm.org>",
-        "Description": "Combine multidimensional arrays into a single array.\n  This is a generalization of 'cbind' and 'rbind'.  Works with\n  vectors, matrices, and higher-dimensional arrays (aka tensors).\n  Also provides functions 'adrop', 'asub', and 'afill' for\n  manipulating, extracting and replacing data in arrays.",
+        "Description": "Combine multidimensional arrays into a single array.\n  This is a generalization of 'cbind' and 'rbind'.  Works with\n  vectors, matrices, and higher-dimensional arrays.  Also\n  provides functions 'adrop', 'asub', and 'afill' for manipulating,\n  extracting and replacing data in arrays.",
         "Depends": "R (>= 1.5.0)",
         "Imports": "methods, utils",
-        "License": "MIT + file LICENSE",
+        "License": "LGPL (>= 2)",
         "NeedsCompilation": "no",
-        "Packaged": "2024-09-11 21:58:20 UTC; tap",
-        "Author": "Tony Plate [aut, cre],\n  Richard Heiberger [aut]",
+        "Packaged": "2016-07-19 15:24:25 UTC; tap",
         "Repository": "CRAN",
-        "Date/Publication": "2024-09-12 17:40:54 UTC",
-        "Built": "R 4.4.1; ; 2024-09-18 23:52:21 UTC; windows"
+        "Date/Publication": "2016-07-21 19:18:05",
+        "Built": "R 4.4.0; ; 2024-04-07 20:08:09 UTC; unix"
       }
     },
     "askpass": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "askpass",
         "Type": "Package",
@@ -1157,13 +1108,13 @@
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "CRAN",
         "Date/Publication": "2023-09-03 20:00:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:56:39 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 22:38:08 UTC; unix",
+        "Archs": "askpass.so.dSYM"
       }
     },
     "base64enc": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "base64enc",
         "Version": "0.1-3",
@@ -1179,8 +1130,8 @@
         "Packaged": "2015-02-04 20:31:00 UTC; svnuser",
         "Repository": "CRAN",
         "Date/Publication": "2015-07-28 08:03:37",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-04-23 00:24:00 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:07:30 UTC; unix",
+        "Archs": "base64enc.so.dSYM"
       }
     },
     "beachmat": {
@@ -1188,13 +1139,13 @@
       "Repository": "https://bioconductor.org/packages/3.19/bioc",
       "description": {
         "Package": "beachmat",
-        "Version": "2.20.0",
-        "Date": "2024-03-28",
+        "Version": "2.21.5",
+        "Date": "2024-07-25",
         "Title": "Compiling Bioconductor to Handle Each Matrix Type",
         "Encoding": "UTF-8",
         "Authors@R": "c(person(\"Aaron\", \"Lun\", role = c(\"aut\", \"cre\"), email = \"infinite.monkeys.with.keyboards@gmail.com\"),\n        person(\"Hervé\", \"Pagès\", role=\"aut\"),\n        person(\"Mike\", \"Smith\", role=\"aut\"))",
         "Imports": "methods, DelayedArray (>= 0.27.2), SparseArray, BiocGenerics,\nMatrix, Rcpp",
-        "Suggests": "testthat, BiocStyle, knitr, rmarkdown, rcmdcheck,\nBiocParallel, HDF5Array",
+        "Suggests": "testthat, BiocStyle, knitr, rmarkdown, rcmdcheck,\nBiocParallel, HDF5Array, beachmat.hdf5",
         "LinkingTo": "Rcpp",
         "biocViews": "DataRepresentation, DataImport, Infrastructure",
         "Description": "\n    Provides a consistent C++ class interface for reading from a variety of commonly used matrix types. \n    Ordinary matrices and several sparse/dense Matrix classes are directly supported, \n    along with a subset of the delayed operations implemented in the DelayedArray package.\n    All other matrix-like objects are supported by calling back into R.",
@@ -1204,23 +1155,22 @@
         "SystemRequirements": "C++17",
         "URL": "https://github.com/tatami-inc/beachmat",
         "BugReports": "https://github.com/tatami-inc/beachmat/issues",
-        "RoxygenNote": "7.3.1",
+        "RoxygenNote": "7.3.2",
         "git_url": "https://git.bioconductor.org/packages/beachmat",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "fe0b119",
-        "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-01",
-        "Packaged": "2024-05-01 21:18:58 UTC; biocbuild",
+        "git_branch": "devel",
+        "git_last_commit": "05a696c",
+        "git_last_commit_date": "2024-07-25",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-07-26",
+        "Packaged": "2024-07-26 20:01:50 UTC; biocbuild",
         "Author": "Aaron Lun [aut, cre],\n  Hervé Pagès [aut],\n  Mike Smith [aut]",
         "Maintainer": "Aaron Lun <infinite.monkeys.with.keyboards@gmail.com>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-02 12:28:04 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-07-27 05:31:43 UTC; unix"
       }
     },
     "beeswarm": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "beeswarm",
         "Title": "The Bee Swarm Plot, an Alternative to Stripchart",
@@ -1238,13 +1188,13 @@
         "Maintainer": "Aron Eklund <aroneklund@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-06-01 21:40:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-04-23 00:29:38 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 08:40:05 UTC; unix",
+        "Archs": "beeswarm.so.dSYM"
       }
     },
     "bslib": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "bslib",
         "Title": "Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'",
@@ -1272,12 +1222,12 @@
         "Maintainer": "Carson Sievert <carson@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-07-29 19:20:02 UTC",
-        "Built": "R 4.4.1; ; 2024-09-23 01:41:12 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-07-29 21:31:43 UTC; unix"
       }
     },
     "cachem": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "cachem",
         "Version": "1.1.0",
@@ -1299,13 +1249,13 @@
         "Maintainer": "Winston Chang <winston@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-05-16 09:50:11 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:56:37 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-16 11:04:31 UTC; unix",
+        "Archs": "cachem.so.dSYM"
       }
     },
     "cli": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "cli",
         "Title": "Helpers for Developing Command Line Interfaces",
@@ -1328,13 +1278,13 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-06-21 21:00:07 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 00:26:08 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-06-21 23:59:10 UTC; unix",
+        "Archs": "cli.so.dSYM"
       }
     },
     "codetools": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "codetools",
         "Version": "0.2-20",
@@ -1350,12 +1300,12 @@
         "Packaged": "2024-03-31 18:18:09 UTC; luke",
         "Repository": "CRAN",
         "Date/Publication": "2024-03-31 20:10:06 UTC",
-        "Built": "R 4.4.0; ; 2024-04-24 08:34:07 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-24 18:04:39 UTC; unix"
       }
     },
     "colorspace": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "colorspace",
         "Version": "2.1-1",
@@ -1379,13 +1329,13 @@
         "Maintainer": "Achim Zeileis <Achim.Zeileis@R-project.org>",
         "Repository": "CRAN",
         "Date/Publication": "2024-07-26 17:10:02 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 00:26:11 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-07-26 20:36:01 UTC; unix",
+        "Archs": "colorspace.so.dSYM"
       }
     },
     "commonmark": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "commonmark",
         "Type": "Package",
@@ -1406,13 +1356,13 @@
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "CRAN",
         "Date/Publication": "2024-01-30 12:40:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:32 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 05:44:04 UTC; unix",
+        "Archs": "commonmark.so.dSYM"
       }
     },
     "cpp11": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "cpp11",
         "Title": "A C++11 Interface for R's C Interface",
@@ -1436,12 +1386,12 @@
         "Maintainer": "Davis Vaughan <davis@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-08-27 04:30:17 UTC",
-        "Built": "R 4.4.1; ; 2024-09-23 00:26:09 UTC; windows"
+        "Built": "R 4.4.1; ; 2024-08-27 06:16:02 UTC; unix"
       }
     },
     "crayon": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "crayon",
         "Title": "Colored Terminal Output",
@@ -1463,18 +1413,18 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-06-20 13:00:02 UTC",
-        "Built": "R 4.4.1; ; 2024-09-23 00:26:34 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-06-20 14:40:08 UTC; unix"
       }
     },
     "curl": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "curl",
         "Type": "Package",
         "Title": "A Modern and Flexible Web Client for R",
-        "Version": "5.2.3",
-        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroenooms@gmail.com\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"ctb\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
+        "Version": "5.2.2",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"ctb\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
         "Description": "The curl() and curl_download() functions provide highly\n    configurable drop-in replacements for base url() and download.file() with\n    better performance, support for encryption (https, ftps), gzip compression,\n    authentication, and other 'libcurl' goodies. The core of the package implements a\n    framework for performing fully customized requests where data can be processed\n    either in memory, on disk, or streaming via the callback or connection\n    interfaces. Some knowledge of 'libcurl' is recommended; for a more-user-friendly\n    web client see the 'httr' package which builds on this package with http\n    specific tools and logic.",
         "License": "MIT + file LICENSE",
         "SystemRequirements": "libcurl: libcurl-devel (rpm) or\nlibcurl4-openssl-dev (deb).",
@@ -1487,18 +1437,18 @@
         "Encoding": "UTF-8",
         "Language": "en-US",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-09-19 15:43:51 UTC; jeroen",
+        "Packaged": "2024-08-25 10:08:31 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Hadley Wickham [ctb],\n  RStudio [cph]",
-        "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
+        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "CRAN",
-        "Date/Publication": "2024-09-20 11:50:24 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 00:26:22 UTC; windows",
-        "Archs": "x64"
+        "Date/Publication": "2024-08-26 09:40:03 UTC",
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-08-26 12:04:40 UTC; unix",
+        "Archs": "curl.so.dSYM"
       }
     },
     "digest": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "digest",
         "Authors@R": "c(person(\"Dirk\", \"Eddelbuettel\", role = c(\"aut\", \"cre\"), email = \"edd@debian.org\",\n                    comment = c(ORCID = \"0000-0001-6419-907X\")),\n             person(\"Antoine\", \"Lucas\", role=\"ctb\"),\n             person(\"Jarek\", \"Tuszynski\", role=\"ctb\"),\n             person(\"Henrik\", \"Bengtsson\", role=\"ctb\", comment = c(ORCID = \"0000-0002-7579-5165\")),\n             person(\"Simon\", \"Urbanek\", role=\"ctb\", comment = c(ORCID = \"0000-0003-2297-1732\")),\n             person(\"Mario\", \"Frasca\", role=\"ctb\"),\n             person(\"Bryan\", \"Lewis\", role=\"ctb\"),\n             person(\"Murray\", \"Stokely\", role=\"ctb\"),\n             person(\"Hannes\", \"Muehleisen\", role=\"ctb\"),\n             person(\"Duncan\", \"Murdoch\", role=\"ctb\"),\n             person(\"Jim\", \"Hester\", role=\"ctb\"),\n             person(\"Wush\", \"Wu\", role=\"ctb\", comment = c(ORCID = \"0000-0001-5180-0567\")),\n             person(\"Qiang\", \"Kou\", role=\"ctb\", comment = c(ORCID = \"0000-0001-6786-5453\")),\n             person(\"Thierry\", \"Onkelinx\", role=\"ctb\", comment = c(ORCID = \"0000-0001-8804-4216\")),\n             person(\"Michel\", \"Lang\", role=\"ctb\", comment = c(ORCID = \"0000-0001-9754-0393\")),\n             person(\"Viliam\", \"Simko\", role=\"ctb\"),\n             person(\"Kurt\", \"Hornik\", role=\"ctb\", comment = c(ORCID = \"0000-0003-4198-9911\")),\n             person(\"Radford\", \"Neal\", role=\"ctb\", comment = c(ORCID = \"0000-0002-2473-3407\")),\n             person(\"Kendon\", \"Bell\", role=\"ctb\", comment = c(ORCID = \"0000-0002-9093-8312\")),\n             person(\"Matthew\", \"de Queljoe\", role=\"ctb\"),\n             person(\"Dmitry\", \"Selivanov\", role=\"ctb\"),\n             person(\"Ion\", \"Suruceanu\", role=\"ctb\"),\n             person(\"Bill\", \"Denney\", role=\"ctb\"),\n             person(\"Dirk\", \"Schumacher\", role=\"ctb\"),\n             person(\"András\", \"Svraka\", role=\"ctb\"),\n             person(\"Sergey\", \"Fedorov\", role=\"ctb\"),\n             person(\"Will\", \"Landau\", role=\"ctb\", comment = c(ORCID = \"0000-0003-1878-3253\")),\n             person(\"Floris\", \"Vanderhaeghe\", role=\"ctb\", comment = c(ORCID = \"0000-0002-6378-6229\")),\n             person(\"Kevin\", \"Tappe\", role=\"ctb\"),\n             person(\"Harris\", \"McGehee\", role=\"ctb\"),\n             person(\"Tim\", \"Mastny\", role=\"ctb\"),\n             person(\"Aaron\", \"Peikert\", role=\"ctb\", comment = c(ORCID = \"0000-0001-7813-818X\")),\n             person(\"Mark\", \"van der Loo\", role=\"ctb\", comment = c(ORCID = \"0000-0002-9807-4686\")),\n             person(\"Chris\", \"Muir\", role=\"ctb\", comment = c(ORCID = \"0000-0003-2555-3878\")),\n             person(\"Moritz\", \"Beller\", role=\"ctb\", comment = c(ORCID = \"0000-0003-4852-0526\")),\n             person(\"Sebastian\", \"Campbell\", role=\"ctb\"),\n             person(\"Winston\", \"Chang\", role=\"ctb\", comment = c(ORCID = \"0000-0002-1576-2126\")),\n             person(\"Dean\", \"Attali\", role=\"ctb\", comment = c(ORCID = \"0000-0002-5645-3493\")),\n             person(\"Michael\", \"Chirico\", role=\"ctb\", comment = c(ORCID = \"0000-0003-0787-087X\")),\n             person(\"Kevin\", \"Ushey\", role=\"ctb\"))",
@@ -1520,13 +1470,13 @@
         "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
         "Repository": "CRAN",
         "Date/Publication": "2024-08-19 14:10:07 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 00:26:12 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-08-19 15:24:38 UTC; unix",
+        "Archs": "digest.so.dSYM"
       }
     },
     "dqrng": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "dqrng",
         "Type": "Package",
@@ -1550,13 +1500,13 @@
         "Maintainer": "Ralf Stubner <ralf.stubner@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-05-28 22:40:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-29 06:07:55 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-06-05 04:47:46 UTC; unix",
+        "Archs": "dqrng.so.dSYM"
       }
     },
     "fansi": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "fansi",
         "Title": "ANSI Control Sequence Aware String Functions",
@@ -1579,13 +1529,13 @@
         "Maintainer": "Brodie Gaslam <brodie.gaslam@yahoo.com>",
         "Repository": "CRAN",
         "Date/Publication": "2023-12-08 03:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:19 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:06:55 UTC; unix",
+        "Archs": "fansi.so.dSYM"
       }
     },
     "farver": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "farver",
@@ -1606,13 +1556,13 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-05-13 09:33:09 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:18 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-13 10:36:46 UTC; unix",
+        "Archs": "farver.so.dSYM"
       }
     },
     "fastmap": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "fastmap",
         "Title": "Fast Data Structures",
@@ -1631,13 +1581,13 @@
         "Maintainer": "Winston Chang <winston@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-05-15 09:00:07 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:16 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-15 11:48:37 UTC; unix",
+        "Archs": "fastmap.so.dSYM"
       }
     },
     "fontawesome": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "fontawesome",
@@ -1661,12 +1611,12 @@
         "Maintainer": "Richard Iannone <rich@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2023-08-19 04:52:40 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 01:15:01 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-08 00:38:08 UTC; unix"
       }
     },
     "formatR": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "formatR",
         "Type": "Package",
@@ -1688,12 +1638,12 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "CRAN",
         "Date/Publication": "2023-01-17 22:30:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 00:31:43 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:22:06 UTC; unix"
       }
     },
     "fs": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "fs",
         "Title": "Cross-Platform File System Operations Based on 'libuv'",
@@ -1721,13 +1671,13 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-04-25 12:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:18 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-25 13:53:34 UTC; unix",
+        "Archs": "fs.so.dSYM"
       }
     },
     "futile.logger": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "futile.logger",
         "Type": "Package",
@@ -1749,12 +1699,12 @@
         "Packaged": "2016-07-10 13:44:30 UTC; brian",
         "Repository": "CRAN",
         "Date/Publication": "2016-07-10 16:57:47",
-        "Built": "R 4.4.0; ; 2024-05-28 01:28:46 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-08 00:48:14 UTC; unix"
       }
     },
     "futile.options": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "futile.options",
         "Type": "Package",
@@ -1771,12 +1721,12 @@
         "Packaged": "2018-04-20 16:08:58 UTC; brian",
         "Repository": "CRAN",
         "Date/Publication": "2018-04-20 22:04:12 UTC",
-        "Built": "R 4.4.0; ; 2024-04-23 00:26:20 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:22:06 UTC; unix"
       }
     },
     "generics": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "generics",
         "Title": "Common S3 Generics not Provided by Base R Methods Related to\nModel Fitting",
@@ -1799,12 +1749,12 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-07-05 19:40:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 00:23:18 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:06:51 UTC; unix"
       }
     },
     "ggbeeswarm": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "ggbeeswarm",
         "Type": "Package",
@@ -1827,12 +1777,12 @@
         "Maintainer": "Erik Clarke <erikclarke@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2023-04-29 21:40:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 01:59:32 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-06-01 00:26:52 UTC; unix"
       }
     },
     "ggplot2": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "ggplot2",
         "Version": "3.5.1",
@@ -1859,12 +1809,12 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-04-23 08:00:08 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 01:44:56 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-31 22:40:03 UTC; unix"
       }
     },
     "ggrastr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "ggrastr",
         "Type": "Package",
@@ -1887,15 +1837,15 @@
         "Packaged": "2023-06-01 05:31:06 UTC; evanbiederstedt",
         "Repository": "CRAN",
         "Date/Publication": "2023-06-01 06:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 02:06:57 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-06-01 13:29:21 UTC; unix"
       }
     },
     "ggrepel": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "ggrepel",
-        "Version": "0.9.6",
+        "Version": "0.9.5",
         "Authors@R": "c(\n    person(\"Kamil\", \"Slowikowski\", email = \"kslowikowski@gmail.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-2843-6370\")),\n    person(\"Alicia\", \"Schep\", role = \"ctb\", comment = c(ORCID = \"0000-0002-3915-0618\")),\n    person(\"Sean\", \"Hughes\", role = \"ctb\", comment = c(ORCID = \"0000-0002-9409-9405\")),\n    person(\"Trung Kien\", \"Dang\", role = \"ctb\", comment = c(ORCID = \"0000-0001-7562-6495\")),\n    person(\"Saulius\", \"Lukauskas\", role = \"ctb\"),\n    person(\"Jean-Olivier\", \"Irisson\", role = \"ctb\", comment = c(ORCID = \"0000-0003-4920-3880\")),\n    person(\"Zhian N\", \"Kamvar\", role = \"ctb\", comment = c(ORCID = \"0000-0003-1458-7108\")),\n    person(\"Thompson\", \"Ryan\", role = \"ctb\", comment = c(ORCID = \"0000-0002-0450-8181\")),\n    person(\"Dervieux\", \"Christophe\", role = \"ctb\", comment = c(ORCID = \"0000-0003-4474-2498\")),\n    person(\"Yutani\", \"Hiroaki\", role = \"ctb\"),\n    person(\"Pierre\", \"Gramme\", role = \"ctb\"),\n    person(\"Amir Masoud\", \"Abdol\", role = \"ctb\"),\n    person(\"Malcolm\", \"Barrett\", role = \"ctb\", comment = c(ORCID = \"0000-0003-0299-5825\")),\n    person(\"Robrecht\", \"Cannoodt\", role = \"ctb\", comment = c(ORCID = \"0000-0003-3641-729X\")),\n    person(\"Michał\", \"Krassowski\", role = \"ctb\", comment = c(ORCID = \"0000-0002-9638-7785\")),\n    person(\"Michael\", \"Chirico\", role = \"ctb\", comment = c(ORCID = \"0000-0003-0787-087X\")),\n    person(\"Pedro\", \"Aphalo\", role = \"ctb\", comment = c(ORCID = \"0000-0003-3385-972X\")),\n    person(\"Francis\", \"Barton\", role = \"ctb\")\n    )",
         "Title": "Automatically Position Non-Overlapping Text Labels with\n'ggplot2'",
         "Description": "Provides text and label geoms for 'ggplot2' that help to avoid\n    overlapping text labels. Labels repel away from each other and away from the\n    data points.",
@@ -1906,22 +1856,22 @@
         "License": "GPL-3 | file LICENSE",
         "URL": "https://ggrepel.slowkow.com/, https://github.com/slowkow/ggrepel",
         "BugReports": "https://github.com/slowkow/ggrepel/issues",
-        "RoxygenNote": "7.3.1",
+        "RoxygenNote": "7.2.3",
         "LinkingTo": "Rcpp",
         "Encoding": "UTF-8",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-09-07 20:12:01 UTC; ks38",
+        "Packaged": "2024-01-10 16:39:29 UTC; ks38",
         "Author": "Kamil Slowikowski [aut, cre] (<https://orcid.org/0000-0002-2843-6370>),\n  Alicia Schep [ctb] (<https://orcid.org/0000-0002-3915-0618>),\n  Sean Hughes [ctb] (<https://orcid.org/0000-0002-9409-9405>),\n  Trung Kien Dang [ctb] (<https://orcid.org/0000-0001-7562-6495>),\n  Saulius Lukauskas [ctb],\n  Jean-Olivier Irisson [ctb] (<https://orcid.org/0000-0003-4920-3880>),\n  Zhian N Kamvar [ctb] (<https://orcid.org/0000-0003-1458-7108>),\n  Thompson Ryan [ctb] (<https://orcid.org/0000-0002-0450-8181>),\n  Dervieux Christophe [ctb] (<https://orcid.org/0000-0003-4474-2498>),\n  Yutani Hiroaki [ctb],\n  Pierre Gramme [ctb],\n  Amir Masoud Abdol [ctb],\n  Malcolm Barrett [ctb] (<https://orcid.org/0000-0003-0299-5825>),\n  Robrecht Cannoodt [ctb] (<https://orcid.org/0000-0003-3641-729X>),\n  Michał Krassowski [ctb] (<https://orcid.org/0000-0002-9638-7785>),\n  Michael Chirico [ctb] (<https://orcid.org/0000-0003-0787-087X>),\n  Pedro Aphalo [ctb] (<https://orcid.org/0000-0003-3385-972X>),\n  Francis Barton [ctb]",
         "Maintainer": "Kamil Slowikowski <kslowikowski@gmail.com>",
         "Repository": "CRAN",
-        "Date/Publication": "2024-09-07 21:50:02 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 02:18:51 UTC; windows",
-        "Archs": "x64"
+        "Date/Publication": "2024-01-10 21:03:02 UTC",
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-06-01 10:50:09 UTC; unix",
+        "Archs": "ggrepel.so.dSYM"
       }
     },
     "glue": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "glue",
         "Title": "Interpreted String Literals",
@@ -1946,13 +1896,13 @@
         "Maintainer": "Jennifer Bryan <jenny@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-01-09 23:13:08 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:16 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:06:51 UTC; unix",
+        "Archs": "glue.so.dSYM"
       }
     },
     "gridExtra": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "gridExtra",
         "Authors@R": "c(person(\"Baptiste\", \"Auguie\",\n    email = \"baptiste.auguie@gmail.com\",\n    role = c(\"aut\", \"cre\")), person(\"Anton\", \"Antonov\",\n    email = \"tonytonov@gmail.com\",\n    role = c(\"ctb\")))",
@@ -1971,12 +1921,12 @@
         "Maintainer": "Baptiste Auguie <baptiste.auguie@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2017-09-09 14:12:08 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 01:28:22 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-08 00:38:57 UTC; unix"
       }
     },
     "gtable": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "gtable",
         "Title": "Arrange 'Grobs' in Tables",
@@ -2000,12 +1950,12 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-04-22 20:40:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 01:15:00 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-23 00:02:08 UTC; unix"
       }
     },
     "htmltools": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "htmltools",
@@ -2031,13 +1981,13 @@
         "Maintainer": "Carson Sievert <carson@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-04-04 05:03:00 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:56:37 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 22:37:13 UTC; unix",
+        "Archs": "htmltools.so.dSYM"
       }
     },
     "httpuv": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "httpuv",
@@ -2062,13 +2012,13 @@
         "Maintainer": "Winston Chang <winston@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-03-26 05:50:06 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 01:28:23 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-31 13:10:07 UTC; unix",
+        "Archs": "httpuv.so.dSYM"
       }
     },
     "httr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "httr",
         "Title": "Tools for Working with URLs and HTTP",
@@ -2091,12 +2041,12 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2023-08-15 09:00:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 01:28:23 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-08 02:11:06 UTC; unix"
       }
     },
     "irlba": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "irlba",
         "Type": "Package",
@@ -2117,13 +2067,13 @@
         "Maintainer": "B. W. Lewis <blewis@illposed.net>",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-03 18:38:49 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-28 01:29:26 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 23:05:34 UTC; unix",
+        "Archs": "irlba.so.dSYM"
       }
     },
     "isoband": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "isoband",
         "Title": "Generate Isolines and Isobands from Regularly Spaced Elevation\nGrids",
@@ -2147,13 +2097,13 @@
         "Maintainer": "Hadley Wickham <hadley@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2022-12-20 10:00:13 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:19 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:07:07 UTC; unix",
+        "Archs": "isoband.so.dSYM"
       }
     },
     "jquerylib": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "jquerylib",
         "Title": "Obtain 'jQuery' as an HTML Dependency Object",
@@ -2172,39 +2122,39 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-04-26 17:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 01:15:01 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-08 00:38:10 UTC; unix"
       }
     },
     "jsonlite": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "jsonlite",
-        "Version": "1.8.9",
+        "Version": "1.8.8",
         "Title": "A Simple and Robust JSON Parser and Generator for R",
         "License": "MIT + file LICENSE",
         "Depends": "methods",
-        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroenooms@gmail.com\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Duncan\", \"Temple Lang\", role = \"ctb\"),\n    person(\"Lloyd\", \"Hilaiel\", role = \"cph\", comment=\"author of bundled libyajl\"))",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Duncan\", \"Temple Lang\", role = \"ctb\"),\n    person(\"Lloyd\", \"Hilaiel\", role = \"cph\", comment=\"author of bundled libyajl\"))",
         "URL": "https://jeroen.r-universe.dev/jsonlite\nhttps://arxiv.org/abs/1403.2805",
         "BugReports": "https://github.com/jeroen/jsonlite/issues",
-        "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
+        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "VignetteBuilder": "knitr, R.rsp",
         "Description": "A reasonably fast JSON parser and generator, optimized for statistical \n    data and the web. Offers simple, flexible tools for working with JSON in R, and\n    is particularly powerful for building pipelines and interacting with a web API. \n    The implementation is based on the mapping described in the vignette (Ooms, 2014).\n    In addition to converting JSON data from/to R objects, 'jsonlite' contains \n    functions to stream, validate, and prettify JSON data. The unit tests included \n    with the package verify that all edge cases are encoded and decoded consistently \n    for use with dynamic data in systems and applications.",
         "Suggests": "httr, vctrs, testthat, knitr, rmarkdown, R.rsp, sf",
         "RoxygenNote": "7.2.3",
         "Encoding": "UTF-8",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-09-19 15:41:06 UTC; jeroen",
+        "Packaged": "2023-12-04 12:57:12 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Duncan Temple Lang [ctb],\n  Lloyd Hilaiel [cph] (author of bundled libyajl)",
         "Repository": "CRAN",
-        "Date/Publication": "2024-09-20 08:40:14 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 00:26:10 UTC; windows",
-        "Archs": "x64"
+        "Date/Publication": "2023-12-04 15:20:02 UTC",
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:07:26 UTC; unix",
+        "Archs": "jsonlite.so.dSYM"
       }
     },
     "labeling": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "labeling",
         "Type": "Package",
@@ -2221,12 +2171,12 @@
         "Packaged": "2023-08-29 21:01:57 UTC; loki",
         "Repository": "CRAN",
         "Date/Publication": "2023-08-29 22:20:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-23 00:24:00 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:07:11 UTC; unix"
       }
     },
     "lambda.r": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "lambda.r",
         "Type": "Package",
@@ -2245,12 +2195,12 @@
         "Packaged": "2019-09-15 08:08:15 UTC; brian",
         "Repository": "CRAN",
         "Date/Publication": "2019-09-18 14:30:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 01:11:09 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 22:46:12 UTC; unix"
       }
     },
     "later": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "later",
         "Type": "Package",
@@ -2273,13 +2223,13 @@
         "Maintainer": "Winston Chang <winston@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2023-12-06 09:10:05 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:56:39 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 22:54:03 UTC; unix",
+        "Archs": "later.so.dSYM"
       }
     },
     "lattice": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "lattice",
         "Version": "0.22-6",
@@ -2303,13 +2253,12 @@
         "Maintainer": "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
         "Repository": "CRAN",
         "Date/Publication": "2024-03-20 06:10:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-04-24 08:28:40 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-24 18:04:39 UTC; unix"
       }
     },
     "lifecycle": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "lifecycle",
         "Title": "Manage the Life Cycle of your Package Functions",
@@ -2333,12 +2282,12 @@
         "Maintainer": "Lionel Henry <lionel@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2023-11-07 10:10:10 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 00:56:36 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 22:37:06 UTC; unix"
       }
     },
     "magrittr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "magrittr",
@@ -2362,16 +2311,16 @@
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-03-30 07:30:09 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:17 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:06:51 UTC; unix",
+        "Archs": "magrittr.so.dSYM"
       }
     },
     "matrixStats": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "matrixStats",
-        "Version": "1.4.1",
+        "Version": "1.3.0",
         "Depends": "R (>= 2.12.0)",
         "Suggests": "utils, base64enc, ggplot2, knitr, markdown, microbenchmark,\nR.devices, R.rsp",
         "VignetteBuilder": "R.rsp",
@@ -2386,17 +2335,17 @@
         "ByteCompile": "TRUE",
         "URL": "https://github.com/HenrikBengtsson/matrixStats",
         "BugReports": "https://github.com/HenrikBengtsson/matrixStats/issues",
-        "RoxygenNote": "7.3.2",
-        "Packaged": "2024-09-07 01:28:08 UTC; henrik",
+        "RoxygenNote": "7.3.1",
+        "Packaged": "2024-04-10 19:34:08 UTC; henrik",
         "Repository": "CRAN",
-        "Date/Publication": "2024-09-08 08:40:02 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 00:27:17 UTC; windows",
-        "Archs": "x64"
+        "Date/Publication": "2024-04-11 08:10:15 UTC",
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-11 09:37:29 UTC; unix",
+        "Archs": "matrixStats.so.dSYM"
       }
     },
     "memoise": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "memoise",
         "Title": "'Memoisation' of Functions",
@@ -2416,12 +2365,12 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-11-26 16:11:10 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 01:14:58 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 22:37:13 UTC; unix"
       }
     },
     "mgcv": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "mgcv",
         "Version": "1.9-1",
@@ -2440,13 +2389,12 @@
         "Packaged": "2023-12-20 10:39:06 UTC; sw283",
         "Repository": "CRAN",
         "Date/Publication": "2023-12-21 00:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-04-24 08:34:43 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-24 18:06:09 UTC; unix"
       }
     },
     "mime": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "mime",
         "Type": "Package",
@@ -2466,13 +2414,13 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "CRAN",
         "Date/Publication": "2021-09-28 05:00:05 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-04-23 00:24:00 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:07:23 UTC; unix",
+        "Archs": "mime.so.dSYM"
       }
     },
     "munsell": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "munsell",
         "Type": "Package",
@@ -2492,24 +2440,24 @@
         "Packaged": "2024-04-01 20:42:09 UTC; charlottewickham",
         "Repository": "CRAN",
         "Date/Publication": "2024-04-01 23:40:10 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 00:56:37 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 22:37:12 UTC; unix"
       }
     },
     "nlme": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "nlme",
-        "Version": "3.1-164",
-        "Date": "2023-11-27",
+        "Version": "3.1-166",
+        "Date": "2024-08-13",
         "Priority": "recommended",
         "Title": "Linear and Nonlinear Mixed Effects Models",
         "Authors@R": "c(person(\"José\", \"Pinheiro\", role = \"aut\", comment = \"S version\"),\n             person(\"Douglas\", \"Bates\", role = \"aut\", comment = \"up to 2007\"),\n             person(\"Saikat\", \"DebRoy\", role = \"ctb\", comment = \"up to 2002\"),\n             person(\"Deepayan\", \"Sarkar\", role = \"ctb\", comment = \"up to 2005\"),\n             person(\"EISPACK authors\", role = \"ctb\", comment = \"src/rs.f\"),\n\t     person(\"Siem\", \"Heisterkamp\", role = \"ctb\", comment = \"Author fixed sigma\"),\n             person(\"Bert\", \"Van Willigen\",role = \"ctb\", comment = \"Programmer fixed sigma\"),\n             person(\"Johannes\", \"Ranke\", role = \"ctb\", comment = \"varConstProp()\"),\n\t     person(\"R Core Team\", email = \"R-core@R-project.org\",\n                    role = c(\"aut\", \"cre\")))",
         "Contact": "see 'MailingList'",
         "Description": "Fit and compare Gaussian linear and nonlinear mixed-effects models.",
-        "Depends": "R (>= 3.5.0)",
+        "Depends": "R (>= 3.6.0)",
         "Imports": "graphics, stats, utils, lattice",
-        "Suggests": "Hmisc, MASS, SASmixed",
+        "Suggests": "MASS, SASmixed",
         "LazyData": "yes",
         "Encoding": "UTF-8",
         "License": "GPL (>= 2)",
@@ -2517,24 +2465,24 @@
         "MailingList": "R-help@r-project.org",
         "URL": "https://svn.r-project.org/R-packages/trunk/nlme/",
         "NeedsCompilation": "yes",
-        "Packaged": "2023-11-27 10:37:08 UTC; hornik",
+        "Packaged": "2024-08-14 04:26:18 UTC; hornik",
         "Author": "José Pinheiro [aut] (S version),\n  Douglas Bates [aut] (up to 2007),\n  Saikat DebRoy [ctb] (up to 2002),\n  Deepayan Sarkar [ctb] (up to 2005),\n  EISPACK authors [ctb] (src/rs.f),\n  Siem Heisterkamp [ctb] (Author fixed sigma),\n  Bert Van Willigen [ctb] (Programmer fixed sigma),\n  Johannes Ranke [ctb] (varConstProp()),\n  R Core Team [aut, cre]",
         "Maintainer": "R Core Team <R-core@R-project.org>",
         "Repository": "CRAN",
-        "Date/Publication": "2023-11-27 15:26:12 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-04-24 08:32:46 UTC; windows",
-        "Archs": "x64"
+        "Date/Publication": "2024-08-14 06:36:33 UTC",
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-08-16 05:02:36 UTC; unix",
+        "Archs": "nlme.so.dSYM"
       }
     },
     "openssl": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "openssl",
         "Type": "Package",
         "Title": "Toolkit for Encryption, Signatures and Certificates Based on\nOpenSSL",
-        "Version": "2.2.2",
-        "Authors@R": "c(person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroenooms@gmail.com\",\n    comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Oliver\", \"Keyes\", role = \"ctb\"))",
+        "Version": "2.2.1",
+        "Authors@R": "c(person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n    comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Oliver\", \"Keyes\", role = \"ctb\"))",
         "Description": "Bindings to OpenSSL libssl and libcrypto, plus custom SSH key parsers.\n    Supports RSA, DSA and EC curves P-256, P-384, P-521, and curve25519. Cryptographic\n    signatures can either be created and verified manually or via x509 certificates. \n    AES can be used in cbc, ctr or gcm mode for symmetric encryption; RSA for asymmetric\n    (public key) encryption or EC for Diffie Hellman. High-level envelope functions \n    combine RSA and AES for encrypting arbitrary sized data. Other utilities include key\n    generators, hash functions (md5, sha1, sha256, etc), base64 encoder, a secure random\n    number generator, and 'bignum' math methods for manually performing crypto \n    calculations on large multibyte integers.",
         "License": "MIT + file LICENSE",
         "URL": "https://jeroen.r-universe.dev/openssl",
@@ -2546,18 +2494,18 @@
         "RoxygenNote": "7.3.2",
         "Encoding": "UTF-8",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-09-19 16:09:16 UTC; jeroen",
+        "Packaged": "2024-08-16 09:18:50 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Oliver Keyes [ctb]",
-        "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
+        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "CRAN",
-        "Date/Publication": "2024-09-20 08:40:05 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 01:24:15 UTC; windows",
-        "Archs": "x64"
+        "Date/Publication": "2024-08-16 10:00:02 UTC",
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-08-16 15:25:08 UTC; unix",
+        "Archs": "openssl.so.dSYM"
       }
     },
     "pheatmap": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "pheatmap",
         "Type": "Package",
@@ -2576,12 +2524,12 @@
         "Packaged": "2019-01-02 15:37:50 UTC; kolde",
         "Repository": "CRAN",
         "Date/Publication": "2019-01-04 13:50:12 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 01:28:58 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-31 06:48:01 UTC; unix"
       }
     },
     "pillar": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "pillar",
         "Title": "Coloured Formatting for Columns",
@@ -2609,12 +2557,12 @@
         "Maintainer": "Kirill Müller <kirill@cynkra.com>",
         "Repository": "CRAN",
         "Date/Publication": "2023-03-22 08:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 01:28:22 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-08 02:10:56 UTC; unix"
       }
     },
     "pins": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "pins",
@@ -2639,12 +2587,12 @@
         "Maintainer": "Julia Silge <julia.silge@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-10-07 16:00:03 UTC",
-        "Built": "R 4.4.0; ; 2024-10-09 01:45:19 UTC; windows"
+        "Built": "R 4.4.1; ; 2024-10-07 17:45:09 UTC; unix"
       }
     },
     "pkgconfig": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "pkgconfig",
         "Title": "Private Configuration for 'R' Packages",
@@ -2663,12 +2611,12 @@
         "Packaged": "2019-09-22 08:42:40 UTC; gaborcsardi",
         "Repository": "CRAN",
         "Date/Publication": "2019-09-22 09:20:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 00:23:15 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:06:56 UTC; unix"
       }
     },
     "png": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "png",
         "Version": "0.1-8",
@@ -2684,13 +2632,13 @@
         "Packaged": "2022-11-29 09:42:31 UTC; rforge",
         "Repository": "CRAN",
         "Date/Publication": "2022-11-29 11:12:53 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-04-23 00:24:52 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:10:15 UTC; unix",
+        "Archs": "png.so.dSYM"
       }
     },
     "promises": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "promises",
@@ -2715,13 +2663,13 @@
         "Maintainer": "Joe Cheng <joe@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-04-05 15:00:06 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 01:15:06 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-08 00:38:01 UTC; unix",
+        "Archs": "promises.so.dSYM"
       }
     },
     "purrr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "purrr",
         "Title": "Functional Programming Tools",
@@ -2747,18 +2695,18 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2023-08-10 08:20:07 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 01:28:31 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-08 00:39:07 UTC; unix",
+        "Archs": "purrr.so.dSYM"
       }
     },
     "ragg": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "ragg",
         "Title": "Graphic Devices Based on AGG",
-        "Version": "1.3.3",
+        "Version": "1.3.2",
         "Authors@R": "c(\n    person(\"Thomas Lin\", \"Pedersen\", , \"thomas.pedersen@posit.co\", role = c(\"cre\", \"aut\"),\n           comment = c(ORCID = \"0000-0002-5147-4711\")),\n    person(\"Maxim\", \"Shemanarev\", role = c(\"aut\", \"cph\"),\n           comment = \"Author of AGG\"),\n    person(\"Tony\", \"Juricic\", , \"tonygeek@yahoo.com\", role = c(\"ctb\", \"cph\"),\n           comment = \"Contributor to AGG\"),\n    person(\"Milan\", \"Marusinec\", , \"milan@marusinec.sk\", role = c(\"ctb\", \"cph\"),\n           comment = \"Contributor to AGG\"),\n    person(\"Spencer\", \"Garrett\", role = \"ctb\",\n           comment = \"Contributor to AGG\"),\n    person(\"Posit, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Description": "Anti-Grain Geometry (AGG) is a high-quality and\n    high-performance 2D drawing library. The 'ragg' package provides a set\n    of graphic devices based on AGG to use as alternative to the raster\n    devices provided through the 'grDevices' package.",
@@ -2774,17 +2722,17 @@
         "SystemRequirements": "freetype2, libpng, libtiff, libjpeg",
         "Config/testthat/edition": "3",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-09-11 08:03:16 UTC; thomas",
+        "Packaged": "2024-05-15 06:29:03 UTC; thomas",
         "Author": "Thomas Lin Pedersen [cre, aut]\n    (<https://orcid.org/0000-0002-5147-4711>),\n  Maxim Shemanarev [aut, cph] (Author of AGG),\n  Tony Juricic [ctb, cph] (Contributor to AGG),\n  Milan Marusinec [ctb, cph] (Contributor to AGG),\n  Spencer Garrett [ctb] (Contributor to AGG),\n  Posit, PBC [cph, fnd]",
         "Repository": "CRAN",
-        "Date/Publication": "2024-09-11 17:50:02 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 01:41:20 UTC; windows",
-        "Archs": "x64"
+        "Date/Publication": "2024-05-15 07:00:02 UTC",
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-15 08:21:24 UTC; unix",
+        "Archs": "ragg.so.dSYM"
       }
     },
     "rappdirs": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "rappdirs",
@@ -2807,13 +2755,44 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-01-31 05:40:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:19 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:07:41 UTC; unix",
+        "Archs": "rappdirs.so.dSYM"
+      }
+    },
+    "renv": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "renv",
+        "Type": "Package",
+        "Title": "Project Environments",
+        "Version": "1.0.11",
+        "Authors@R": "c(\n    person(\"Kevin\", \"Ushey\", role = c(\"aut\", \"cre\"), email = \"kevin@rstudio.com\",\n           comment = c(ORCID = \"0000-0003-2880-7407\")),\n    person(\"Hadley\", \"Wickham\", role = c(\"aut\"), email = \"hadley@rstudio.com\",\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n    )",
+        "Description": "A dependency management toolkit for R. Using 'renv', you can create\n    and manage project-local R libraries, save the state of these libraries to\n    a 'lockfile', and later restore your library as required. Together, these\n    tools can help make your projects more isolated, portable, and reproducible.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://rstudio.github.io/renv/, https://github.com/rstudio/renv",
+        "BugReports": "https://github.com/rstudio/renv/issues",
+        "Imports": "utils",
+        "Suggests": "BiocManager, cli, compiler, covr, cpp11, devtools, gitcreds,\njsonlite, jsonvalidate, knitr, miniUI, modules, packrat, pak,\nR6, remotes, reticulate, rmarkdown, rstudioapi, shiny,\ntestthat, uuid, waldo, yaml, webfakes",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Config/testthat/parallel": "true",
+        "Config/testthat/start-first": "bioconductor,python,install,restore,snapshot,retrieve,remotes",
+        "NeedsCompilation": "no",
+        "Packaged": "2024-10-11 18:36:11 UTC; kevin",
+        "Author": "Kevin Ushey [aut, cre] (<https://orcid.org/0000-0003-2880-7407>),\n  Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>),\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-10-12 07:30:02 UTC",
+        "Built": "R 4.4.1; ; 2024-10-12 09:11:56 UTC; unix"
       }
     },
     "rlang": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "rlang",
         "Version": "1.1.4",
@@ -2839,13 +2818,13 @@
         "Maintainer": "Lionel Henry <lionel@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-06-04 09:45:03 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-09-23 00:26:09 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-06-05 04:08:48 UTC; unix",
+        "Archs": "rlang.so.dSYM"
       }
     },
     "rsvd": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "rsvd",
         "Type": "Package",
@@ -2870,12 +2849,12 @@
         "Packaged": "2021-04-14 17:52:09 UTC; ben",
         "Repository": "CRAN",
         "Date/Publication": "2021-04-16 05:40:03 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 01:32:51 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-31 00:54:19 UTC; unix"
       }
     },
     "sass": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "sass",
@@ -2899,13 +2878,13 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-03-15 22:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 01:15:01 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-08 00:38:16 UTC; unix",
+        "Archs": "sass.so.dSYM"
       }
     },
     "scales": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "scales",
         "Title": "Scale Functions for Visualization",
@@ -2929,7 +2908,7 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2023-11-28 09:10:06 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 01:14:59 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-08 00:37:59 UTC; unix"
       }
     },
     "scater": {
@@ -2938,32 +2917,32 @@
       "description": {
         "Package": "scater",
         "Type": "Package",
-        "Authors@R": "c(\n        person(\"Davis\", \"McCarthy\", role=c(\"aut\"), email=\"davis@ebi.ac.uk\"),\n        person(\"Kieran\", \"Campbell\", role=c(\"aut\"), email=\"kieran.campbell@sjc.ox.ac.uk\"),\n        person(\"Aaron\", \"Lun\", role = c(\"aut\", \"ctb\"), email=\"infinite.monkeys.with.keyboards@gmail.com\"),\n        person(\"Quin\", \"Wills\", role=c(\"aut\"), email=\"qilin@quinwills.net\"),\n        person(\"Vladimir\", \"Kiselev\", role=c(\"ctb\"), email=\"vk6@sanger.ac.uk\"),\n        person(\"Felix G.M.\", \"Ernst\", role=c(\"ctb\"), email=\"felix.gm.ernst@outlook.com\"),\n        person(\"Alan\", \"O'Callaghan\", role=c(\"ctb\", \"cre\"), email=\"alan.ocallaghan@outlook.com\"),\n        person(\"Yun\", \"Peng\", role=c(\"ctb\"), email=\"yunyunp96@gmail.com\"),\n        person(\"Leo\", \"Lahti\", role=c(\"ctb\"), email=\"leo.lahti@utu.fi\",\n\t             comment = c(ORCID = \"0000-0001-5537-637X\"))\n\t)",
-        "Version": "1.32.1",
+        "Authors@R": "c(\n        person(\"Davis\", \"McCarthy\", role=c(\"aut\"), email=\"davis@ebi.ac.uk\"),\n        person(\"Kieran\", \"Campbell\", role=c(\"aut\"), email=\"kieran.campbell@sjc.ox.ac.uk\"),\n        person(\"Aaron\", \"Lun\", role = c(\"aut\", \"ctb\"), email=\"infinite.monkeys.with.keyboards@gmail.com\"),\n        person(\"Quin\", \"Wills\", role=c(\"aut\"), email=\"qilin@quinwills.net\"),\n        person(\"Vladimir\", \"Kiselev\", role=c(\"ctb\"), email=\"vk6@sanger.ac.uk\"),\n        person(\"Felix G.M.\", \"Ernst\", role=c(\"ctb\"), email=\"felix.gm.ernst@outlook.com\"),\n        person(\"Alan\", \"O'Callaghan\", role=c(\"ctb\", \"cre\"), email=\"alan.ocallaghan@outlook.com\"),\n        person(\"Yun\", \"Peng\", role=c(\"ctb\"), email=\"yunyunp96@gmail.com\"),\n        person(\"Leo\", \"Lahti\", role=c(\"ctb\"), email=\"leo.lahti@utu.fi\", comment = c(ORCID = \"0000-0001-5537-637X\")),\n        person(\"Tuomas\", \"Borman\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0002-8563-8884\"))\n    )",
+        "Version": "1.33.4",
         "Date": "2024-07-18",
         "License": "GPL-3",
         "Title": "Single-Cell Analysis Toolkit for Gene Expression Data in R",
         "Description": "A collection of tools for doing various analyses of\n        single-cell RNA-seq gene expression data, with a focus on\n        quality control and visualization.",
         "Depends": "SingleCellExperiment, scuttle, ggplot2",
-        "Imports": "stats, utils, methods, Matrix, BiocGenerics, S4Vectors,\nSummarizedExperiment, DelayedArray, MatrixGenerics, beachmat,\nBiocNeighbors, BiocSingular, BiocParallel, rlang, ggbeeswarm,\nviridis, Rtsne, RColorBrewer, RcppML, uwot, pheatmap, ggrepel,\nggrastr",
-        "Suggests": "BiocStyle, snifter, densvis, cowplot, biomaRt, knitr,\nscRNAseq, robustbase, rmarkdown, testthat, Biobase, scattermore",
+        "Imports": "stats, utils, methods, Matrix, BiocGenerics, S4Vectors,\nSummarizedExperiment, MatrixGenerics, SparseArray,\nDelayedArray, beachmat, BiocNeighbors, BiocSingular,\nBiocParallel, rlang, ggbeeswarm, viridis, Rtsne, RColorBrewer,\nRcppML, uwot, pheatmap, ggrepel, ggrastr",
+        "Suggests": "BiocStyle, DelayedMatrixStats, snifter, densvis, cowplot,\nbiomaRt, knitr, scRNAseq, robustbase, rmarkdown, testthat,\nBiobase, scattermore",
         "VignetteBuilder": "knitr",
         "biocViews": "ImmunoOncology, SingleCell, RNASeq, QualityControl,\nPreprocessing, Normalization, Visualization,\nDimensionReduction, Transcriptomics, GeneExpression,\nSequencing, Software, DataImport, DataRepresentation,\nInfrastructure, Coverage",
         "Encoding": "UTF-8",
-        "RoxygenNote": "7.3.1",
+        "RoxygenNote": "7.3.2",
         "URL": "http://bioconductor.org/packages/scater/",
         "BugReports": "https://support.bioconductor.org/",
         "git_url": "https://git.bioconductor.org/packages/scater",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "0ad51ab",
+        "git_branch": "devel",
+        "git_last_commit": "d14427e",
         "git_last_commit_date": "2024-07-18",
-        "Repository": "Bioconductor 3.19",
+        "Repository": "Bioconductor 3.20",
         "Date/Publication": "2024-07-21",
         "NeedsCompilation": "no",
-        "Packaged": "2024-07-22 01:54:36 UTC; biocbuild",
-        "Author": "Davis McCarthy [aut],\n  Kieran Campbell [aut],\n  Aaron Lun [aut, ctb],\n  Quin Wills [aut],\n  Vladimir Kiselev [ctb],\n  Felix G.M. Ernst [ctb],\n  Alan O'Callaghan [ctb, cre],\n  Yun Peng [ctb],\n  Leo Lahti [ctb] (<https://orcid.org/0000-0001-5537-637X>)",
+        "Packaged": "2024-07-21 22:15:10 UTC; biocbuild",
+        "Author": "Davis McCarthy [aut],\n  Kieran Campbell [aut],\n  Aaron Lun [aut, ctb],\n  Quin Wills [aut],\n  Vladimir Kiselev [ctb],\n  Felix G.M. Ernst [ctb],\n  Alan O'Callaghan [ctb, cre],\n  Yun Peng [ctb],\n  Leo Lahti [ctb] (<https://orcid.org/0000-0001-5537-637X>),\n  Tuomas Borman [ctb] (<https://orcid.org/0000-0002-8563-8884>)",
         "Maintainer": "Alan O'Callaghan <alan.ocallaghan@outlook.com>",
-        "Built": "R 4.4.1; ; 2024-07-22 13:08:34 UTC; windows"
+        "Built": "R 4.4.1; ; 2024-07-22 06:01:20 UTC; unix"
       }
     },
     "scuttle": {
@@ -2973,36 +2952,36 @@
         "Package": "scuttle",
         "Type": "Package",
         "Authors@R": "c(\n        person(\"Aaron\", \"Lun\", role = c(\"aut\", \"cre\"), email=\"infinite.monkeys.with.keyboards@gmail.com\"),\n        person(\"Davis\", \"McCarthy\", role=\"aut\")\n    )",
-        "Version": "1.14.0",
-        "Date": "2024-03-05",
+        "Version": "1.15.4",
+        "Date": "2024-08-13",
         "License": "GPL-3",
         "Title": "Single-Cell RNA-Seq Analysis Utilities",
         "Description": "\n    Provides basic utility functions for performing single-cell analyses,\n    focusing on simple normalization, quality control and data transformations.\n    Also provides some helper functions to assist development of other packages.",
         "Depends": "SingleCellExperiment",
-        "Imports": "methods, utils, stats, Matrix, Rcpp, BiocGenerics, S4Vectors,\nBiocParallel, GenomicRanges, SummarizedExperiment,\nDelayedArray, DelayedMatrixStats, beachmat",
-        "Suggests": "BiocStyle, knitr, scRNAseq, rmarkdown, testthat, scran",
+        "Imports": "methods, utils, stats, Matrix, Rcpp, BiocGenerics, S4Vectors,\nBiocParallel, GenomicRanges, SummarizedExperiment, S4Arrays,\nMatrixGenerics, SparseArray, DelayedArray, beachmat",
+        "Suggests": "BiocStyle, knitr, scRNAseq, rmarkdown, testthat,\nsparseMatrixStats, DelayedMatrixStats, scran",
         "VignetteBuilder": "knitr",
         "biocViews": "ImmunoOncology, SingleCell, RNASeq, QualityControl,\nPreprocessing, Normalization, Transcriptomics, GeneExpression,\nSequencing, Software, DataImport",
         "LinkingTo": "Rcpp, beachmat",
         "SystemRequirements": "C++11",
-        "RoxygenNote": "7.2.3",
+        "RoxygenNote": "7.3.2",
+        "Encoding": "UTF-8",
         "NeedsCompilation": "yes",
         "git_url": "https://git.bioconductor.org/packages/scuttle",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "7e2bcae",
-        "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-01",
-        "Packaged": "2024-05-02 01:52:46 UTC; biocbuild",
+        "git_branch": "devel",
+        "git_last_commit": "407eacb",
+        "git_last_commit_date": "2024-08-13",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-08-21",
+        "Packaged": "2024-08-21 22:52:33 UTC; biocbuild",
         "Author": "Aaron Lun [aut, cre],\n  Davis McCarthy [aut]",
         "Maintainer": "Aaron Lun <infinite.monkeys.with.keyboards@gmail.com>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-02 13:30:38 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-08-22 05:35:39 UTC; unix"
       }
     },
     "shiny": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "shiny",
         "Type": "Package",
@@ -3028,12 +3007,12 @@
         "Maintainer": "Winston Chang <winston@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-08-01 10:50:02 UTC",
-        "Built": "R 4.4.1; ; 2024-09-23 01:51:09 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-08-01 16:36:55 UTC; unix"
       }
     },
     "sitmo": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "sitmo",
         "Title": "Parallel Pseudo Random Number Generator (PPRNG) 'sitmo' Header\nFiles",
@@ -3056,13 +3035,13 @@
         "Maintainer": "James Balamuta <balamut2@illinois.edu>",
         "Repository": "CRAN",
         "Date/Publication": "2021-10-13 04:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-28 00:32:43 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 07:20:45 UTC; unix",
+        "Archs": "sitmo.so.dSYM"
       }
     },
     "snow": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "snow",
         "Title": "Simple Network of Workstations",
@@ -3078,12 +3057,12 @@
         "Packaged": "2021-10-26 17:36:46 UTC; luke",
         "Repository": "CRAN",
         "Date/Publication": "2021-10-27 14:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-04-23 00:25:54 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:13:34 UTC; unix"
       }
     },
     "sourcetools": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "sourcetools",
         "Type": "Package",
@@ -3102,49 +3081,13 @@
         "Packaged": "2023-01-31 18:03:04 UTC; kevin",
         "Repository": "CRAN",
         "Date/Publication": "2023-02-01 10:10:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-28 00:30:44 UTC; windows",
-        "Archs": "x64"
-      }
-    },
-    "sparseMatrixStats": {
-      "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
-      "description": {
-        "Package": "sparseMatrixStats",
-        "Type": "Package",
-        "Title": "Summary Statistics for Rows and Columns of Sparse Matrices",
-        "Version": "1.16.0",
-        "Authors@R": "person(\"Constantin\", \"Ahlmann-Eltze\", email = \"artjom31415@googlemail.com\", \n                  role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-3762-068X\"))",
-        "Description": "High performance functions for row and column operations on sparse matrices.\n    For example: col / rowMeans2, col / rowMedians, col / rowVars etc. Currently,\n    the optimizations are limited to data in the column sparse format. \n    This package is inspired by the matrixStats package by Henrik Bengtsson.",
-        "License": "MIT + file LICENSE",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.3.1",
-        "LinkingTo": "Rcpp",
-        "Imports": "Rcpp, Matrix, matrixStats (>= 0.60.0), methods",
-        "Depends": "MatrixGenerics (>= 1.5.3)",
-        "Suggests": "testthat (>= 2.1.0), knitr, bench, rmarkdown, BiocStyle",
-        "SystemRequirements": "C++11",
-        "VignetteBuilder": "knitr",
-        "URL": "https://github.com/const-ae/sparseMatrixStats",
-        "BugReports": "https://github.com/const-ae/sparseMatrixStats/issues",
-        "biocViews": "Infrastructure, Software, DataRepresentation",
-        "git_url": "https://git.bioconductor.org/packages/sparseMatrixStats",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "2ad650c",
-        "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-01",
-        "NeedsCompilation": "yes",
-        "Packaged": "2024-05-02 02:04:08 UTC; biocbuild",
-        "Author": "Constantin Ahlmann-Eltze [aut, cre]\n    (<https://orcid.org/0000-0002-3762-068X>)",
-        "Maintainer": "Constantin Ahlmann-Eltze <artjom31415@googlemail.com>",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-02 13:34:23 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-30 05:43:47 UTC; unix",
+        "Archs": "sourcetools.so.dSYM"
       }
     },
     "sys": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "sys",
         "Type": "Package",
@@ -3165,13 +3108,13 @@
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "CRAN",
         "Date/Publication": "2023-05-23 07:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:31 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:08:53 UTC; unix",
+        "Archs": "sys.so.dSYM"
       }
     },
     "systemfonts": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Type": "Package",
         "Package": "systemfonts",
@@ -3197,13 +3140,13 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-05-15 11:10:03 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 01:15:06 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-15 12:14:38 UTC; unix",
+        "Archs": "systemfonts.so.dSYM"
       }
     },
     "textshaping": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "textshaping",
         "Title": "Bindings to the 'HarfBuzz' and 'Fribidi' Libraries for Text\nShaping",
@@ -3227,13 +3170,13 @@
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-05-24 09:00:03 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-24 23:50:38 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-24 12:50:35 UTC; unix",
+        "Archs": "textshaping.so.dSYM"
       }
     },
     "tibble": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "tibble",
         "Title": "Simple Data Frames",
@@ -3262,13 +3205,13 @@
         "Maintainer": "Kirill Müller <kirill@cynkra.com>",
         "Repository": "CRAN",
         "Date/Publication": "2023-03-20 06:30:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 01:38:32 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-08 02:45:24 UTC; unix",
+        "Archs": "tibble.so.dSYM"
       }
     },
     "utf8": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "utf8",
         "Title": "Unicode Text Processing",
@@ -3290,13 +3233,13 @@
         "Maintainer": "Kirill Müller <kirill@cynkra.com>",
         "Repository": "CRAN",
         "Date/Publication": "2023-10-22 21:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 00:23:19 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-07 20:06:55 UTC; unix",
+        "Archs": "utf8.so.dSYM"
       }
     },
     "uwot": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "uwot",
         "Title": "The Uniform Manifold Approximation and Projection (UMAP) Method\nfor Dimensionality Reduction",
@@ -3320,13 +3263,13 @@
         "Maintainer": "James Melville <jlmelville@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2024-04-21 21:20:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-28 01:43:37 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-05-31 07:12:34 UTC; unix",
+        "Archs": "uwot.so.dSYM"
       }
     },
     "vctrs": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "vctrs",
         "Title": "Vector Helpers",
@@ -3351,13 +3294,13 @@
         "Maintainer": "Davis Vaughan <davis@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2023-12-01 23:50:02 UTC",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-25 01:14:57 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-04-08 00:37:49 UTC; unix",
+        "Archs": "vctrs.so.dSYM"
       }
     },
     "vipor": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "vipor",
         "Type": "Package",
@@ -3377,12 +3320,12 @@
         "Packaged": "2023-12-16 03:56:56 UTC; scott",
         "Repository": "CRAN",
         "Date/Publication": "2023-12-18 14:30:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 00:33:58 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-30 09:35:39 UTC; unix"
       }
     },
     "viridis": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "viridis",
         "Type": "Package",
@@ -3407,12 +3350,12 @@
         "Author": "Simon Garnier [aut, cre],\n  Noam Ross [ctb, cph],\n  Bob Rudis [ctb, cph],\n  Marco Sciaini [ctb, cph],\n  Antônio Pedro Camargo [ctb, cph],\n  Cédric Scherer [ctb, cph]",
         "Repository": "CRAN",
         "Date/Publication": "2024-01-29 10:10:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 02:17:42 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-08 04:51:33 UTC; unix"
       }
     },
     "viridisLite": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "viridisLite",
         "Type": "Package",
@@ -3434,12 +3377,12 @@
         "Author": "Simon Garnier [aut, cre],\n  Noam Ross [ctb, cph],\n  Bob Rudis [ctb, cph],\n  Marco Sciaini [ctb, cph],\n  Antônio Pedro Camargo [ctb, cph],\n  Cédric Scherer [ctb, cph]",
         "Repository": "CRAN",
         "Date/Publication": "2023-05-02 23:50:02 UTC",
-        "Built": "R 4.4.0; ; 2024-05-25 00:23:18 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-04-07 20:07:19 UTC; unix"
       }
     },
     "whisker": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "whisker",
         "Maintainer": "Edwin de Jonge <edwindjonge@gmail.com>",
@@ -3457,12 +3400,12 @@
         "Packaged": "2022-12-05 15:15:55 UTC; hornik",
         "Repository": "CRAN",
         "Date/Publication": "2022-12-05 15:33:50 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 00:32:43 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-30 06:05:34 UTC; unix"
       }
     },
     "withr": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "withr",
         "Title": "Run Code 'With' Temporarily Modified Global State",
@@ -3487,12 +3430,12 @@
         "Maintainer": "Lionel Henry <lionel@posit.co>",
         "Repository": "CRAN",
         "Date/Publication": "2024-07-31 11:30:02 UTC",
-        "Built": "R 4.4.1; ; 2024-09-23 00:26:09 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-07-31 14:03:05 UTC; unix"
       }
     },
     "xtable": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "xtable",
         "Version": "1.8-4",
@@ -3512,12 +3455,12 @@
         "Packaged": "2019-04-21 10:56:51 UTC; dsco036",
         "Author": "David B. Dahl [aut],\n  David Scott [aut, cre],\n  Charles Roosen [aut],\n  Arni Magnusson [aut],\n  Jonathan Swinton [aut],\n  Ajay Shah [ctb],\n  Arne Henningsen [ctb],\n  Benno Puetz [ctb],\n  Bernhard Pfaff [ctb],\n  Claudio Agostinelli [ctb],\n  Claudius Loehnert [ctb],\n  David Mitchell [ctb],\n  David Whiting [ctb],\n  Fernando da Rosa [ctb],\n  Guido Gay [ctb],\n  Guido Schulz [ctb],\n  Ian Fellows [ctb],\n  Jeff Laake [ctb],\n  John Walker [ctb],\n  Jun Yan [ctb],\n  Liviu Andronic [ctb],\n  Markus Loecher [ctb],\n  Martin Gubri [ctb],\n  Matthieu Stigler [ctb],\n  Robert Castelo [ctb],\n  Seth Falcon [ctb],\n  Stefan Edwards [ctb],\n  Sven Garbade [ctb],\n  Uwe Ligges [ctb]",
         "Date/Publication": "2019-04-21 12:20:03 UTC",
-        "Built": "R 4.4.0; ; 2024-05-28 00:30:43 UTC; windows"
+        "Built": "R 4.4.0; ; 2024-05-30 05:40:02 UTC; unix"
       }
     },
     "yaml": {
       "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
       "description": {
         "Package": "yaml",
         "Type": "Package",
@@ -3535,8 +3478,8 @@
         "Packaged": "2024-07-22 15:44:18 UTC; garbetsp",
         "Repository": "CRAN",
         "Date/Publication": "2024-07-26 15:10:02 UTC",
-        "Built": "R 4.4.1; x86_64-w64-mingw32; 2024-07-31 00:26:34 UTC; windows",
-        "Archs": "x64"
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-07-26 15:21:08 UTC; unix",
+        "Archs": "yaml.so.dSYM"
       }
     },
     "zlibbioc": {
@@ -3546,7 +3489,7 @@
         "Package": "zlibbioc",
         "Type": "Package",
         "Title": "An R packaged zlib-1.2.5",
-        "Version": "1.50.0",
+        "Version": "1.51.1",
         "Author": "Martin Morgan",
         "Maintainer": "Bioconductor Package Maintainer <maintainer@bioconductor.org>",
         "Description": "This package uses the source code of zlib-1.2.5 to create\n  libraries for systems that do not have these available via other\n  means (most Linux and Mac users should have system-level access to\n  zlib, and no direct need for this package). See the vignette for\n  instructions on use.",
@@ -3557,22 +3500,28 @@
         "License": "Artistic-2.0 + file LICENSE",
         "LazyLoad": "yes",
         "VignetteBuilder": "knitr",
+        "PackageStatus": "Deprecated",
         "git_url": "https://git.bioconductor.org/packages/zlibbioc",
-        "git_branch": "RELEASE_3_19",
-        "git_last_commit": "0cb52e8",
-        "git_last_commit_date": "2024-04-30",
-        "Repository": "Bioconductor 3.19",
-        "Date/Publication": "2024-05-01",
+        "git_branch": "devel",
+        "git_last_commit": "24c01b0",
+        "git_last_commit_date": "2024-06-03",
+        "Repository": "Bioconductor 3.20",
+        "Date/Publication": "2024-06-05",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-05-02 02:37:36 UTC; biocbuild",
-        "Built": "R 4.4.0; x86_64-w64-mingw32; 2024-05-02 13:43:12 UTC; windows",
-        "Archs": "x64"
+        "Packaged": "2024-06-06 03:18:04 UTC; biocbuild",
+        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-06-06 17:30:57 UTC; unix"
       }
     }
   },
   "files": {
+    ".Rprofile": {
+      "checksum": "ff66258f875512b7cd4bdedbfff3a6f8"
+    },
     "app.R": {
-      "checksum": "5e11dd30fb07994307c86ad321d1c590"
+      "checksum": "4311726f1d9dc14f0cfb659598fb67bc"
+    },
+    "renv.lock": {
+      "checksum": "1d9a6c2e9802b66bebd454a5483730ee"
     }
   },
   "users": null
