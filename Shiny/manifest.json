@@ -34,7 +34,7 @@
     },
     "Biobase": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "Biobase",
         "Title": "Biobase: Base functions for Bioconductor",
@@ -66,7 +66,7 @@
     },
     "BiocGenerics": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "BiocGenerics",
         "Title": "S4 generic functions used in Bioconductor",
@@ -74,24 +74,24 @@
         "biocViews": "Infrastructure",
         "URL": "https://bioconductor.org/packages/BiocGenerics",
         "BugReports": "https://github.com/Bioconductor/BiocGenerics/issues",
-        "Version": "0.51.0",
+        "Version": "0.51.3",
         "License": "Artistic-2.0",
         "Encoding": "UTF-8",
         "Author": "The Bioconductor Dev Team",
         "Maintainer": "Hervé Pagès <hpages.on.github@gmail.com>",
         "Depends": "R (>= 4.0.0), methods, utils, graphics, stats",
         "Imports": "methods, utils, graphics, stats",
-        "Suggests": "Biobase, S4Vectors, IRanges, GenomicRanges, DelayedArray,\nBiostrings, Rsamtools, AnnotationDbi, affy, affyPLM, DESeq2,\nflowClust, MSnbase, annotate, RUnit",
-        "Collate": "S3-classes-as-S4-classes.R utils.R normarg-utils.R\nreplaceSlots.R aperm.R append.R as.data.frame.R as.list.R\nas.vector.R cbind.R do.call.R duplicated.R eval.R Extremes.R\nformat.R funprog.R get.R grep.R is.unsorted.R lapply.R mapply.R\nmatch.R mean.R nrow.R order.R paste.R rank.R rep.R\nrow_colnames.R sets.R sort.R start.R subset.R t.R table.R\ntapply.R unique.R unlist.R unsplit.R relist.R var.R which.R\nwhich.min.R boxplot.R image.R density.R IQR.R mad.R residuals.R\nweights.R xtabs.R annotation.R combine.R dbconn.R dge.R dims.R\nfileName.R normalize.R Ontology.R organism_species.R path.R\nplotMA.R plotPCA.R score.R strand.R toTable.R type.R\nupdateObject.R testPackage.R zzz.R",
+        "Suggests": "Biobase, S4Vectors, IRanges, S4Arrays, SparseArray,\nDelayedArray, HDF5Array, GenomicRanges, pwalign, Rsamtools,\nAnnotationDbi, affy, affyPLM, DESeq2, flowClust, MSnbase,\nannotate, RUnit",
+        "Collate": "S3-classes-as-S4-classes.R utils.R normarg-utils.R\nreplaceSlots.R aperm.R append.R as.data.frame.R as.list.R\nas.vector.R cbind.R do.call.R duplicated.R eval.R Extremes.R\nformat.R funprog.R get.R grep.R is.unsorted.R lapply.R mapply.R\nmatch.R mean.R nrow.R order.R paste.R rank.R rep.R\nrow_colnames.R saveRDS.R sets.R sort.R start.R subset.R t.R\ntable.R tapply.R unique.R unlist.R unsplit.R relist.R var.R\nwhich.R which.min.R boxplot.R image.R density.R IQR.R mad.R\nresiduals.R weights.R xtabs.R annotation.R combine.R\ncontainsOutOfMemoryData.R dbconn.R dge.R dims.R fileName.R\nnormalize.R Ontology.R organism_species.R path.R plotMA.R\nplotPCA.R score.R strand.R toTable.R type.R updateObject.R\ntestPackage.R zzz.R",
         "git_url": "https://git.bioconductor.org/packages/BiocGenerics",
         "git_branch": "devel",
-        "git_last_commit": "7b9834d",
-        "git_last_commit_date": "2024-04-30",
+        "git_last_commit": "2272d5e",
+        "git_last_commit_date": "2024-10-01",
         "Repository": "Bioconductor 3.20",
-        "Date/Publication": "2024-05-01",
+        "Date/Publication": "2024-10-21",
         "NeedsCompilation": "no",
-        "Packaged": "2024-05-01 21:23:01 UTC; biocbuild",
-        "Built": "R 4.4.0; ; 2024-05-02 18:17:48 UTC; unix"
+        "Packaged": "2024-10-21 19:59:56 UTC; biocbuild",
+        "Built": "R 4.4.1; ; 2024-10-22 07:42:06 UTC; unix"
       }
     },
     "BiocManager": {
@@ -101,8 +101,8 @@
         "Package": "BiocManager",
         "Title": "Access the Bioconductor Project Package Repository",
         "Description": "A convenient tool to install and update Bioconductor packages.",
-        "Version": "1.30.24",
-        "Authors@R": "c(\n    person(\"Martin\", \"Morgan\", email = \"martin.morgan@roswellpark.org\",\n        role = \"aut\", comment = c(ORCID = \"0000-0002-5874-8148\")),\n    person(\"Marcel\", \"Ramos\", email = \"marcel.ramos@roswellpark.org\",\n        role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-3242-0582\")))",
+        "Version": "1.30.25",
+        "Authors@R": "c(\n    person(\"Martin\", \"Morgan\", email = \"martin.morgan@roswellpark.org\",\n        role = \"aut\", comment = c(ORCID = \"0000-0002-5874-8148\")),\n    person(\"Marcel\", \"Ramos\", email = \"marcel.ramos@sph.cuny.edu\",\n        role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-3242-0582\")))",
         "Imports": "utils",
         "Suggests": "BiocVersion, BiocStyle, remotes, rmarkdown, testthat, withr,\ncurl, knitr",
         "URL": "https://bioconductor.github.io/BiocManager/",
@@ -112,17 +112,24 @@
         "Encoding": "UTF-8",
         "RoxygenNote": "7.3.1",
         "NeedsCompilation": "no",
-        "Packaged": "2024-08-20 15:57:13 UTC; mr148",
+        "Packaged": "2024-08-27 21:44:40 UTC; mr148",
         "Author": "Martin Morgan [aut] (<https://orcid.org/0000-0002-5874-8148>),\n  Marcel Ramos [aut, cre] (<https://orcid.org/0000-0002-3242-0582>)",
-        "Maintainer": "Marcel Ramos <marcel.ramos@roswellpark.org>",
-        "Repository": "CRAN",
-        "Date/Publication": "2024-08-20 19:10:05 UTC",
-        "Built": "R 4.4.1; ; 2024-08-20 23:23:28 UTC; unix"
+        "Maintainer": "Marcel Ramos <marcel.ramos@sph.cuny.edu>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-08-28 14:20:02 UTC",
+        "Built": "R 4.4.0; ; 2024-08-29 05:13:49 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "BiocManager",
+        "RemoteRef": "BiocManager",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-apple-darwin20",
+        "RemoteSha": "1.30.25"
       }
     },
     "BiocNeighbors": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "BiocNeighbors",
         "Version": "1.23.0",
@@ -153,7 +160,7 @@
     },
     "BiocParallel": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "BiocParallel",
         "Type": "Package",
@@ -189,7 +196,7 @@
     },
     "BiocSingular": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "BiocSingular",
         "Version": "1.21.2",
@@ -222,7 +229,7 @@
     },
     "BiocVersion": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "BiocVersion",
         "Version": "3.20.0",
@@ -274,7 +281,7 @@
     },
     "DelayedArray": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "DelayedArray",
         "Title": "A unified framework for working transparently with on-disk and\nin-memory array-like datasets",
@@ -330,7 +337,7 @@
     },
     "GenomeInfoDb": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "GenomeInfoDb",
         "Title": "Utilities for manipulating chromosome names, including modifying\nthem to follow a particular naming style",
@@ -363,7 +370,7 @@
     },
     "GenomeInfoDbData": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/data/annotation",
+      "Repository": "https://bioconductor.org/packages/3.20/data/annotation",
       "description": {
         "Package": "GenomeInfoDbData",
         "Title": "Species and taxonomy ID look up tables used by GenomeInfoDb",
@@ -381,7 +388,7 @@
     },
     "GenomicRanges": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "GenomicRanges",
         "Title": "Representation and manipulation of genomic intervals",
@@ -414,7 +421,7 @@
     },
     "IRanges": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "IRanges",
         "Title": "Foundation of integer range manipulation in Bioconductor",
@@ -509,7 +516,7 @@
     },
     "MatrixGenerics": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "MatrixGenerics",
         "Title": "S4 Generic Summary Statistic Functions that Operate on\nMatrix-Like Objects",
@@ -813,7 +820,7 @@
     },
     "S4Arrays": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "S4Arrays",
         "Title": "Foundation of array-like containers in Bioconductor",
@@ -846,7 +853,7 @@
     },
     "S4Vectors": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "S4Vectors",
         "Title": "Foundation of vector-like and list-like containers in\nBioconductor",
@@ -877,7 +884,7 @@
     },
     "ScaledMatrix": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "ScaledMatrix",
         "Version": "1.13.0",
@@ -908,7 +915,7 @@
     },
     "SingleCellExperiment": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "SingleCellExperiment",
         "Version": "1.27.2",
@@ -938,7 +945,7 @@
     },
     "SparseArray": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "SparseArray",
         "Title": "High-performance sparse data representation and manipulation in\nR",
@@ -971,7 +978,7 @@
     },
     "SummarizedExperiment": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "SummarizedExperiment",
         "Title": "SummarizedExperiment container",
@@ -1003,7 +1010,7 @@
     },
     "UCSC.utils": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "UCSC.utils",
         "Title": "Low-level utilities to retrieve data from the UCSC Genome\nBrowser",
@@ -1034,7 +1041,7 @@
     },
     "XVector": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "XVector",
         "Title": "Foundation of external vector representation and manipulation in\nBioconductor",
@@ -1136,7 +1143,7 @@
     },
     "beachmat": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "beachmat",
         "Version": "2.21.5",
@@ -2913,7 +2920,7 @@
     },
     "scater": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "scater",
         "Type": "Package",
@@ -2947,7 +2954,7 @@
     },
     "scuttle": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "scuttle",
         "Type": "Package",
@@ -3484,7 +3491,7 @@
     },
     "zlibbioc": {
       "Source": "Bioconductor",
-      "Repository": "https://bioconductor.org/packages/3.19/bioc",
+      "Repository": "https://bioconductor.org/packages/3.20/bioc",
       "description": {
         "Package": "zlibbioc",
         "Type": "Package",
@@ -3515,13 +3522,13 @@
   },
   "files": {
     ".Rprofile": {
-      "checksum": "ff66258f875512b7cd4bdedbfff3a6f8"
+      "checksum": "d219b9f7f6b6d5fea1d02e256f6e5bd5"
     },
     "app.R": {
       "checksum": "4311726f1d9dc14f0cfb659598fb67bc"
     },
     "renv.lock": {
-      "checksum": "1d9a6c2e9802b66bebd454a5483730ee"
+      "checksum": "8a523a6f09ac09da5588252b4b5bff85"
     }
   },
   "users": null
