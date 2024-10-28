@@ -3496,7 +3496,7 @@
         "Package": "zlibbioc",
         "Type": "Package",
         "Title": "An R packaged zlib-1.2.5",
-        "Version": "1.51.1",
+        "Version": "1.51.2",
         "Author": "Martin Morgan",
         "Maintainer": "Bioconductor Package Maintainer <maintainer@bioconductor.org>",
         "Description": "This package uses the source code of zlib-1.2.5 to create\n  libraries for systems that do not have these available via other\n  means (most Linux and Mac users should have system-level access to\n  zlib, and no direct need for this package). See the vignette for\n  instructions on use.",
@@ -3510,25 +3510,25 @@
         "PackageStatus": "Deprecated",
         "git_url": "https://git.bioconductor.org/packages/zlibbioc",
         "git_branch": "devel",
-        "git_last_commit": "24c01b0",
-        "git_last_commit_date": "2024-06-03",
+        "git_last_commit": "0cf516b",
+        "git_last_commit_date": "2024-10-19",
         "Repository": "Bioconductor 3.20",
-        "Date/Publication": "2024-06-05",
+        "Date/Publication": "2024-10-21",
         "NeedsCompilation": "yes",
-        "Packaged": "2024-06-06 03:18:04 UTC; biocbuild",
-        "Built": "R 4.4.0; x86_64-apple-darwin20; 2024-06-06 17:30:57 UTC; unix"
+        "Packaged": "2024-10-21 22:39:21 UTC; biocbuild",
+        "Built": "R 4.4.1; x86_64-apple-darwin20; 2024-10-22 08:22:33 UTC; unix"
       }
     }
   },
   "files": {
     ".Rprofile": {
-      "checksum": "d219b9f7f6b6d5fea1d02e256f6e5bd5"
+      "checksum": "1c00f7d6179480b5990ab69d9a7254ce"
     },
     "app.R": {
       "checksum": "4311726f1d9dc14f0cfb659598fb67bc"
     },
     "renv.lock": {
-      "checksum": "8a523a6f09ac09da5588252b4b5bff85"
+      "checksum": "8271c81ae99082504b656007b7788d9d"
     }
   },
   "users": null
